@@ -34,7 +34,9 @@ li a {
   text-transform: capitalize;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   padding: 17px 35px;
   border-radius: 10px;
   transition: linear 0.3s;
@@ -102,7 +104,7 @@ button {
 
 .page-intro {
   color: white;
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/csr-images/Picture1.jpg");
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/hero-img2.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -182,6 +184,8 @@ button {
 }
 
 footer {
+  padding-top: 50px;
+  background-color: #3461e2;
   color: white;
 }
 footer .container .row {
@@ -289,7 +293,7 @@ footer .copy .container .row .social-media img {
 }
 
 .hero {
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/hero-img2.JPG");
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/hero-img2.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;

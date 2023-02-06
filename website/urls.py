@@ -16,7 +16,6 @@ urlpatterns = [
     path('non-deposit-taking-micorfinance', service5, name='non-deposit-taking-micorfinance'),
     path('financial-analysis-and-calculations-related-services', service6, name='financial-analysis-and-calculations-related-services'),
     
-    path('about_us',about_us,name='about_us'),
-    re_path(r'[^(index|blogs|about_us)]', coming_soon),
+    path('about',about_us,name='about'),
 
 ]

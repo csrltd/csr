@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/mobile.css">
-
-    <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
-    <link rel="icon" type="image/x-icon" href="/img/csr logo.svg">
-    <title>Comprehensive Staffing
-        Resources Ltd(CSR)</title>
-</head>
-
-<body>
-    <header class="header" id="home">
-        <div class="container">
-            <!-- navbar -->
-            <nav class="nav-header">
-                <div class="brand">
-                    <img src="./img/logo.svg" alt="" class="logo">
-                    <h1>comprehensive <br> staffing resources</h1>
-                </div>
-                <div class="nav-menu">
-                    <ul class="links">
-                        <li class="link">
-                            <a href="index.html">home</a>
-                        </li>
-                        <li class="link">
-                            <a href="about.html">about us</a>
-                        </li>
-                        <li class="link">
-                            <a href="#services">services</a>
-                        </li>
-                        <li class="link">
-                            <a href="">gallery</a>
-                        </li>
-                        <li class="link">
-                            <a href="blog.html">news room</a>
-                        </li>
-                        <li class="link contact-btn">
-                            <a href="#contacts">contact</a>
-                            <img src="./img/icons/Vector.svg" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-        </div>
-        </nav>
-    </header>
-
+{% include 'navbar.html' %}
     <section class="hero">
         <div class="container">
             <h4 class="sub-heading">trusted partner</h4>
@@ -72,12 +17,12 @@
                         <a href="">
                             Hire a Talent
                         </a>
-                        <img src="./img/icons/🦆 icon _Angle Double Right_.svg" alt="">
+                        <img src="{% static './img/icons/🦆 icon _Angle Double Right_.svg' %}" alt="">
                     </button>
                 </div>
                 <div class="btn">
                     <button class="hero-btn2">
-                        <img src="./img/icons/play-btn.svg" alt="">
+                        <img src="{% static './img/icons/play-btn.svg' %}" alt="">
                         <a href="https://www.youtube.com/embed/9KcvJozkbSQ">
                             Watch our business launch
                         </a>
@@ -91,19 +36,19 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="./img/icons/chart.svg" alt="">
+                    <img src="{% static './img/icons/chart.svg' %}" alt="">
                     <h3>financial statements</h3>
                 </div>
                 <div class="col">
-                    <img src="./img/icons/users.svg" alt="">
+                    <img src="{% static './img/icons/users.svg' %}" alt="">
                     <h3>customer support</h3>
                 </div>
                 <div class="col">
-                    <img src="./img/icons/software.svg" alt="">
+                    <img src="{% static './img/icons/software.svg' %}" alt="">
                     <h3>software development</h3>
                 </div>
                 <div class="col">
-                    <img src="./img/icons/🦆 icon _table_.svg" alt="">
+                    <img src="{% static './img/icons/🦆 icon _table_.svg' %}" alt="">
                     <h3>social media management</h3>
                 </div>
             </div>
@@ -124,13 +69,13 @@
                         <a href="">Get in touch with us</a>
                     </div>
                     <div class="about-img">
-                        <img src="/img/image-sandra.jpg" alt="csr staff">
+                        <img src="{% static '/img/image-sandra.jpg' %}" alt="csr staff">
                     </div>
                 </div>
                 <!-- second column -->
                 <div class="row row-not-reverse">
                     <div class="about-img">
-                        <img src="/img/Image-patient.jpg" alt="csr staff">
+                        <img src="{% static '/img/Image-patient.jpg' %}" alt="csr staff">
                     </div>
                     <div class="about-description">
                         <h2>significant cost savings guaranteed</h2>
@@ -149,7 +94,7 @@
                         <a href="">Get in touch with us</a>
                     </div>
                     <div class="about-img">
-                        <img src="/img/imaje-joselyne.jpg" alt="csr staff">
+                        <img src="{% static '/img/imaje-joselyne.jpg' %}" alt="csr staff">
                     </div>
                 </div>
             </div>
@@ -163,7 +108,7 @@
             <div class="col">
                 <div class="row">
                     <div class="title-col">
-                        <img src="/img/icons/chart.svg" alt="icon" class="icon">
+                        <img src="{% static '/img/icons/chart.svg' %}" alt="icon" class="icon">
                         <h2>financial statements</h2>
                     </div>
                     <p>We have a team dedicated to delivering the services and working with our clients from the
@@ -172,7 +117,7 @@
                 <!-- second row -->
                 <div class="row">
                     <div class="title-col">
-                        <img src="/img/icons/users.svg" alt="icon" class="icon">
+                        <img src="{% static '/img/icons/users.svg' %}" alt="icon" class="icon">
                         <h2>customer support</h2>
                     </div>
                     <p>We have a team dedicated to delivering the services and working with our clients from the
@@ -181,7 +126,7 @@
                 <!-- third row -->
                 <div class="row">
                     <div class="title-col">
-                        <img src="/img/icons/software.svg" alt="icon" class="icon">
+                        <img src="{% static '/img/icons/software.svg' %}" alt="icon" class="icon">
                         <h2>software development</h2>
                     </div>
                     <p>We have a team dedicated to delivering the services and working with our clients from the
@@ -190,7 +135,7 @@
                 <!-- fourth row -->
                 <div class="row">
                     <div class="title-col">
-                        <img src="/img/icons/🦆 icon _table_.svg" alt="icon" class="icon">
+                        <img src="{% static '/img/icons/🦆 icon _table_.svg' %}" alt="icon" class="icon">
                         <h2>social media management</h2>
                     </div>
                     <p>We have a team dedicated to delivering the services and working with our clients from the
@@ -224,23 +169,23 @@
             <h1 class="heading">our partners</h1>
             <div class="row">
                 <a href="">
-                    <img src="/img/partners/cohesive-health-care.jpeg" alt="cohesive-health-care">
+                    <img src="{% static '/img/partners/cohesive-health-care.jpeg' %}" alt="cohesive-health-care">
                 </a>
 
                 <a href="">
-                    <img src="/img/partners/cohesivestaffing.jpeg" alt="cohesive-staffing" class="partners-logo">
+                    <img src="{% static '/img/partners/cohesivestaffing.jpeg' %}" alt="cohesive-staffing" class="partners-logo">
                 </a>
 
                 <a href="">
-                    <img src="/img/partners/Geantox.jpeg" alt="Gentox" class="partners-logo">
+                    <img src="{% static '/img/partners/Geantox.jpeg' %}" alt="Gentox" class="partners-logo">
                 </a>
 
                 <a href="">
-                    <img src="/img/partners/meat-processing.jpeg" alt="meat-processing" class="partners-logo">
+                    <img src="{% static '/img/partners/meat-processing.jpeg' %}" alt="meat-processing" class="partners-logo">
                 </a>
 
                 <a href="">
-                    <img src="/img/partners/tca.jpeg" alt="tca" class="partners-logo">
+                    <img src="{% static '/img/partners/tca.jpeg' %}" alt="tca" class="partners-logo">
                 </a>
             </div>
         </div>
@@ -265,7 +210,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">SIBOMANA Alphonse</h2>
                                 <h3 class="position">Senior Manager</h3>
@@ -284,7 +229,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="" class="avatar">
+                            <img src="{% static '/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">GATERA Charmant</h2>
                                 <h3 class="position">software engineer</h3>
@@ -303,7 +248,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">BUSAH Irene</h2>
                                 <h3 class="position">UI/UX</h3>
@@ -322,7 +267,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">Honorine</h2>
                                 <h3 class="position">software engineer</h3>
@@ -341,7 +286,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">John Doe</h2>
                                 <h3 class="position">software engineer</h3>
@@ -360,7 +305,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">John Doe</h2>
                                 <h3 class="position">software engineer</h3>
@@ -379,7 +324,7 @@
                                 Refactored this
                             -->
                         <div class="customer-profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <div class="profile">
                                 <h2 class="name">John Doe</h2>
                                 <h3 class="position">software engineer</h3>
@@ -394,7 +339,7 @@
                             industry. Lorem Ipsum
                             has been the industry's.”</p>
                         <div class="profile">
-                            <img src="/img/avatar/avatar.png" alt="" class="avatar">
+                            <img src="{% static '/img/avatar/avatar.png' %}" alt="" class="avatar">
                             <h2>John Doe</h2>
                             <h3>software engineer</h3>
                         </div>
@@ -429,18 +374,18 @@
                         <div class="row-1">
                             <div class="office">
                                 <div class="office-title">
-                                    <img src="/img/icons/🦆 icon _Alternate Map Marker_.svg" alt="location"
+                                    <img src="{% static '/img/icons/🦆 icon _Alternate Map Marker_.svg' %}" alt="location"
                                         class="icon">
                                     <h3>rwanda office</h3>
                                 </div>
-                                <p>KN 78 St, Kigali. Norrsken </p>
-                                <p>House, Kigali,Rwanda.</p>
+                                <p>KG 566 St, Kigali. Starttimes House </p>
+                                <p>Kimihurura, Kigali,Rwanda.</p>
                             </div>
                         </div>
                         <div class="row-1">
                             <div class="office">
                                 <div class="office-title">
-                                    <img src="/img/icons/us-location.svg" alt="location" class="icon">
+                                    <img src="{% static '/img/icons/us-location.svg' %}" alt="location" class="icon">
                                     <h3>USA office</h3>
                                 </div>
                                 <p>2510 E Independence st</p>
@@ -454,7 +399,7 @@
                         <div class="row-1">
                             <div class="office">
                                 <div class="office-title">
-                                    <img src="/img/icons/🦆 icon _Alternate Map Marker_.svg" alt="location"
+                                    <img src="{% static '/img/icons/🦆 icon _Alternate Map Marker_.svg' %}" alt="location"
                                         class="icon">
                                     <h3>send us an email</h3>
                                 </div>
@@ -469,7 +414,7 @@
                         <div class="row-1">
                             <div class="office">
                                 <div class="office-title">
-                                    <img src="/img/icons/us-location.svg" alt="location" class="icon">
+                                    <img src="{% static '/img/icons/us-location.svg' %}" alt="location" class="icon">
                                     <h3>USA office</h3>
                                 </div>
                                 <p>2510 E Independence st</p>
@@ -495,7 +440,7 @@
             </div>
             <div class="location">
                 <div class="row">
-                    <img src="/img/csr-office.jpeg" alt="csr">
+                    <img src="{% static '/img/csr-office.jpeg' %}" alt="csr">
                 </div>
                 <div class="map">
                     <iframe src="https://maps.google.com/maps?q=Startimes&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -506,124 +451,6 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col about-company">
-                    <h1 class="heading">About the company</h1>
-                    <p>We are a local outsourcing firm, started in 2021 with the aim to save companies from bankrupts by
-                        providing unique and
-                        quick services in comprehensive solutions.</p>
+    {% include 'footer.html' %}
 
-                </div>
-
-                <div class="col footer-services">
-                    <h1 class="heading">services</h1>
-                    <ul>
-                        <li>
-                            <a href="#services">Financial Statements</a>
-                        </li>
-                        <li>
-                            <a href="#services">Customer Support</a>
-                        </li>
-                        <li>
-                            <a href="#services">Software Development</a>
-                        </li>
-                        <li>
-                            <a href="#services">Social Media Management</a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="col footer-blogs">
-                    <h1 class="heading">Blogs</h1>
-                    <div class="col">
-                        <a href="single-blog.html" class="row blog">
-                            <div class="col featured-img">
-                                <img src="/img/blog-images/img-1.avif" alt="blog" class="blog-img">
-                            </div>
-                            <div class="col summary">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sequi?</p>
-
-                            </div>
-                        </a>
-                        <a href="single-blog.html" class="row blog">
-                            <div class="col featured-img">
-                                <img src="/img/blog-images/img-2.avif" alt="blog" class="blog-img">
-                            </div>
-                            <div class="col summary">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sequi?</p>
-
-                            </div>
-                        </a>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="copy">
-            <div class="container">
-                <div class="row">
-                    <div class="col copy-text">
-                        <i class="far fa-copyright"></i> 2023 Copyright, All Rights Reserved
-                    </div>
-                    <ul class="menu-links">
-                        <li class="link">
-                            <a href="index.html">home</a>
-                        </li>
-                        <li class="link">
-                            <a href="about.html">about us</a>
-                        </li>
-                        <li class="link">
-                            <a href="#services">services</a>
-                        </li>
-                        <li class="link">
-                            <a href="">gallery</a>
-                        </li>
-                        <li class="link">
-                            <a href="blog.html">news room</a>
-                        </li>
-
-                    </ul>
-                    <div class="col social-media">
-                        <div class="icon">
-                            <a href="https://www.facebook.com/profile.php?id=100086812094253&mibextid=LQQJ4d">
-                                <img src="/img/icons/🦆 icon _Facebook_.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.instagram.com/csr.rw/">
-                                <img src="/img/icons/🦆 icon _Instagram Square_.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.youtube.com/@csrlimitedkigalicsr">
-                                <img src="/img/icons/🦆 icon _YouTube Square_.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://twitter.com/home?lang=en">
-                                <img src="/img/icons/🦆 icon _Twitter Square_.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/company/comprehensive-staffing-resources-ltd/">
-                                <img src="/img/icons/🦆 icon _LinkedIn_.svg" alt="">
-                            </a>
-                        </div>
-                        <!-- other links -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <script src="/js/nav.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-
-</html>
+{% endblock %}

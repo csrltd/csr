@@ -6,27 +6,29 @@ from django.conf import settings
 # Create your views here.
 
 def index(request):
+    page_title = 'Home'
     form = ContactForm()
-
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('thank-you')
-    context = {'form': form}
+    context = {'form': form, 'page_title':page_title}
 
     if settings.COMMING_SOON:
         return render(request, 'coming-soon.html')
     return render(request, 'index.html', context)
 
 def blog(request, slug):
+    page_title = 'Blog posts'
     blog = Blog.objects.get(slug=slug)
     context = {'blog':blog}
     return render(request, 'single-blog.html', context)
 
 def blogs(request):
+    page_title = 'Blog posts'
     blogs = Blog.objects.filter(status='Published')
-    context = {'blogs':blogs}
+    context = {'blogs':blogs, 'page_title': page_title}
     return render(request, 'blog.html', context)
 
 def features(request):
@@ -56,7 +58,9 @@ def service6(request):
     return render(request, 'financial-analysis-and-calculations-related-services.html')
 
 def about_us(request):
-    return render(request, 'about.html')
+    page_title = 'About Us'
+    context = {'page_title': page_title}
+    return render(request, 'about.html', context)
 
 def coming_soon(request):
     return render(request, 'coming-soon.html')
