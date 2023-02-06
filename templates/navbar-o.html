@@ -1,0 +1,29 @@
+{% load static %}
+<header class="">
+    <nav class="navbar">
+        <div class="brand">
+            <a href="{% url 'index' %}">
+                <img class="logo" src="{% static '/img/logo-csr.png' %}" alt="">
+            <p class="site-title">Comprehensive Staffing <br>
+                Resources Ltd(CSR)
+            </p>
+            </a>     
+        </div>
+        <div class="menu-bar" id="menuBtn" href="" onclick="OpenCloseMenu()">
+            <img id="OpenMenu" src="{% static '/img/icons/menu-bar.svg' %}" alt="">
+            <img id="CloseMenu" src="{% static '/img/icons/close.svg' %}" alt="">
+        </div>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <a class="menu-link" href="{% url 'index' %}">Welcome</a>
+            <a class="menu-link" href="{% url 'index' %}#about">About Us</a>
+            <a class="menu-link" href="{% url 'index' %}#services">Services</a>
+            <a class="menu-link" href="{% url 'index' %}#gallery">Gallery</a>
+            <a class="menu-link" href="{% url 'blogs' %}">Our Blog</a>
+            <a class="menu-link" href="{% url 'features' %}">Featured In</a>
+            <a class="menu-link" href="{% url 'index' %}#get-in-touch">
+                <button class="btn-outil">Contact us <span><img src="{% static '/img/icons/support.svg' %}" alt=""></span></button>
+            </a>
+        </div>
+    </nav>
+</header>

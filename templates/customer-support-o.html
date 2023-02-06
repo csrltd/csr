@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static '/css/services.css' %}">
+    <title>CSR | Customer support service</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <section class="section-header">
+        
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="col">
+                <h1 class="heading">Customer support service</h1>
+                <p>
+                    We provide Customer Support
+
+                    We offer flexible customer support via voice, chat, email, and social media to deliver excellent customer service at every customer touchpoint. We manage customer communication via different communication channels such as voice, chat, email, and text for our global clientele.
+                    
+                    Here at CSR we monitor, we train and evaluate your customer services 
+                </p>
+                <a href="/#get-in-touch">
+                    <button>Hire a talent <span><img src="{% static '/img/icons/angle right.svg' %}" alt=""></span></button>
+                </a>
+            </div>
+
+            <div class="col">
+                <img src="{% static '/img/kabibi.webp' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+    {% endblock %}
+</body>

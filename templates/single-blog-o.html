@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static '/css/single-blog.css' %}">
+    <title>CSR | Blog</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <section class="blog-header">
+        <div class="container">
+            <div class="col">
+                <h1 class="heading blog-title">
+                    {{blog.title}}
+                </h1>
+
+                <div class="meta">
+                    <div class="meta-item"><a href=""><img src="{% static '/img/icons/folder.svg' %}" alt="">
+                            <p>{{blog.category}}</p>
+                        </a></div>
+                    <div class="meta-item"><a href=""><img src="{% static '/img/icons/author.svg' %}" alt="">
+                            <p>{{blog.author}}</p>
+                        </a></div>
+                    <div class="meta-item"><a href=""><img src="{% static '/img/icons/calendar.svg' %}" alt="">
+                            <p>{{blog.date_created|date:"M d, Y"}}</p>
+                        </a></div>
+                </div>
+
+            </div>
+
+            <div class="col featured-image">
+                <img src="{{blog.featured_image.url}}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <div class="col content">
+                {{blog.blog_content|safe}}
+            </div>
+
+            <div class="col side-bar">
+                <h3>Our services</h3>
+                <div class="services">
+                    <a href="/book-keeping-and-outsourcing-of-staff.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/book.svg' %}" alt="">
+                            <p>
+                                Bookkeeping and
+                                Outsourcing of Staff
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/customer-support.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/support blue.svg' %}" alt="">
+                            <p>
+                                Customer Support
+                                services
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/financial-analysis-and-calculations-related-services.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/calculator.svg' %}" alt="">
+                            <p>
+                                Financial analysis
+                                and calculations
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/non-deposit-taking-micorfinance.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/percentage.svg' %}" alt="">
+                            <p>
+                                Non-deposit-taking
+                                microfinance
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/data-entry.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/table.svg' %}" alt="">
+                            <p>
+                                Data Entry
+                                Service
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="/payroll-management-and-funding.html">
+                        <div class="service">
+                            <img src="{% static '/img/icons/list money.svg' %}" alt="">
+                            <p>
+                                Payroll Management
+                                and Funding
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+    {% endblock %}
+</body>

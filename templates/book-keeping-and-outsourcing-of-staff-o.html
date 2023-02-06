@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static '/css/services.css' %}">
+    <title>CSR | Book keeping and outsourcig of staff</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <section class="section-header">
+
+    </section>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="col">
+                <h1 class="heading">Book keeping and outsourcig of staff</h1>
+                <p>
+                    Bookkeeping is the most basic of all accounting functions. It involves maintaining accurate and
+                    updated records of all your company’s financial activities.
+
+                    This includes bank records, tax fillings, payroll records, purchase and sales records, and
+                    regulatory filings.
+
+                    These records are essential to regulatory compliance. Proper bookkeeping makes other accounting
+                    functions, such as audit, payroll, and tax preparation, much simpler and less time-consuming.
+
+                    We have a team deducted to delivering the services and walking with our clients from the inception
+                    of the contracts.
+                </p>
+                <a href="/#get-in-touch">
+                    <button>Hire a talent <span><img src="{% static '/img/icons/angle right.svg' %}" alt=""></span></button>
+                </a>
+            </div>
+
+            <div class="col">
+                <img src="{% static '/img/kabibi.webp' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+    {% endblock %}
+</body>

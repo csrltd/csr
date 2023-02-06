@@ -1,0 +1,532 @@
+$color-blue: #3461e2;
+$color-blue-fade: #e5eafb;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 10px;
+
+
+//CUSTOM CLASSES
+
+@media screen and(max-width:1250px) {
+  .container{
+    padding: 0 50px;
+  }
+}
+
+@media screen and(max-width:540px) {
+  .container{
+    padding: 20px;
+  }
+}
+
+
+//NAVIGATION
+
+@media screen and (max-width: 1020px) {
+    .header {
+      .container {
+        padding-top: 20px;
+  
+        .nav-header {
+          .brand {
+            gap: 5px;
+            .logo {
+              width: 20px;
+              height: 20px;
+            }
+  
+            h1 {
+              font-size: 10px;
+            }
+          }
+  
+          .nav-menu {
+            display: none;
+          }
+  
+          .nav-toggle {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1047px) {
+    .footer {
+      .container {
+        .col {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  
+  @media screen and(max-width: 540px) {
+    footer {
+      .container {
+        .row {
+          flex-direction: column;
+          gap: 50px;
+        }
+  
+        .footer-blogs {
+          .col {
+            .blog {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              flex-direction: row;
+              padding: 12px 0;
+            }
+            .summary {
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+  
+      .copy {
+        margin-top: 50px;
+        padding: 20px 0;
+  
+        .container {
+          .row {
+            flex-direction: column-reverse;
+            gap: 24px;
+            .menu-links {
+              flex-wrap: wrap;
+              width: 100%;
+            }
+  
+            .social-media {
+              justify-content: start;
+            }
+          }
+        }
+      }
+    }
+  }
+
+//HOME PAGE
+@media screen and(max-width: 540px) {
+    .hero {
+      text-align: center;
+      padding-top: 250px;
+      height: 855px;
+      .hero-btns {
+        flex-direction: column;
+      }
+    }
+    .services-section {
+      margin-top: -25px;
+      .container {
+        .row {
+          flex-direction: column;
+          gap: 60px;
+  
+          .col {
+            width: 100%;
+            justify-content: center;
+            
+          }
+        }
+      }
+    }
+  
+    //About Section
+  
+    .about {
+      .container {
+        .col {
+          .row {
+            flex-direction: column;
+            .about-description {
+              width: 100%;
+              padding: 0 30px 30px 30px;
+            }
+  
+            .about-img {
+              img {
+                width: 350px;
+              }
+            }
+          }
+          .row-reverse {
+            flex-direction: column-reverse;
+            padding-left: 0;
+          
+          }
+          .row-not-reverse {
+            padding-right: 0;        
+          }
+        }
+      }
+    }
+  
+    //Services
+    .services-details {
+      .container {
+        .col {
+          flex-direction: column;
+        }
+      }
+    }
+  
+    //Partnership
+  
+    .partnership {
+      .container {
+        margin: 0 20px;
+        
+      }
+    }
+  
+    //Partners
+  
+    .partners {
+      .container {
+        .row {
+          grid-template-columns: 33% 33% 33%;
+        }
+      }
+    }
+  
+    //Testimonies
+  
+    .testimonials {
+      display: none;
+      padding: 50px 0;
+  
+      .container {
+        .slider-container {
+          .slider {
+            flex-direction: column;
+            .card {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+    //Contact
+  
+    .contacts {
+      .container {
+        .col {
+          flex-direction: column;
+          .row {
+            width: 100%;
+  
+            .col-1 {
+              flex-direction: column;
+              width: 100%;
+  
+              .row-1 {
+                width: 100%;
+                height: auto;
+                padding: 30px;
+              }
+            }
+          }
+  
+          .row {
+            width: 100%;
+          }
+        }
+  
+        .location {
+          flex-direction: column;
+  
+          .row {
+            width: 100%;
+            img {
+              border-radius: $border-radius $border-radius 0 0;
+            }
+          }
+  
+          .map {
+            width: 100%;
+            margin-top: 0;
+  
+            iframe {
+              border-radius: 0 0 $border-radius $border-radius;
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    //about section
+    .about {
+      .container {
+        .col {
+          .about-description {
+            padding: 24px 0;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 928px) {
+    //services section
+    .services-section {
+      .container {
+        .row {
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+      }
+    }
+  }
+    
+  
+  @media screen and (max-width: 1096px) {
+    .services-details {
+      .container {
+        .col {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 810px) {
+    .contacts {
+      .container {
+        .location {
+          display: flex;
+          flex-direction: column;
+  
+          .map {
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+//BLOG PAGE
+
+@media screen and (max-width: 540px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    
+    .blog-page-header {
+        padding: 50px 0;
+        .container {
+            .col {
+                .heading {
+                    font-size: 24px;
+                }
+                img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    .blogs {
+        padding: 0;
+        padding-bottom: 50px;
+
+        .container {
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            a {
+                .blog {
+                    width: 100%;
+                    border-radius: 10px;
+
+                    img {
+                        border-radius: 10px;
+                    }
+
+                    .blog-summary {
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 620px) {
+    .hero {
+        height: 50vh;
+        .container {
+            padding-top: 150px;
+            .blog-intro {
+                font-size: 30px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blogs {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+//ABOUT PAGE
+
+@media screen and (max-width: 540px) {
+    //first section
+    .description {
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    width: 500px;
+                }
+                .col-description {
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+    //second section
+    .mission {
+        .container {
+            .col {
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    }
+
+    //third section
+    .our-team {
+        .container {
+            display: grid;
+            flex-wrap: wrap;
+
+            .row {
+                display: grid;
+                place-items: center;
+
+                .col {
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .description {
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    width: 100%;
+                }
+                .col-description {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .mission {
+        .container {
+            .col {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+//SERVICES PAGE
+
+
+@media screen and (max-width: 540px) {
+    .section-header {
+        display: none;
+    }
+    .service-content {
+        padding: 50px 0;
+
+        .container {
+            flex-direction: column-reverse;
+            .col {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// SINGLE BLOG
+
+
+@media screen and (max-width: 740px) {
+    .blog-header {
+        padding-top: 20px;
+        .container {
+            flex-direction: column-reverse;
+            .col {
+                .blog-title {
+                    font-size: 24px;
+                }
+                .meta {
+                    .meta-item {
+                        a {
+                            gap: 5px;
+                            img {
+                                width: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-content {
+        padding-top: 20px;
+        padding-bottom:20px;
+        
+        .container {
+            flex-direction: column;
+            .content {
+                width: 100%;
+            }
+            .side-bar {
+                display: none
+            };
+        }
+        
+        
+    }
+}

@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static '/img/csr logo.svg' %}">
+    <title>Comprehensive Staffing Resources Ltd(CSR)</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+    <section class="hero">
+        <div class="container">
+            <div class="intro">
+                <p class="sub-heading">Trusted Partner</p>
+                <h1 class="heading">Our Clients, Our Priority</h1>
+                <p>
+                    Efficiency and effectiveness describe us best when it comes to delivering services to our clients. We understand the importance of delivering 24/7 business operations to meet our clients back office demands.
+                </p>
+
+                <div class="buttons">
+                    <a href="/#get-in-touch"><button>
+                            Hire a talent
+                            <span><img src="{% static '/img/icons/angle right.svg' %}" alt=""></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="promo-video">
+                <div class="pop-up" id="pop-up">
+            
+                    <div class="pop-up-video">
+                        <div class="close-pop-up">
+                            <img src="{% static '/img/icons/close.svg' %}" alt="">
+                        </div>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eBEswRd4l64" title="Comprehensive Staffing Resources Ltd, Company launches at M.Hotel, Kigali Rwanda." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="youtube" href="#">
+                    <img class="play-btn" src="{% static '/img/icons/play btn.svg' %}" alt="">
+                    <p class="link">Watch our business launch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why" id="about">
+        <div class="container">
+            <h1 class="heading">Why Should you choose us?</h1>
+            <div class="why-section">
+                <div class="why-col">
+                    <h2 class="why-title">Business Operations</h2>
+                    <p class="why-text">
+                        We understand the importance of delivering 24/7 business operations to meet your business
+                        requirements. Whether your customers are based locally or globally- we are fully equipped to
+                        provide your business needs.
+                    </p>
+                    <a href="">Get in touch</a>
+                </div>
+                <div class="why-image">
+                    <img src="{% static '/img/csr-team-services.webp' %}" alt="">
+                </div>
+            </div>
+
+            <div class="why-section inverse">
+                <div class="why-col">
+                    <h2 class="why-title">Significant Cost Savings Guaranteed</h2>
+                    <p class="why-text">
+                        Our services come with guaranteed quality at a competitive price-giving you the complete
+                        advantage of business process outsourcing.
+                    </p>
+                    <a href="">Get in touch</a>
+                </div>
+                <div class="why-image">
+                    <img src="{% static '/img/csr-services.webp' %}" alt="">
+                </div>
+            </div>
+
+            <div class="why-section">
+                <div class="why-col">
+                    <h2 class="why-title">A Global Outsourcing Firm</h2>
+                    <p class="why-text">
+                        We serve Local and foreign companies. You get the advantage of working with a company that has a
+                        global presence. You get to work with people of different diversity, backgrounds, and skillset
+                        while adding reliability and credibility to your business.
+                    </p>
+                    <a href="">Get in touch</a>
+                </div>
+                <div class="why-image">
+                    <img src="{% static '/img/csr-team.webp' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h1 class="heading">Our Services</h1>
+            <p>
+                Welcome to our services. For any inquiries, feel free to contact us.
+            </p>
+
+            <div class="services">
+                <a href="{% url 'book-keeping-and-outsourcing-of-staff' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/book.svg' %}" alt="" class="icon">
+                            <h3 class="title">Bookkeeping and
+                                Outsourcing of Staff</h3>
+                        </div>
+                        <p class="service-text">
+                            Bookkeeping is the most basic of all accounting functions. It involves maintaining accurate and
+                            updated records of all your company’s financial activities.
+                    </div>
+                </a>
+
+                <a href="{% url 'customer-support' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/support blue.svg' %}" alt="" class="icon">
+                            <h3 class="title">Customer Support
+                                services</h3>
+                        </div>
+                        <p class="service-text">
+                            We offer flexible customer support via voice, chat, email, and social media to deliver excellent
+                            customer service at every customer touchpoint.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="{% url 'financial-analysis-and-calculations-related-services' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/calculator.svg' %}" alt="" class="icon">
+                            <h3 class="title">Financial analysis and calculations-related services
+                            </h3>
+                        </div>
+                        <p class="service-text">
+                            Our financial consulting services are designed to provide you with expert analysis and advice
+                            regarding your company’s strategic decisions.
+    
+    
+                        </p>
+                    </div>
+                </a>
+
+                <a href="{% url 'data-entry' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/table.svg' %}" alt="" class="icon">
+                            <h3 class="title">Data entry Service
+                            </h3>
+                        </div>
+                        <p class="service-text">
+                            In the technology-centred world we live in today, digitalization is a necessity for most
+                            businesses – irrespective of the industry they operate in.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="{% url 'payroll-management-and-funding' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/list money.svg' %}" alt="" class="icon">
+                            <h3 class="title">Payroll Management and Funding</h3>
+                        </div>
+                        <p class="service-text">
+                            It is critical that every business needs a function performed by our Payroll professionals under
+                            the CSR accounting team. The payroll involves managing all employee compensation, benefits, and
+                            withholdings.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="{% url 'non-deposit-taking-micorfinance' %}">
+                    <div class="service">
+                        <div class="serive-title">
+                            <img src="{% static '/img/icons/percentage.svg' %}" alt="" class="icon">
+                            <h3 class="title">Non-deposit-taking microfinance</h3>
+                        </div>
+                        <p class="service-text">
+                            CSR aims to be part of the non-deposit-taking microfinance institutions offering custom-made
+                            working capital solutions to small and medium businesses.
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-actiom" id="call-to-action">
+        <div class="container">
+            <h1 class="heading">Let us partner with you</h1>
+            <p>
+                Our services are professionally deliverd around the world
+            </p>
+            <a class="cta-btn" href="/#get-in-touch">
+                <button>
+                    Hire a tallent <span><img src="{% static '/img/icons/angle right blue.svg' %}" alt=""></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h1 class="heading">Our Team</h1>
+            <p>
+                People behind the good and amazing serivces that we give to clients
+            </p>
+
+            <div class="team-members">
+                <div class="member">
+                    <img src="{% static '/img/team/Godwinpassport.JPG' %}" alt="">
+                    <div class="desc">
+                        <img class="team-member-img" src="{% static '/img/icons/linked-blue.svg' %}" alt="" class="social">
+                        <div class="name-title">
+                            <p class="name">Godwin FEH</p>
+                            <p class="title">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="{% static '/img/team/victorv2.jpg' %}" alt="">
+                    <div class="desc">
+                        <img class="team-member-img" src="{% static '/img/icons/linked-blue.svg' %}" alt="" class="social">
+                        <div class="name-title">
+                            <p class="name">Victor FEH</p>
+                            <p class="title">Managing Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="{% static '/img/team/Valence.jpg' %}" alt="">
+                    <div class="desc">
+                        <img class="team-member-img" src="{% static '/img/icons/linked-blue.svg' %}" alt="" class="social">
+                        <div class="name-title">
+                            <p class="name">Valence RUKESHA</p>
+                            <p class="title">Advisor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="{% static '/img/team/Shukuru.jpeg' %}" alt="">
+                    <div class="desc">
+                        <img class="team-member-img" src="{% static '/img/icons/linked-blue.svg' %}" alt="" class="social">
+                        <div class="name-title">
+                            <p class="name">Emmanuel SHUKURU</p>
+                            <p class="title">Advisor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <img src="{% static '/img/team/Patient (2).jpeg' %}" alt="">
+                    <div class="desc">
+                        <img class="team-member-img" src="{% static '/img/icons/linked-blue.svg' %}" alt="" class="social">
+                        <div class="name-title">
+                            <p class="name">Patient KARENZI</p>
+                            <p class="title">Finance & Admin</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="partners" id="partners">
+        <div class="container">
+            <h1 class="heading">Our Partners</h1>
+            <div class="partners-logos">
+                <a class="partner" href=""><img src="{% static '/img/partners/cohesive.jpeg' %}" alt=""></a>
+                <a class="partner" href=""><img src="{% static '/img/partners/cohesivestaffing.jpeg' %}" alt=""></a>
+                <a class="partner" href=""><img src="{% static '/img/partners/Geantox.jpeg' %}" alt=""></a>
+                <a class="partner" href=""><img src="{% static '/img/partners/Patner2.jpeg' %}" alt=""></a>
+                <a class="partner" href=""><img src="{% static '/img/partners/tca.jpeg' %}" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-in-touch" id="get-in-touch">
+        <div class="container">
+            <h1 class="heading">Get in touch with us</h1>
+            <p>If you have any questions or need more explanation
+                on our services, feel free get in touch with us, or visit us at our office
+            </p>
+
+            <div class="contacts">
+                <div class="addresses">
+                    <a href="" class="address">
+                        <div class="address-title">
+                            <img src="{% static '/img/icons/map.svg' %}" alt="">
+                            <p>Rwanda Office</p>
+                        </div>
+                        <div class="address-info">
+                            <p>
+                                KN 5 Rd, Startimes house, Ground Floor, Kigali,Rwanda
+                            </p>
+                        </div>
+                    </a>
+
+                    <a href="" class="address">
+                        <div class="address-title">
+                            <img src="{% static '/img/icons/map2.svg' %}" alt="">
+                            <p>Us Office</p>
+                        </div>
+                        <div class="address-info">
+                            <p>
+                                2510 E Independence st Shawnee Oklahoma, USA
+                            </p>
+                        </div>
+                    </a>
+
+                    <div class="address">
+                        <div class="address-title">
+                            <img src="{% static '/img/icons/envelope.svg' %}" alt="">
+                            <p>Send us an email</p>
+                        </div>
+
+                        <div class="address-info">
+                            <a href="mailto:info@csrlimited.com">info@csrlimited.com</a>
+                            <a href="mailto:info@csrlimited.rw">info@csrlimited.rw</a>
+                        </div>
+                    </div>
+
+                    <div class="address">
+                        <div class="address-title">
+                            <img src="{% static '/img/icons/phone.svg' %}" alt="">
+                            <p>Call us</p>
+                        </div>
+
+                        <div class="address-info">
+                            <a href="tel:+250791902159">+250 79 1902 159</a>
+                            <a href="tel:+1(405)777-4085">+1(405)777-4085</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {{form.name}}
+                        {{form.phone_number}}
+                        {{form.email}}
+                        {{form.message}}
+                        <button>
+                            <input type="submit" value="Send your message">
+                            <img src="{% static '/img/icons/paper plane.svg' %}" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map">
+                <img class="new-office" src="{% static '/img/new office.png' %}" alt="">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.8751001330381!2d30.09618440153953!3d-1.953387635917115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6f151afffff%3A0xa02fb8f5c013d6ce!2sStarTimes!5e1!3m2!1sen!2srw!4v1669466562461!5m2!1sen!2srw" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+    {% endblock %}
+</body>
