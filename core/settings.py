@@ -13,8 +13,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-load_dotenv()
-# load_dotenv("/home/csr/csrwebsite/core/.env")
+#load_dotenv()
+load_dotenv("/home/csr/csrwebsite/core/.env")
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,7 +31,7 @@ DEBUG = True
 
 COMMING_SOON = False
 
-ALLOWED_HOSTS = [os.getenv('DOMAIN_NAME'),'127.0.0.1']
+ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1']
 
 
 # Application definition
