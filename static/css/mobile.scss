@@ -414,16 +414,28 @@ $border-radius: 10px;
 
     //second section
     .mission {
+      padding-top: 0;
         .container {
-            .col {
-                flex-direction: column;
-                gap: 24px;
+            .row {
+              flex-direction: column-reverse;
+              gap: 50px;
+              .col {
+                width: 100%;
+              }
             }
         }
     }
 
     //third section
     .our-team {
+      .team-bios {
+        .overlay {
+          padding: 0 20px;
+          .popup {
+            width: 100%;
+          }
+        }
+      }
         .container {
             display: grid;
             flex-wrap: wrap;
@@ -433,11 +445,13 @@ $border-radius: 10px;
                 place-items: center;
 
                 .col {
-                    width: 280px;
+                    width: 100%;
                 }
             }
         }
     }
+
+    //third section
 }
 
 @media screen and (max-width: 940px) {
@@ -458,13 +472,6 @@ $border-radius: 10px;
         }
     }
 
-    .mission {
-        .container {
-            .col {
-                flex-direction: column;
-            }
-        }
-    }
 }
 
 //SERVICES PAGE
