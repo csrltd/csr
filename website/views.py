@@ -29,7 +29,7 @@ def blogs(request):
     page_title = 'Blog posts'
     blogs = Blog.objects.filter(status='Published')
     context = {'blogs':blogs, 'page_title': page_title}
-    return render(request, 'blog.html', context)
+    return render(request, 'coming-soon.html', context)
 
 def features(request):
     features = Feature.objects.all()
@@ -62,5 +62,5 @@ def about_us(request):
     context = {'page_title': page_title}
     return render(request, 'about.html', context)
 
-def coming_soon(request):
+def gallery(request):
     return render(request, 'coming-soon.html')

@@ -1,12 +1,13 @@
-from django.urls import path,re_path
+from django.urls import path
 from .views import *
 urlpatterns = [
     path('', index, name='index'),
+    path('about/',about_us,name='about'),
+    path('gallery/', gallery, name='gallery'),
 
-    path('blogs', blogs, name='blogs'),
-    
+    path('blogs/', blogs, name='blogs'),
+
     path('blog/<slug:slug>', blog, name='blog'),
-
     path('features', features, name='features'),
     path('thank-you', thankYou, name='thank-you'),
     path('book-keeping-and-outsourcing-of-staff', service1, name='book-keeping-and-outsourcing-of-staff'),
@@ -15,7 +16,4 @@ urlpatterns = [
     path('payroll-management-and-funding', service4, name='payroll-management-and-funding'),
     path('non-deposit-taking-micorfinance', service5, name='non-deposit-taking-micorfinance'),
     path('financial-analysis-and-calculations-related-services', service6, name='financial-analysis-and-calculations-related-services'),
-    
-    path('about',about_us,name='about'),
-
 ]

@@ -970,4 +970,68 @@ footer .copy .container .row .social-media img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.dev {
+  width: 100vw;
+}
+.dev .container {
+  max-width: 100vw;
+}
+.dev .container .logo {
+  width: 40px;
+  height: 40px;
+}
+.dev .container .icon {
+  width: 24px;
+  height: 24px;
+}
+.dev .container .row .col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dev .container .row .col .contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.dev .container .row .col .contacts .col-contacts {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.dev .container .row .col .social-media {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dev .container .row .col .social-media a {
+  color: #3461e2;
+}
+.dev .container .row .col-1 {
+  height: 100vh;
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%, rgba(40, 39, 39, 0.5) 83.52%), url("/static/img/image-sandra.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+.dev .container .row .col-1 .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f6f9fe;
+  margin: 10rem auto;
+}
+.dev .container .row .col-1 .title h1 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.dev .container .row .col-2 {
+  padding: 0 90px;
+}
+.dev .container .row .col-2 h1 {
+  color: #3461e2;
+  text-transform: capitalize;
 }/*# sourceMappingURL=styles.css.map */

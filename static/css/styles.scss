@@ -1237,3 +1237,84 @@ footer {
     justify-content: center;
   }
 }
+
+
+//COMING SOON PAGE
+
+.dev {
+  width: 100vw;
+  .container {
+    max-width: 100vw;
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .row {
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .contacts {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          .col-contacts {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+          }
+        }
+
+        .social-media {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          a {
+            color: $color-blue;
+          }
+        }
+      }
+
+      .col-1 {
+        height: 100vh;
+        background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.5) 44.53%,
+        rgba(40, 39, 39, 0.5) 83.52%), url('/static/img/image-sandra.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+        
+
+        .title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: $whitesmoke;
+          margin: 10rem auto;
+
+          h1 {
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      .col-2 {
+        padding: 0 90px;
+        h1 {
+          color: $color-blue;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
