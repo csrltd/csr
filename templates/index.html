@@ -428,10 +428,11 @@
                 <!-- second row -->
                 <div class="row">
                     <div class="form-container">
-                        <form class="form" id="form">
+                        <form class="form" id="form" method="POST">
+                            {% csrf_token %}
                             <input type="text" name="name" placeholder="Full name"><br>
                             <input type="email" name="email" placeholder="Email"><br>
-                            <input type="phone" name="phone" placeholder="Phone number"><br>
+                            <input type="phone" name="phone_number" placeholder="Phone number"><br>
                             <textarea name="message" id="" rows="8" placeholder="Message"></textarea>
                             <input type="submit" value="Send message">
                         </form>

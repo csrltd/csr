@@ -64,3 +64,6 @@ def about_us(request):
 
 def gallery(request):
     return render(request, 'coming-soon.html')
+
+def thankYou(request):
+    return render(request, 'thank-you.html')
