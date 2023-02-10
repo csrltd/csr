@@ -400,6 +400,7 @@ footer .copy .container .row .social-media img {
   gap: 50px;
 }
 .about .container .col .row {
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   gap: 41px;

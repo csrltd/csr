@@ -555,20 +555,12 @@ footer {
       flex-direction: column;
       gap: 50px;
 
-      // .row-reverse {
-      //   padding-left: 50px;
-      // }
-
-      // .row-not-reverse {
-      //   padding-right: 50px;
-      // }
-
       .row {
+        flex: 1 1 auto;
         display: flex;
         align-items: center;
         gap: 41px;
-        //Refactored this
-        // background-color: $color-blue-fade;
+        
         border-radius: 10px;
 
 
