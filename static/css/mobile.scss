@@ -7,15 +7,16 @@ $border-radius: 10px;
 
 //CUSTOM CLASSES
 
-@media screen and(max-width:1250px) {
+@media screen and (max-width:1250px) {
   .container{
     padding: 0 50px;
   }
 }
 
-@media screen and(max-width:540px) {
+@media screen and (max-width:540px) {
   .container{
     padding: 20px;
+    width: 100%;
   }
 }
 
@@ -24,28 +25,99 @@ $border-radius: 10px;
 
 @media screen and (max-width: 1020px) {
     .header {
+      background-color: transparent;
+      position: relative;
       .container {
+        padding: 0;
         padding-top: 20px;
   
         .nav-header {
+          position: relative;
           .brand {
+            margin-left: 20px;
             gap: 5px;
             .logo {
-              width: 20px;
-              height: 20px;
+              width: 50px;
+              height: 50px;
             }
   
             h1 {
-              font-size: 10px;
+              font-size: 16px;
             }
           }
   
           .nav-menu {
             display: none;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            left: 0;
+            background-color: #3462e2c3;
+            height: 100vh;
+
+            .links {
+              flex-direction: column;
+              padding-top: 50px;
+            }
+
           }
   
           .nav-toggle {
+            margin-right: 20px;
             display: block;
+            cursor: pointer;
+          }
+          .nav-fixed {
+            position: fixed;
+            display: grid;
+            place-content: center;
+            visibility: hidden;
+            height: 100%;
+            width: 100%;
+            background-color: #3462e2a6;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+
+            a {
+              color: $color-blue;
+            }
+
+            .fixed-nav-links {
+              background-color: $whitesmoke;
+              border-radius: 10px;
+              width: 90vw;
+              padding: 20px 10px;
+
+              .link {
+                padding: 1rem;
+              }
+
+              .contact-btn {
+                background-color: $color-blue;
+                color: $whitesmoke;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 40vw;
+                border-radius: 10px;
+                padding: 10px 25px;
+                a {
+                  color: $whitesmoke;
+                }
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+          .nav-close-btn {
+            margin-right: 20px;
+            display: none;
+            position: relative;
+            cursor: pointer;
           }
         }
       }
@@ -63,7 +135,7 @@ $border-radius: 10px;
     }
   }
   
-  @media screen and(max-width: 540px) {
+  @media screen and (max-width: 540px) {
     footer {
       .container {
         .row {
@@ -81,7 +153,10 @@ $border-radius: 10px;
               padding: 12px 0;
             }
             .summary {
-              padding-left: 12px;
+              //padding-left: 12px;
+              p {
+                width: 100%;
+              }
             }
           }
         }
@@ -110,7 +185,7 @@ $border-radius: 10px;
   }
 
 //HOME PAGE
-@media screen and(max-width: 540px) {
+@media screen and (max-width: 540px) {
     .hero {
       text-align: center;
       padding-top: 250px;
@@ -177,10 +252,7 @@ $border-radius: 10px;
     //Partnership
   
     .partnership {
-      .container {
-        margin: 0 20px;
-        
-      }
+      padding: 0;
     }
   
     //Partners
@@ -188,7 +260,7 @@ $border-radius: 10px;
     .partners {
       .container {
         .row {
-          grid-template-columns: 33% 33% 33%;
+          grid-template-columns: 33% 33% ;
         }
       }
     }
@@ -368,18 +440,6 @@ $border-radius: 10px;
     
 }
 
-@media screen and (max-width: 620px) {
-    .hero {
-        height: 50vh;
-        .container {
-            padding-top: 150px;
-            .blog-intro {
-                font-size: 30px;
-                width: 350px;
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .blogs {
@@ -401,11 +461,11 @@ $border-radius: 10px;
                 flex-direction: column;
 
                 .col {
-                    width: 500px;
+                    width: 100%;
                 }
                 .col-description {
                     img {
-                        width: 500px;
+                        width: 100%;
                     }
                 }
             }
@@ -450,8 +510,6 @@ $border-radius: 10px;
             }
         }
     }
-
-    //third section
 }
 
 @media screen and (max-width: 940px) {
@@ -471,11 +529,9 @@ $border-radius: 10px;
             }
         }
     }
-
 }
 
 //SERVICES PAGE
-
 
 @media screen and (max-width: 540px) {
     .section-header {
@@ -495,7 +551,6 @@ $border-radius: 10px;
 
 
 // SINGLE BLOG
-
 
 @media screen and (max-width: 740px) {
     .blog-header {

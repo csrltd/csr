@@ -1,18 +1,3 @@
-function OpenCloseMenu() {
-  const menu = document.getElementById("nav-menu");
-  const OpenMenu = document.getElementById("OpenMenu");
-  const CloseMenu = document.getElementById("CloseMenu");
-  if (menu.style.display === "none") {
-    menu.style.display = "flex";
-    OpenMenu.style.display = "none";
-    CloseMenu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-    OpenMenu.style.display = "block";
-    CloseMenu.style.display = "none";
-  }
-}
-
 //sliders
 var slideIndex = 0;
 var slider = document.querySelector(".slider");
@@ -38,17 +23,51 @@ function showSlides() {
   }
 }
 
-document.querySelector(".prev-btn").addEventListener("click", function () {
-  slideIndex--;
-  showSlides();
-});
+// document.querySelector(".prev-btn").addEventListener("click", function () {
+//   slideIndex--;
+//   showSlides();
+// });
 
-document.querySelector(".next-btn").addEventListener("click", function () {
-  slideIndex++;
-  showSlides();
-});
+// document.querySelector(".next-btn").addEventListener("click", function () {
+//   slideIndex++;
+//   showSlides();
+// });
 
-showSlides();
+// showSlides();
+
+//date on the footer
+const date = document.getElementById('date')
+//date.innerHTML = new Date().getFullYear()
+
+//nav 
+const mobileMenu = document.querySelector('.nav-menu')
+const navToggle = document.querySelector('.nav-toggle')
+const closeBtn = document.querySelector('.nav-close-btn')
+const headerBg = document.querySelector('.header')
+const navLinks = document.querySelectorAll('.link')
 
 
+//Closing menu when link clicked
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    mobileMenu.style.display = 'none'
+    headerBg.style.background = '#3462e2c3'
+  })
+})
+
+
+//opening the mobile menu
+navToggle.addEventListener('click', () => {
+  mobileMenu.style.display = 'block'
+  closeBtn.style.display = 'block'
+  navToggle.style.display = 'none'
+})
+// closing the fixed nav
+closeBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none'
+  closeBtn.style.display = 'none'
+  navToggle.style.display = 'block'
+  headerBg.style.background = 'transparent'
+})
 

@@ -180,6 +180,15 @@ button {
 .header .container .nav-header .nav-toggle {
   display: none;
   color: #f6f9fe;
+  font-size: 30px;
+}
+.header .container .nav-header .nav-fixed {
+  display: none;
+}
+.header .container .nav-header .nav-close-btn {
+  color: #f6f9fe;
+  font-size: 30px;
+  display: none;
 }
 
 footer {

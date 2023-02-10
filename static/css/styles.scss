@@ -146,6 +146,75 @@ button {
 }
 
 //NAVIGATION
+// .header {
+//   background-color: transparent;
+//   height: 100px;
+//   margin-bottom: -100px;
+//   position: relative;
+//   z-index: 10;
+
+//   .container {
+//     .nav-header {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       padding-top: 20px;
+
+//       .brand {
+//         width: 400px;
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+
+//         h1 {
+//           text-transform: capitalize;
+//           color: white;
+//           font-size: 20px;
+//         }
+
+//         .logo {
+//           width: 60px;
+//           height: 60px;
+//           pointer-events: none;
+//         }
+//       }
+
+//       .nav-menu {
+//         .links {
+//           display: flex;
+//           align-items: center;
+//           gap: 20px;
+
+//           .link {
+//             font-size: 18px;
+//           }
+
+//           .contact-btn {
+//             display: flex;
+//             align-items: center;
+//             gap: 10px;
+//             background-color: $color-blue;
+//             padding: 10px 25px;
+//             border-radius: 10px;
+//           }
+
+//           button {
+//             font-size: 24px;
+//             color: $whitesmoke;
+//             background: transparent;
+//             border-color: transparent;
+//             cursor: pointer;
+//           }
+//         }
+//       }
+
+//       .nav-toggle {
+//         display: none;
+//         color: $whitesmoke;
+//       }
+//     }
+//   }
+// }
 .header {
   background-color: transparent;
   height: 100px;
@@ -211,6 +280,15 @@ button {
       .nav-toggle {
         display: none;
         color: $whitesmoke;
+        font-size: 30px;
+      }
+      .nav-fixed {
+        display: none;
+      }
+      .nav-close-btn {
+        color: $whitesmoke;
+        font-size: 30px;
+        display: none;
       }
     }
   }
