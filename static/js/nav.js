@@ -33,11 +33,11 @@ function showSlides() {
 //   showSlides();
 // });
 
-// showSlides();
+showSlides();
 
 //date on the footer
 const date = document.getElementById('date')
-//date.innerHTML = new Date().getFullYear()
+date.innerHTML = new Date().getFullYear()
 
 //nav 
 const mobileMenu = document.querySelector('.nav-menu')
@@ -46,13 +46,25 @@ const closeBtn = document.querySelector('.nav-close-btn')
 const headerBg = document.querySelector('.header')
 const navLinks = document.querySelectorAll('.link')
 
+window.addEventListener('scroll', () => {
+  let scrolledPixels = window.scrollY
+
+  if (scrolledPixels >= 50) {
+    headerBg.style.background = '#00000077'  
+  }else {
+    headerBg.style.background = 'transparent'
+  }
+})
+
+
 
 //Closing menu when link clicked
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    mobileMenu.style.display = 'none'
-    headerBg.style.background = '#3462e2c3'
+    if (window.innerWidth < 1200 ) {
+      mobileMenu.style.display = 'none'
+    }
   })
 })
 
