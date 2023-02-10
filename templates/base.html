@@ -1,10 +1,37 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>{{page_title}} | CSR Limited</title>
+    <meta name="title" content="{{page_title}} — Comprehensive Staffing Recources">
+    <meta name="description"
+        content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crlimited.rw/">
+    <meta property="og:title" content="About — Comprehensive Staffing Recources">
+    <meta property="og:description"
+        content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management.">
+    <meta property="og:image"
+        content="{% static '/img/office.jpg' %}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://csrlimited.rw/">
+    <meta property="twitter:title" content="{{page_title}} — Comprehensive Staffing Recources">
+    <meta property="twitter:description"
+        content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management.">
+    <meta property="twitter:image"
+        content="{% static '/img/office.jpg' %}">
+
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link rel="stylesheet" href="{% static '/css/styles.css' %}">
     <link rel="stylesheet" href="{% static '/css/mobile.css' %}">
@@ -15,17 +42,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <link rel="icon" type="image/x-icon" href="{% static '/img/csr logo.svg' %}">
-    <title>{{page_title}} | CSR Limited</title>
+
 
     {% block title %}
     <title>Title</title>
     {% endblock title %}
 
 </head>
+
 <body>
     {% block content %}
     {% endblock %}
     <script src="{% static '/js/nav.js' %}"></script>
     <script src="{% static '/js/main.js' %}"></script>
 </body>
+
 </html>
