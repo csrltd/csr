@@ -31,6 +31,9 @@ def blogs(request):
     context = {'blogs':blogs, 'page_title': page_title}
     return render(request, 'coming-soon.html', context)
 
+def contact(request):
+    return render(request, 'contact.html')
+
 def features(request):
     features = Feature.objects.all()
     context = {'features':features}

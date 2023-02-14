@@ -13,6 +13,8 @@
     <meta name="title" content="{{page_title}} — Comprehensive Staffing Recources">
     <meta name="description"
         content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management services">
+    
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -20,8 +22,7 @@
     <meta property="og:title" content="{{page_title}} — Comprehensive Staffing Recources">
     <meta property="og:description"
         content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management.">
-    <meta property="og:image"
-        content="{% static '/img/office.jpg' %}">
+    <meta property="og:image" content="{% static '/img/office.jpg' %}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -29,8 +30,7 @@
     <meta property="twitter:title" content="{{page_title}} — Comprehensive Staffing Recources">
     <meta property="twitter:description"
         content="We provide unique and quick Accounting & Finance, Software Dev & Design, and Social Media Management.">
-    <meta property="twitter:image"
-        content="{% static '/img/office.jpg' %}">
+    <meta property="twitter:image" content="{% static '/img/office.jpg' %}">
 
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link rel="stylesheet" href="{% static '/css/styles.css' %}">
@@ -44,6 +44,10 @@
     <link rel="icon" type="image/x-icon" href="{% static '/img/csr logo.svg' %}">
 
 
+    <!--Google tag manager-->
+
+    <meta name="google-site-verification" content="0vpX2QksWPZAY1g2kZuiIB_KXU-wBzWVTnB1LhqGzh0" />
+
     {% block title %}
     <title>Title</title>
     {% endblock title %}
@@ -54,7 +58,6 @@
     {% block content %}
     {% endblock %}
     <script src="{% static '/js/nav.js' %}"></script>
-    <script src="{% static '/js/main.js' %}"></script>
 </body>
 
 </html>

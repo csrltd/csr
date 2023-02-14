@@ -3,370 +3,380 @@
 {% block content %}
 
 {% include 'navbar.html' %}
-<section class="page-intro">
-    <div class="container">
-        <div class="breadchrums">
-            <a href="{% url 'index' %}"><i class="fas fa-angle-left"></i><span class="prev-page">Home</span></a>/<span
-                class="current-page">About Us</span>
-        </div>
-        <h1 class="heading">About The Company</h1>
-        <div class="page-summary">
-            <p>We are your trusted of work force for your daily business tasks.</p>
-            <p>We understand the importance of delivering 24/7 business operations to meet your business requirements.
-                We aim to serve you with the best.</p>
-        </div>
-    </div>
-</section>
-
-<!-- description -->
-<section class="description">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Who we are?</h1>
-                <p>We are a local outsourcing firm, started in 2021 with the aim to safe companies from bankruptcy by
-                    providing unique and
-                    quick services in comprehensive solutions ranging from accounting services to software development and digital marketing</p>
+    <!-- Page intro Section -->
+    <section class="page-intro">
+        <div class="container">
+            <div class="breadchrums">
+                <a href="/index.html"><i class="fas fa-angle-left"></i><span class="prev-page">Home</span></a>/<span
+                    class="current-page">About Us</span>
             </div>
-            <div class="col col-description">
-                <img src="{% static '/img/csr.webp' %}" alt="" class="description-img">
+            <h1 class="heading">About The Company</h1>
+            <div class="page-summary">
+                <p>We are your trusted of work force for your daily business tasks.</p>
+                <p>We understand the importance of delivering 24/7 business operations to meet your business
+                    requirements.
+                    We aim to serve you with the best.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- mission/vision -->
-<section class="mission">
-    <div class="container">
-
-        <div class="row">
-            <!-- our mission -->
-            <div class="col col-mission">
-
-                <h2>Mission</h2>
-                <p>Our mission is to ensure the total satisfaction and future success of all our stakeholders. We
-                    are dedicated to creating
-                    a future profession through entry-level jobs for the graduates in Rwanda which will enable them
-                    to serve the global
-                    business world. We are committed to developing future employees for the local and global market.
-                </p>
-            </div>
-            <!-- our vision -->
-            <div class="col">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="vision" class="">
-            </div>
-
-        </div>
-
-
-        <div class="row row-vision-mission">
-            <!-- our mission -->
-            <div class="col col-vision-mission">
-
-                <h2>Vision</h2>
-                <p class="para">To become the leading outsourcing<br> company and leading Business Solutions<br>
-                    Provider in Africa and the<br> world at large.
-                </p>
-            </div>
-            <!-- our vision -->
-            <div class="col img-frame">
-                <img src="{% static '/img/kabibi.webp' %}" alt="">
-
-            </div>
-            <!-- our values -->
-            <div class="col col-vision-mission">
-
-                <h2 class=>Values</h2>
-                <p class="para">Competence <br>Integrity <br>Transparency and open communication<br> Customer is
-                    Priority
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- team -->
-<section class="our-team">
-    <!-- team bios -->
-    <!-- added the team biographies -->
-    <div class="team-bios">
-        <!-- CEO -->
-        <div class="overlay GodwinBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+    <!-- description -->
+    <section class="description">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="heading">Who we are?</h1>
+                    <p>We are a local outsourcing firm, started in 2021 with the aim to safe companies from bankruptcy
+                        by
+                        providing unique and
+                        quick services in comprehensive solutions ranging from accounting services to software
+                        development and digital marketing.</p>
                 </div>
-                <img src="{% static '/img/team/Godwinpassport.JPG' %}" alt="">
-                <h1>Godwin Feh</h1>
-                <h4>Founder&CEO</h4>
-                <p>Godwin Feh, with more than two decades of experience as a patient-focused health care leader with
-                    proven expertise in acute care, staff development and family advocacy, founded Cohesive
-                    Healthcare
-                    in 2016.  </p>
-                <p>As Cohesive Healthcare has grown over the years, Feh continues expanding the activity of
-                    Cohesive;
-                    after visiting Rwanda, he found that Rwanda is a good place for a business. This makes him
-                    register
-                    Comprehensive Staffing Resource Ltd in June 2022, in the way of expanding and providing the work
-                    and
-                    solutions. </p>
-                <p>Before founding Cohesive Healthcare, Comprehensive Staffing Resources Ltd Feh served in
-                    leadership
-                    positions in several long-term acute care hospitals and critical care hospitals. During his
-                    tenure
-                    at various healthcare facilities, Feh was widely recognized as an excellent care provider,
-                    patient
-                    advocate and hospital administrator. 
-
-                    Feh received his Bachelor’s in Science in Nursing and his Master’s in Business Administration
-                    from
-                    St. Gregory University. He is a licensed registered nurse and is ACLS and BLS certified. </p>
-            </div>
-        </div>
-
-        <!-- MD -->
-        <div class="overlay victorbio">
-            <!--  -->
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                <div class="col col-description">
+                    <img src="{% static '/img/who we are.jpg' %}" alt="" class="description-img">
                 </div>
-                <img src="{% static '/img/team/victorv2.jpg' %}" alt="">
-                <h1>Victor Feh</h1>
-                <h4>Managing Director</h4>
-                <p>Victor Feh's extensive career includes establishing and building start-up companies, especially
-                    in
-                    the service industry. The focus now is to bring Comprehensive Staffing Resources Ltd towards
-                    goal
-                    realization by providing solutions to Rwandan start-up companies abroad.
-
-                    As a Managing Director, Victor Feh, provides inspiration, motivation and guidance to leaders and
-                    managers in the company, by directing the company’s operation to make sure it achieves its
-                    objectives effectively and efficiently.
-
-                    Victor Feh combines a background in BPhil in business philosophy from the Urbaniana University
-                    Rome,
-                    Msc in Transport and Logistics, LLB in Law-specialized in Business Law, and a Diploma in Legal
-                    Practice and Development.
-
-                    Victor Feh looks forward to unifying these diversified backgrounds to make Comprehensive
-                    Staffing
-                    Resources your trusted partner. </p>
             </div>
         </div>
+    </section>
+    <!-- mission/vision -->
+    <section class="mission">
+        <div class="container">
 
-        <!-- JP -->
-        <div class="overlay jpBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+            <div class="row">
+                <!-- our mission -->
+                <div class="col">
+                    <img src="{% static '/img/mission.jpg' %}" alt="vision" class="">
                 </div>
-                <img src="{% static '/img/team/jean-paul.jpg' %}" alt="">
-                <h1>Jean Paul</h1>
-                <h4>Chief Finance Officer</h4>
-                <p>As a finance professional with over 9 years of experience, I have a proven track record of excelling
-                    in financial management, planning, and the management of business operations. Throughout my career,
-                    I have engaged my skills in various sectors including the public sector and the manufacturing of
-                    goods and services.
+                <div class="col col-mission">
 
-                    In my most recent role as the head of the finance department for a company that deals with transport
-                    ticketing and processing, I successfully oversaw the department's cashflow projections and
-                    management, provided financial analysis and advice to the board, and developed finance standards,
-                    policies, procedures, and systems. Additionally, I implemented appropriate action plans to ensure
-                    sound financial management, and advised management on investing decisions.
-
-                    As a leader, I possess the ability to drive change by constantly challenging and improving existing
-                    processes and systems. My focus is to work with a dynamic organization that requires creative
-                    thinking, problem-solving, and efficiency within the finance department. I am excited to bring my
-                    experience and skills to a new opportunity and contribute to the success of the organization.</p>
-            </div>
-        </div>
-
-        <!-- Alphonse -->
-        <div class="overlay AlphonseBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <h2>Mission</h2>
+                    <p>Our mission is to ensure the total satisfaction and future success of all our stakeholders. We
+                        are dedicated to creating
+                        a future profession through entry-level jobs for the graduates in Rwanda which will enable them
+                        to serve the global
+                        business world. We are committed to developing future employees for the local and global market.
+                    </p>
                 </div>
-                <img src="{% static '/img/team/alphonse.jpg' %}" alt="">
-                <h1>Alphonse Sibomana</h1>
-                <h4>Senior manager and Software Engineer</h4>
-                <p>Alphonse is the senior manager for software development department at CSR. Alongside managerial
-                    duties, he is a senior software engineer, where he leads a team of 7+ junior developers. The
-                    department’s goals is empowering businesses with software solutions that make them stand out
-                    from their competitors. </p>
-            </div>
-        </div>
 
-        <!-- Patient -->
-        <div class="overlay PatientBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+
+            </div>
+
+
+            <div class="row row-vision-mission">
+                <!-- our mission -->
+                <div class="col col-vision-mission">
+
+                    <h2>Vision</h2>
+                    <p class="para">To become the leading outsourcing<br> company and leading Business Solutions<br>
+                        Provider in Africa and the<br> world at large.
+                    </p>
                 </div>
-                <img src="{% static '/img/team/Patient (2).jpeg' %}" alt="">
-                <h1>Patient Karenzi</h1>
-                <h4>Finance Administrator</h4>
-                <p>Patient KARENZI is a finance and administrative officer of Comprehensive Staffing Resources Ltd;
-                    manages financial and administration activities, a business plan, timeline, and budget to perform
-                    economic projects and develop overall goals for the company (marketing, finance, and administration
-                    departments.) Identify and resolve financial and administration.
-                </p>
-            </div>
-        </div>
+                <!-- our vision -->
+                <div class="col img-frame">
+                    <img src="{% static '/img/kabibi.webp' %}" alt="">
 
-        <!-- Tinah -->
-        <div class="overlay TinahBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
-                <img src="{% static '/img/team/tinah.jpg' %}" alt="">
-                <h1>Christine Uwamwiza</h1>
-                <h4>Head of the Digital Marketing Department </h4>
-                <p>Self-motivated and experienced in disciplines such as marketing and communications. I develop and
-                    implement communications plans, campaigns, and events for a broad range of audiences Including
-                    Internal, external, and digital audiences. These campaigns are carried out effectively to promote
-                    the organization, Its products, and its services.
+                <!-- our values -->
+                <div class="col col-vision-mission">
 
-                    I have been fortunate enough to work for over 6 years in this field and it's been an enlightening
-                    experience. My work with the Marketing and Communications agencies ( Quake Ltd & Brand Speak Global)
-                    I worked with has enabled me to work with brands in different sectors including CIMERWA, Unilever
-                    Rwanda, Intare Conference Arena, GIZ Rwanda, Gorilla Games, Toyota Rwanda, Babyl Rwanda, Africa
-                    Improved Foods, and Jabalee Sports to mention a few.
-
-                    I’m currently working for Comprehensive Staffing Resources, where I’m in charge of Digital Marketing
-                    and Communications for the company and I’m ready to share and acquire more skills regarding my field
-                    as I help clients to achieve their goals through social media marketing. </p>
-            </div>
-        </div>
-
-        <!--Charles-->
-
-        <div class="overlay charlesBio">
-            <div class="popup" id="popups">
-                <div class="close-btn">
-                    <i class="fa fa-times" aria-hidden="true"></i>
+                    <h2 class=>Values</h2>
+                    <ul class="values">
+                        <li class="value">Competence</li>
+                        <li class="value">Integrity</li>
+                        <li class="value">Transparency and open communication</li>
+                        <li class="value">Customer is priority</li>
+                    </ul>
                 </div>
-                <img src="{% static '/img/team/charles.jpg' %}" alt="">
-                <h1>Charles Ruzindana</h1>
-                <h4>Head Of Accounting Department</h4>
-                <p>
-                    Charles is the head of the Finance and Accounting department at CSR LTD. His strong project management
-                    skills include leadership, negotiation, team building, problem-solving, finance, accounting, human
-                    resource management, and the ability to prepare staff performance appraisals and compute local taxes
-                    for the organization. I also have experience in project planning, execution, organizing staff-wide
-                    meetings and assigning action items, as well as monitoring and controlling company-wide events to
-                    achieve organizational goals.
-                    He holds a Bachelor of Commerce, specializing in management from UR-CBE. His self-motivation and
-                    expertise in various areas make me a valuable asset to CSR LTD and any organization he works with. He
-                    is dedicated to achieving the expected outcomes and contributing to the success of the organization.
-                </p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container">
-        <h1>our team</h1>
-        <p>People behind the good and amazing services that we give to clients.</p>
-        <div class="row">
-            <div class="col profile Godwin">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/Godwinpassport.JPG' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Godwin Feh</h3>
-                        <h4>Founder&CEO</h4>
+    <!-- team -->
+    <section class="our-team">
+        <!-- team bios -->
+        <!-- added the team biographies -->
+        <div class="team-bios">
+            <!-- CEO -->
+            <div class="overlay GodwinBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static '/img/team/FEH Godwin.JPG' %}" alt="">
+                    <h1>Godwin Feh</h1>
+                    <p>Godwin Feh, with more than two decades of experience as a patient-focused health care leader with
+                        proven expertise in acute care, staff development and family advocacy, founded Cohesive
+                        Healthcare
+                        in 2016. 
+                        As Cohesive Healthcare has grown over the years, Feh continues expanding the activity of
+                        Cohesive;
+                        after visiting Rwanda, he found that Rwanda is a good place for a business. This makes him
+                        register
+                        Comprehensive Staffing Resource Ltd in June 2022, in the way of expanding and providing the work
+                        and
+                        solutions.
+                        Before founding Cohesive Healthcare, Comprehensive Staffing Resources Ltd Feh served in
+                        leadership
+                        positions in several long-term acute care hospitals and critical care hospitals. During his
+                        tenure
+                        at various healthcare facilities, Feh was widely recognized as an excellent care provider,
+                        patient
+                        advocate and hospital administrator. 
+
+                        Feh received his Bachelor’s in Science in Nursing and his Master’s in Business Administration
+                        from
+                        St. Gregory University. He is a licensed registered nurse and is ACLS and BLS certified.
+                    </p>
                 </div>
-                <p>
-                    Godwin Feh, with more than two decades of experience as a patient-focused health care leader with
-                    proven expertise in acute care,
-                </p>
             </div>
-            <div class="col profile victor">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/victorv2.jpg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Victor Feh</h3>
-                        <h4>Managing Director</h4>
+
+            <!-- MD -->
+            <div class="overlay victorbio">
+                <!--  -->
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static '/img/team/FEH Victor.jpg' %}" alt="">
+                    <h1>Victor Feh</h1>
+                    <h4>Managing Director</h4>
+                    <p>Victor Feh's extensive career includes establishing and building start-up companies, especially
+                        in
+                        the service industry. The focus now is to bring Comprehensive Staffing Resources Ltd towards
+                        goal
+                        realization by providing solutions to Rwandan start-up companies abroad.
+
+                        As a Managing Director, Victor Feh, provides inspiration, motivation and guidance to leaders and
+                        managers in the company, by directing the company’s operation to make sure it achieves its
+                        objectives effectively and efficiently.
+
+                        Victor Feh combines a background in BPhil in business philosophy from the Urbaniana University
+                        Rome,
+                        Msc in Transport and Logistics, LLB in Law-specialized in Business Law, and a Diploma in Legal
+                        Practice and Development.
+
+                        Victor Feh looks forward to unifying these diversified backgrounds to make Comprehensive
+                        Staffing
+                        Resources your trusted partner.
+                    </p>
                 </div>
-                <p>
-                    Victor Feh's extensive career includes establishing and building start-up companies, especially
-                    in the service industry.
-                </p>
             </div>
-            <div class="col profile jp">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/jean-paul.jpg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Jean Paul</h3>
-                        <h4>Chief Finance Officer</h4>
+
+            <!-- JP -->
+            <div class="overlay jpBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static '/img/team/TWAGIRIMANA Jean Paul.jpg' %}" alt="">
+                    <h1>Jean Paul</h1>
+                    <h4>Chief Finance Officer</h4>
+                    <p>
+                        As a finance professional with over 9 years of experience, I have a proven track record of
+                        excelling
+                        in financial management, planning, and the management of business operations. Throughout my
+                        career,
+                        I have engaged my skills in various sectors including the public sector and the manufacturing of
+                        goods and services.
+
+                        In my most recent role as the head of the finance department for a company that deals with
+                        transport
+                        ticketing and processing, I successfully oversaw the department's cashflow projections and
+                        management, provided financial analysis and advice to the board, and developed finance
+                        standards,
+                        policies, procedures, and systems. Additionally, I implemented appropriate action plans to
+                        ensure
+                        sound financial management, and advised management on investing decisions.
+
+                        As a leader, I possess the ability to drive change by constantly challenging and improving
+                        existing
+                        processes and systems. My focus is to work with a dynamic organization that requires creative
+                        thinking, problem-solving, and efficiency within the finance department. I am excited to bring
+                        my
+                        experience and skills to a new opportunity and contribute to the success of the organization.
+                    </p>
                 </div>
-                <p>
-                    As a finance professional with over 9 years of experience, I have a proven track record of excelling
-                    in financial management...
-                </p>
             </div>
-            <div class="col profile Patient">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/Patient (2).jpeg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Patient Karenzi</h3>
-                        <h4>Finance & Administration Officer</h4>
+
+            <!-- Alphonse -->
+            <div class="overlay AlphonseBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static '/img/team/SIBOMANA Alphonse.jpg' %}" alt="">
+                    <h1>Alphonse Sibomana</h1>
+                    <h4>Senior manager and Software Engineer</h4>
+                    <p>
+                        Alphonse is the senior manager for software development department at CSR. Alongside managerial
+                        duties, he is a senior software engineer, where he leads a team of 7+ junior developers. The
+                        department’s goals is empowering businesses with software solutions that make them stand out
+                        from their competitors.
+                    </p>
                 </div>
-                <p>
-                    Patient KARENZI is a finance and administrative officer of Comprehensive Staffing Resources Ltd;
-                    manages financial and administration activities
-                </p>
             </div>
-            <div class="col profile Alphonse">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/alphonse.jpg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Alphonse Sibomana</h3>
-                        <h4>Senior Software Eng. & Manager</h4>
+
+            <!-- Patient -->
+            <div class="overlay PatientBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
-                </div>
-                <p>
-                    Alphonse is the senior manager for software development department at CSR. Alongside managerial
-                    duties...
-                </p>
+                    <img src="{% static '/img/team/KARENZI Patient.jpeg' %}" alt="">
+                    <h1>Patient Karenzi</h1>
+                    <h4>Chief Operation Officer</h4>
+                    <p>
+                        Patient KARENZI is a Chief Operations Officer of Comprehensive Staffing Resources Ltd;
+                        alongside with his duties, he manages financial and administration activities, a business plan, timeline, and budget to perform
+                        economic projects and develop overall goals for the company (marketing, finance, and administration
+                        departments.) Identify and resolve financial and administration.
+                    </p>
+                    </div>
             </div>
-            <div class="col profile Tinah">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/tinah.jpg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Tinah</h3>
-                        <h4>Social Media Mananer</h4>
+
+            <!-- Tinah -->
+            <div class="overlay TinahBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static '/img/team/UWAMWIZA Tinah.jpg' %}" alt="">
+                    <h1>Christine Uwamwiza</h1>
+                    <h4>Head of the Digital Marketing Department </h4>
+                    <p>
+                        Self-motivated and experienced in disciplines such as marketing and communications. I develop and
+                        implement communications plans, campaigns, and events for a broad range of audiences Including
+                        Internal, external, and digital audiences. These campaigns are carried out effectively to promote
+                        the organization, Its products, and its services.
+    
+                        I have been fortunate enough to work for over 6 years in this field and it's been an enlightening
+                        experience. My work with the Marketing and Communications agencies ( Quake Ltd & Brand Speak Global)
+                        I worked with has enabled me to work with brands in different sectors including CIMERWA, Unilever
+                        Rwanda, Intare Conference Arena, GIZ Rwanda, Gorilla Games, Toyota Rwanda, Babyl Rwanda, Africa
+                        Improved Foods, and Jabalee Sports to mention a few.
+    
+                        I’m currently working for Comprehensive Staffing Resources, where I’m in charge of Digital Marketing
+                        and Communications for the company and I’m ready to share and acquire more skills regarding my field
+                        as I help clients to achieve their goals through social media marketing.
+                    </p>
                 </div>
-                <p>
-                    Self-motivated and experienced in disciplines such as marketing and communications. I develop and
-                    implement communications plans...
-                </p>
             </div>
-            <div class="col profile charles">
-                <div class="profile-pic-and-title">
-                    <img src="{% static '/img/team/charles.jpg' %}" alt="profile">
-                    <div class="name-position">
-                        <h3>Charles Ruzindana</h3>
-                        <h4>Head Of Accounting Department</h4>
+
+            <div class="overlay charlesBio">
+                <div class="popup" id="popups">
+                    <div class="close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
+                    <img src="{% static 'img/team/RUZINDANA Charles.jpg' %}" alt="">
+                    <h1>Charles Ruzindana</h1>
+                    <h4>Head Of Accounting Department</h4>
+                    <p>
+                        Charles is the head of the Finance and Accounting department at CSR LTD. His strong project
+                        management
+                        skills include leadership, negotiation, team building, problem-solving, finance, accounting, human
+                        resource management, and the ability to prepare staff performance appraisals and compute local taxes
+                        for the organization. I also have experience in project planning, execution, organizing staff-wide
+                        meetings and assigning action items, as well as monitoring and controlling company-wide events to
+                        achieve organizational goals.
+                        He holds a Bachelor of Commerce, specializing in management from UR-CBE. His self-motivation and
+                        expertise in various areas make me a valuable asset to CSR LTD and any organization he works with.
+                        He
+                        is dedicated to achieving the expected outcomes and contributing to the success of the organization.
+                    </p>
                 </div>
-                <p>
-                    Charles is the head of Finance and Accounting department at CSR LTD. His strong project management
-                    skills include leadership,
-                </p>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-</section>
+        <div class="container">
+            <h1>our team</h1>
+            <p>People behind the good and amazing services that we give to clients.</p>
+            <div class="row">
+                <div class="col profile Godwin" id="person">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/FEH Godwin.JPG' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Godwin Feh</h3>
+                            <h4>Founder&CEO</h4>
+                        </div>
+                    </div>
+                    <p>Godwin Feh, with more than two decades of experience as a patient-focused health care leader with
+                        proven expertise in acute care...</p>
+                </div>
+                <div class="col profile victor">
+                    <!-- profile -->
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/FEH Victor.jpg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Victor Feh</h3>
+                            <h4>Founder&CEO</h4>
+                        </div>
+                    </div>
+                    <p>Victor Feh's extensive career includes establishing and building start-up companies, especially
+                        in the service industry...</p>
+                </div>
+                <div class="col profile jp">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/TWAGIRIMANA Jean Paul.jpg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Jean Paul</h3>
+                            <h4>Chief Finance Officer</h4>
+                        </div>
+                    </div>
+                    <p>As a finance professional with over 9 years of experience, I have a proven track record of
+                        excelling in financial management, planning, and the management...</p>
+                </div>
+                <div class="col profile Patient">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/KARENZI Patient.jpeg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Patient Karenzi</h3>
+                            <h4>Chief Operations Officer </h4>
+                        </div>
+                    </div>
+                    <p>Patient KARENZI is a Chief Operations Officer of Comprehensive Staffing Resources Ltd;
+                        manages financial and administration activities...</p>
+                </div>
+                <div class="col profile Alphonse">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/SIBOMANA Alphonse.jpg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Alphonse Sibomana</h3>
+                            <h4>Senior Manager&Software Engineer</h4>
+                        </div>
+                    </div>
+                    <p>Alphonse is the senior manager for software development department at CSR. Alongside managerial
+                        duties...</p>
+                </div>
+                <div class="col profile Tinah">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static '/img/team/UWAMWIZA Tinah.jpg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Tinah</h3>
+                            <h4>Head of Digital Marketing Departement</h4>
+                        </div>
+                    </div>
+                    <p>Self-motivated and experienced in disciplines such as marketing and communications. I develop and
+                        implement communications plans...</p>
+                </div>
 
+                <div class="col profile charles">
+                    <div class="profile-pic-and-title">
+                        <img src="{% static 'img/team/RUZINDANA Charles.jpg' %}" alt="profile">
+                        <div class="name-position">
+                            <h3>Charles Ruzindana</h3>
+                            <h4>Head Of Accounting Department</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Charles is the head of Finance and Accounting department at CSR LTD. His strong project management
+                        skills include leadership,
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+<script src="{% static 'js/main.js' %}"></script>
 <!-- footer -->
 {% include 'footer.html' %}
 

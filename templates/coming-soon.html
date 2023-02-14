@@ -1,29 +1,27 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<section class="dev">
+<section class="coming-soon">
     <div class="container dev-container">
         <div class="row">
             <div class="col col-1">
-                <div class="title">
-                    <img src="{% static '/img/logo.svg' %}" alt="" class="logo">
-                    <h1>comprehensive <br> staffing resources Ltd(CSR)</h1>
-                </div>
+                <img class="logo" src="{% static '/img/branding/logo-white.svg' %}" alt="">
             </div>
             <div class="col col-2">
-                <h1>coming soon!</h1>
+                <img class="logo" src="{% static '/img/branding/logo-blue.svg' %}" alt="">
+                <h1>coming soon</h1>
                 <p>Our developers are working on this page currently, and it will be published soon. We understand
-                    that you may need services related to this page. If so, use this form below to communicate with
+                    that you may need services related to this page. If so, use any of our communication channel below to communicate with
                     us. Our team will be in touch with you as soon as possible</p>
-                <div class="contacts">
+                <div class="coming-soon-contacts">
                     <!-- email -->
                     <div class="col-contacts">
-                        <img src="{% static '/img/icons/envelope.svg' %}" alt="" class="icon">
+                        <i class="fa fa-envelope"></i>
                         <a href="info@csrlimited.com">info@csrlimited.com</a>
                     </div>
                     <!-- phone -->
                     <div class="col-contacts">
-                        <img src="{%static '/img/icons/phone.svg' %}" alt="" class="icon">
+                        <i class="fa fa-phone"></i>
                         <a href="info@csrlimited.com">+250791902159</a>
                     </div>
                 </div>
@@ -61,7 +59,7 @@
                     </div>
                 </div>
 
-                <a href="{% url 'index' %}">
+                <a href="/">
                     <button>Go back to home page</button>
                 </a>
             </div>

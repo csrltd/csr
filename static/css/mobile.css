@@ -2,14 +2,6 @@
   .container {
     padding: 0 50px;
   }
-  .heading {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Archivo Black", sans-serif;
-  }
-  .heading-hero {
-    font-size: 45px;
-  }
 }
 @media screen and (max-width: 540px) {
   .container {
@@ -20,7 +12,6 @@
 @media screen and (max-width: 1020px) {
   .header .container {
     padding: 0;
-    padding-top: 20px;
   }
   .header .container .nav-header {
     position: relative;
@@ -30,19 +21,19 @@
     gap: 5px;
   }
   .header .container .nav-header .brand .logo {
-    width: 50px;
-    height: 50px;
+    width: 150px;
   }
   .header .container .nav-header .brand h1 {
     font-size: 16px;
   }
   .header .container .nav-header .nav-menu {
+    transition: linear 0.23s;
     display: none;
     position: absolute;
-    top: 80px;
+    top: 85px;
     right: 0;
     left: 0;
-    background-color: rgba(52, 98, 226, 0.7647058824);
+    background-color: white;
     height: 100vh;
   }
   .header .container .nav-header .nav-menu .links {
@@ -68,7 +59,7 @@
     bottom: 0;
   }
   .header .container .nav-header .nav-fixed a {
-    color: #3461e2;
+    color: #4565af;
   }
   .header .container .nav-header .nav-fixed .fixed-nav-links {
     background-color: #f6f9fe;
@@ -80,7 +71,7 @@
     padding: 1rem;
   }
   .header .container .nav-header .nav-fixed .fixed-nav-links .contact-btn {
-    background-color: #3461e2;
+    background-color: #4565af;
     color: #f6f9fe;
     display: flex;
     align-items: center;
@@ -242,9 +233,21 @@
   }
 }
 @media screen and (max-width: 928px) {
+  .services-section {
+    margin-top: -90px;
+  }
   .services-section .container .row {
-    flex-wrap: wrap;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    row-gap: 20px;
+  }
+  .services-section .container .row .col {
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin: 0;
   }
 }
 @media screen and (max-width: 1096px) {
@@ -391,5 +394,25 @@
   }
   .blog-content .container .side-bar {
     display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .coming-soon .container {
+    padding: 0;
+  }
+  .coming-soon .container .row .col-1 {
+    display: none;
+  }
+  .coming-soon .container .row .col-2 {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    text-align: center;
+    place-items: center;
+    place-content: center;
+  }
+  .coming-soon .container .row .col-2 .logo {
+    display: block;
+    width: 150px;
   }
 }/*# sourceMappingURL=mobile.css.map */

@@ -4,9 +4,8 @@ urlpatterns = [
     path('', index, name='index'),
     path('about/',about_us,name='about'),
     path('gallery/', gallery, name='gallery'),
-
+    path('contact/', contact, name='contact'),
     path('blogs/', blogs, name='blogs'),
-
     path('blog/<slug:slug>', blog, name='blog'),
     path('features', features, name='features'),
     path('thank-you', thankYou, name='thank-you'),
