@@ -15,4 +15,6 @@ urlpatterns = [
     path('payroll-management-and-funding', service4, name='payroll-management-and-funding'),
     path('non-deposit-taking-micorfinance', service5, name='non-deposit-taking-micorfinance'),
     path('financial-analysis-and-calculations-related-services', service6, name='financial-analysis-and-calculations-related-services'),
+
+    path('sitemap', sitemap, name='sitemap')
 ]

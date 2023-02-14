@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+import os
 from django.http import HttpResponse
 from .forms import *
 from .models import *
@@ -14,9 +15,6 @@ def index(request):
             form.save()
             return redirect('thank-you')
     context = {'form': form, 'page_title':page_title}
-
-    if settings.COMMING_SOON:
-        return render(request, 'coming-soon.html')
     return render(request, 'index.html', context)
 
 def blog(request, slug):
@@ -32,7 +30,15 @@ def blogs(request):
     return render(request, 'coming-soon.html', context)
 
 def contact(request):
-    return render(request, 'contact.html')
+    page_title = 'Contact'
+    form = ContactForm()
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('thank-you')
+    context = {'form': form, 'page_title': page_title}
+    return render(request, 'contact.html', context)
 
 def features(request):
     features = Feature.objects.all()
@@ -70,3 +76,13 @@ def gallery(request):
 
 def thankYou(request):
     return render(request, 'thank-you.html')
+
+
+from django.http import HttpResponse
+from django.template import loader
+def sitemap(request):
+    template = loader.get_template('sitemap.xml')
+    content_type = 'application.xml'
+    rendered_template = template.render()
+
+    return HttpResponse(rendered_template, content_type = content_type)

@@ -170,7 +170,8 @@
             </a>
 
             <a href="">
-                <img src="{% static '/img/partners/cohesivestaffing.jpeg' %}" alt="cohesive-staffing" class="partners-logo">
+                <img src="{% static '/img/partners/cohesivestaffing.jpeg' %}" alt="cohesive-staffing"
+                    class="partners-logo">
             </a>
 
             <a href="">
@@ -178,7 +179,8 @@
             </a>
 
             <a href="">
-                <img src="{% static '/img/partners/meat-processing.jpeg' %}" alt="meat-processing" class="partners-logo">
+                <img src="{% static '/img/partners/meat-processing.jpeg' %}" alt="meat-processing"
+                    class="partners-logo">
             </a>
 
             <a href="">
@@ -427,11 +429,12 @@
             <!-- second row -->
             <div class="row">
                 <div class="form-container">
-                    <form class="form" id="form">
-                        <input type="text" name="name" placeholder="Full name"><br>
-                        <input type="email" name="email" placeholder="Email"><br>
-                        <input type="phone" name="phone" placeholder="Phone number"><br>
-                        <textarea name="message" id="" rows="8" placeholder="Message"></textarea>
+                    <form method="POST" class="form" id="form">
+                        {% csrf_token %}
+                        {{form.name}}
+                        {{form.email}}
+                        {{form.phone_number}}
+                        {{form.message}}
                         <input type="submit" value="Send message">
                     </form>
                 </div>
@@ -442,7 +445,8 @@
                 <img src="{% static '/img/csr-office.jpeg' %}" alt="csr">
             </div>
             <div class="map">
-                <iframe src="{% static 'https://maps.google.com/maps?q=Startimes&t=&z=13&ie=UTF8&iwloc=&output=embed' %}"
+                <iframe
+                    src="{% static 'https://maps.google.com/maps?q=Startimes&t=&z=13&ie=UTF8&iwloc=&output=embed' %}"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>

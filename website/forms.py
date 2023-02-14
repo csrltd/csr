@@ -8,6 +8,6 @@ class ContactForm(ModelForm):
         widgets = {
             'name': TextInput(attrs={'placeholder': 'Full name'}),
             'phone_number': TextInput(attrs={'placeholder': 'Phone number with country code'}),
-            'email': EmailInput(attrs={'placeholder': 'Email addess'}),
+            'email': EmailInput(attrs={'placeholder': 'Email address'}),
             'message': Textarea(attrs={'placeholder': 'Your message', 'rows':'5'})
         }

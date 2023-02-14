@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
 <section class="coming-soon">
     <div class="container dev-container">
         <div class="row">
             <div class="col col-1">
-                <img class="logo" src="{% static '/img/branding/logo-white.svg' %}" alt="">
+                <img class="logo" src="{% static '/imgbranding/logo-white.svg' %}" alt="">
             </div>
             <div class="col col-2">
                 <img class="logo" src="{% static '/img/branding/logo-blue.svg' %}" alt="">
                 <h1>coming soon</h1>
                 <p>Our developers are working on this page currently, and it will be published soon. We understand
-                    that you may need services related to this page. If so, use any of our communication channel below to communicate with
+                    that you may need services related to this page. If so, use this form below to communicate with
                     us. Our team will be in touch with you as soon as possible</p>
                 <div class="coming-soon-contacts">
                     <!-- email -->
@@ -66,4 +67,5 @@
         </div>
     </div>
 </section>
+
 {% endblock %}
