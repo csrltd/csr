@@ -81,7 +81,7 @@ def thankYou(request):
 from django.http import HttpResponse
 from django.template import loader
 def sitemap(request):
-    template = loader.get_template('sitemap.xml')
+    template = loader.get_template('sitemaps/sitemap.xml')
     content_type = 'application.xml'
     rendered_template = template.render()
 
