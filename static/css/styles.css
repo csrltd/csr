@@ -463,18 +463,18 @@ footer .copy .container .row .social-media img {
 }
 .services-details .container .col {
   display: flex;
-  align-items: center;
-  gap: 30px;
+  flex-direction: row;
+  gap: 12px;
 }
 .services-details .container .col .row {
-  flex: 1 1 auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
   background-color: rgba(42, 45, 124, 0.062745098);
   border-radius: 2px;
   padding: 30px;
   gap: 12px;
-  height: 350px;
+  max-width: 350px;
   transition: linear 0.3s;
 }
 .services-details .container .col .row .title-col {
