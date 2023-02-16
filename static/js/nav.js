@@ -92,9 +92,12 @@ window.addEventListener('scroll', () => {
 
 
 //Closing menu when link clicked
+// corrections made closeBtn dissapear when a link is clicked
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
+    closeBtn.style.display = 'none'
+    navToggle.style.display = 'block'
     if (window.innerWidth < 1200) {
       mobileMenu.style.display = 'none'
     }
