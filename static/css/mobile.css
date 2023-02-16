@@ -168,12 +168,6 @@
   .about .container .col .row-not-reverse {
     padding-right: 0;
   }
-  .services-details .container .col {
-    flex-direction: column;
-  }
-  .services-details .container .col .row {
-    height: 240px;
-  }
   .partnership {
     padding: 0;
   }
