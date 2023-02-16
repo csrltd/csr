@@ -96,10 +96,11 @@ window.addEventListener('scroll', () => {
 
 navLinks.forEach((link) => {
   link.addEventListener('click', () => {
-    closeBtn.style.display = 'none'
-    navToggle.style.display = 'block'
+    
     if (window.innerWidth < 1200) {
       mobileMenu.style.display = 'none'
+      closeBtn.style.display = 'none'
+      navToggle.style.display = 'block'
     }
   })
 })
