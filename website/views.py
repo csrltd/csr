@@ -15,7 +15,7 @@ def index(request):
             form.save()
             return redirect('thank-you')
     context = {'form': form, 'page_title':page_title}
-    return render(request, 'coming-soon.html', context)
+    return render(request, 'index.html', context)
 
 def blog(request, slug):
     page_title = 'Blog posts'
