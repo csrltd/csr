@@ -1,7 +1,21 @@
 // corrected styles  on mobile view
 
-// footer
+// CUSTOM CLASSES
+@media screen and (max-width: 540px) {
+    .heading {
+        font-size: 22px;
+    }
 
+    .hero {
+        .container {
+            .hero-heading {
+                font-size: 45px;
+            }
+        }
+    }
+}
+
+// footer
 @media screen and (max-width: 540px) {
     footer {
       .container {
@@ -52,4 +66,5 @@
         }
       }
     }
-  }
+}
+

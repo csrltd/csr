@@ -1,4 +1,12 @@
 @media screen and (max-width: 540px) {
+  .heading {
+    font-size: 22px;
+  }
+  .hero .container .hero-heading {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 540px) {
   footer .container .row {
     flex-direction: column;
     gap: 50px;
