@@ -1,0 +1,55 @@
+// corrected styles  on mobile view
+
+// footer
+
+@media screen and (max-width: 540px) {
+    footer {
+      .container {
+        .row {
+          flex-direction: column;
+          gap: 50px;
+
+          .col {
+            width: 100%;
+          }
+        }
+  
+        .footer-blogs {
+          .col {
+            .blog {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              flex-direction: row;
+              padding: 12px 0;
+            }
+            .summary {
+              p {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+  
+      .copy {
+        margin-top: 50px;
+        padding: 20px 0;
+  
+        .container {
+          .row {
+            flex-direction: column-reverse;
+            gap: 24px;
+            .menu-links {
+              flex-wrap: wrap;
+              width: 100%;
+            }
+  
+            .social-media {
+              justify-content: start;
+            }
+          }
+        }
+      }
+    }
+  }
