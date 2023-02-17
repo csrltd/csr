@@ -33,7 +33,7 @@ DEBUG = False
 
 COMMING_SOON = False
 
-ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1']
+ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1','csrlimited.com']
 
 
 # Application definition
