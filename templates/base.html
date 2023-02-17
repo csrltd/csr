@@ -44,6 +44,7 @@
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link rel="stylesheet" href="{% static '/css/styles.css' %}">
     <link rel="stylesheet" href="{% static '/css/mobile.css' %}">
+    <link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}">
 
     <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -51,6 +52,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <link rel="icon" type="image/x-icon" href="{% static '/img/csr logo.svg' %}">
+    {% block pageLinks %}
+        <!-- <link rel="stylesheet" href=""> -->
+    {% endblock pageLinks %}
 
 
     <!--Google tag manager-->

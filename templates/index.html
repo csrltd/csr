@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}">
+{% endblock pageLinks %}
+
 {% block content %}
 
 {% include 'navbar.html' %}
@@ -7,7 +12,7 @@
     <div class="container">
         <h4 class="sub-heading">trusted partner</h4>
         <!--Added a class to heading nnamed heading-->
-        <h1 class="heading">Our Clients, Our Priority</h1>
+        <h1 class="heading hero-heading">Our Clients, Our Priority</h1>
         <p>We are your trusted partner of work force for your daily business tasks.</p>
         <p>We understand the importance of delivering 24/7 business operations to meet your business
             requirements.</p>
@@ -40,6 +45,7 @@
                 <i class="fas fa-pencil-ruler"></i>
                 <h3>Business <br> branding</h3>
             </div>
+
             <div class="col">
                 <i class="fas fa-code"></i>
                 <h3>software <br> development</h3>
@@ -52,7 +58,7 @@
     </div>
 </section>
 
-
+<!-- changed the paragrah/description under business operations and global outsourcing -->
 <section class="about" id="about">
     <div class="container">
         <h1 class="heading">why should you <br> choose us?</h1>
@@ -61,7 +67,7 @@
                 <div class="about-description">
                     <h2>business operations</h2>
                     <p>We understand the importance of delivering 24/7 business operations to meet your business
-                        requirements. Whether your clientss are based locally or globally, we are fully to provide
+                        requirements. Whether your clientss are based locally or globally, we are fully equiped to provide
                         your business needs.</p>
                     <a href="{% url 'contact' %}">Get in touch with us</a>
                 </div>
@@ -85,9 +91,7 @@
             <div class="row">
                 <div class="about-description">
                     <h2>a global outsourcing firm</h2>
-                    <p>We serve local and foreign companies. You get the advantage of working with a company that
-                        has a gobal presence. you get to work with people of different diversity, backgrounds, and
-                        skillset while adding reliability and credibility to your business.</p>
+                    <p>We offer services with proven quality at affordable prices, providing you the benefit of outsourcing operations.</p>
                     <a href="contact.html">Get in touch with us</a>
                 </div>
                 <div class="about-img">
@@ -112,13 +116,14 @@
                     up-to-date.</p>
             </div>
             <!-- second row -->
+            <!-- changed the description on business branding -->
             <div class="row">
                 <div class="title-col">
                     <i class="fas fa-pencil-ruler"></i>
                     <h2>Business <br> Branding</h2>
                 </div>
-                <p>Dedicated and knowledgeable customer support team to assist with resolving issues, answering
-                    questions, and providing information.</p>
+                <p>We offer comprehensive branding services that encompass everything from logo design to
+                    brand strategy development.</p>
             </div>
             <!-- third row -->
             <div class="row">
@@ -387,7 +392,7 @@
                                 <h3>USA office</h3>
                             </div>
                             <p>2510 E Independence st</p>
-                            <p>Shawnee,Oklahoma, USA</p>
+                            <p>816 E. Federal Shawnee, OK 74804</p>
                         </div>
                     </div>
                 </div>
@@ -418,8 +423,8 @@
                                 </div>
                                 <h3>Call Us</h3>
                             </div>
-                            <a href="tel:+250791902159">+250791902159</a>
-                            <a href="tel:+405.367.4422">405.367.4422</a>
+                            <a href="tel:+250791902159">Phone: +250791902159</a>
+                            <a href="tel:+918.269.1722">Phone: 918.269.1722</a>
                         </div>
                     </div>
                 </div>
@@ -441,14 +446,7 @@
             </div>
         </div>
         <div class="location">
-            <div class="row">
-                <img src="{% static '/img/csr-office.jpeg' %}" alt="csr">
-            </div>
-            <div class="map">
-                <iframe
-                    src="https://maps.google.com/maps?q=Startimes&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.499657960703!2d30.094012214924884!3d-1.9534435372691505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x64e8a36be1f73c77%3A0x13d6066392f7624c!2sComprehensive%20Staffing%20Resources!5e0!3m2!1sen!2srw!4v1676450976959!5m2!1sen!2srw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     </div>
@@ -457,3 +455,4 @@
 {% include 'footer.html' %}
 
 {% endblock %}
+
