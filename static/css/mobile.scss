@@ -133,54 +133,7 @@ $border-radius: 10px;
     }
   }
   
-  @media screen and (max-width: 540px) {
-    footer {
-      .container {
-        .row {
-          flex-direction: column;
-          gap: 50px;
-        }
-  
-        .footer-blogs {
-          .col {
-            .blog {
-              display: flex;
-              align-items: center;
-              gap: 12px;
-              flex-direction: row;
-              padding: 12px 0;
-            }
-            .summary {
-              //padding-left: 12px;
-              p {
-                width: 100%;
-              }
-            }
-          }
-        }
-      }
-  
-      .copy {
-        margin-top: 50px;
-        padding: 20px 0;
-  
-        .container {
-          .row {
-            flex-direction: column-reverse;
-            gap: 24px;
-            .menu-links {
-              flex-wrap: wrap;
-              width: 100%;
-            }
-  
-            .social-media {
-              justify-content: start;
-            }
-          }
-        }
-      }
-    }
-  }
+ 
 
 //HOME PAGE
 @media screen and (max-width: 540px) {
@@ -621,3 +574,9 @@ $border-radius: 10px;
     }
   }
 }
+
+
+
+
+
+

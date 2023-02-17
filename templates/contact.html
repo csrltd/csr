@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+
+<!-- {% block links %} -->
+    <!-- corrected mobile view styles -->
+<!-- ÷<link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}"> -->
+<!-- {% endblock links %} -->
 {% block content %}
 
 {% include 'navbar.html' %}
@@ -22,6 +27,12 @@
 
 <section class="contacts" id="contacts">
     <div class="container">
+        <div class="contacts-heading">
+            <h1 class="heading">Get in touch with us</h1>
+            <p class="get-in-touch-text">Thank you for your interest in contacting CSR Ltd, please reach us at the
+                below contacts we will be happy to discuss
+                this with you.</p>
+        </div>
         <div class="col">
             <div class="row">
                 <div class="col-1">
@@ -31,8 +42,8 @@
                                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
                                 <h3>rwanda office</h3>
                             </div>
-                            <p>KN 78 St, Kigali. Norrsken </p>
-                            <p>House, Kigali,Rwanda.</p>
+                            <p>Immeuble Aigle Blanc</p>
+                                <p>KN 5 Rd, Kigali,Rwanda.</p>
                         </div>
                     </div>
                     <div class="row-1">
@@ -42,7 +53,7 @@
                                 <h3>USA office</h3>
                             </div>
                             <p>2510 E Independence st</p>
-                            <p>Shawnee,Oklahoma, USA</p>
+                            <p>816 E. Federal Shawnee, OK 74804</p>
                         </div>
                     </div>
                 </div>
@@ -73,8 +84,8 @@
                                 </div>
                                 <h3>Call Us</h3>
                             </div>
-                            <a href="tel:+250791902159">+250791902159</a>
-                            <a href="tel:+405.367.4422">405.367.4422</a>
+                            <a href="tel:+250791902159">Phone: +250791902159</a>
+                            <a href="tel:+918.269.1722">Phone: 918.269.1722</a>
                         </div>
                     </div>
                 </div>
@@ -97,13 +108,6 @@
         </div>
         <div class="location">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.499657960703!2d30.094012214924884!3d-1.9534435372691505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x64e8a36be1f73c77%3A0x13d6066392f7624c!2sComprehensive%20Staffing%20Resources!5e0!3m2!1sen!2srw!4v1676450976959!5m2!1sen!2srw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!-- <div class="row">
-                <img src="/img/csr-office.jpeg" alt="csr">
-            </div>
-            <div class="map">
-                <iframe src="https://maps.google.com/maps?q=Startimes&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            </div> -->
         </div>
     </div>
     </div>
