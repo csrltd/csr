@@ -19,3 +19,11 @@ class featureAdmin(admin.ModelAdmin):
 class categoryAdmin(admin.ModelAdmin):
     list_display = ('category','slug')
     prepopulated_fields = {"slug": ("category",)}
+
+@admin.register(Author)
+class authorAdmin(admin.ModelAdmin):
+    list_display = ('name','email','department')
+
+@admin.register(Department)
+class departmentAdmin(admin.ModelAdmin):
+    list_display=('name',)

@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from ckeditor_uploader.fields import RichTextUploadingField
+
 # Create your models here.
 class contactMessage(models.Model):
     name = models.CharField(max_length=255)
@@ -8,6 +9,23 @@ class contactMessage(models.Model):
     email = models.EmailField(max_length=255)
     message = models.TextField(max_length=1000)
     date_ceated = models.DateTimeField(auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.name
+
+# Adding new models (Department and Author models)
+
+class Department(models.Model):
+    name = models.CharField(max_length=255,null=False)
+
+    def __str__(self):
+        return self.name
+
+
+class Author(models.Model):
+    name = models.CharField(max_length=255, null=False)
+    email = models.EmailField(null=False)
+    department = models.ForeignKey(Department, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -34,17 +52,23 @@ class Blog(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=2, null=None)
     category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default='uncategorised')
-    author = models.CharField(max_length=255)
+
+    # Linking the author to Author model
+    # author = models.CharField(max_length=255)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
     status = models.CharField(max_length=255, choices=STATUS_CHOICES, default=draft)
     featured_image = models.ImageField(upload_to='blog/featured_images')
     blog_summary = models.TextField(max_length=255, default=defaul_summary)
     blog_content = RichTextUploadingField()
     date_created = models.DateTimeField(auto_now_add=True)
+    
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
+
         return reverse('blog', kwargs={'slug': self.slug})
     
 
@@ -56,3 +80,5 @@ class Feature(models.Model):
     date_featured = models.DateTimeField(auto_now_add=False, null= True)
     def __str__(self):
         return self.title
+
+

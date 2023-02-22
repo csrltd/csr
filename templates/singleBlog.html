@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}
+
+    <title>CSR | Blog</title>
+
+{% endblock title %} 
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+    <section class="blog-header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="heading blog-title">
+                        Learn about Book keeping and outsourcig of staff in this blog
+                    </h1>
+    
+                    <div class="meta">
+                        <div class="meta-item"><a href=""><img src="{% static '/img/icons/folder.svg' %}" alt="">
+                                <p>{{blog.category}}</p>
+                            </a></div>
+                        <div class="meta-item"><a href=""><img src="{% static '/img/icons/author.svg' %}" alt="">
+                                <p>{{blog.author}}</p>
+                            </a></div>
+                        <div class="meta-item"><a href=""><img src="{% static '/img/icons/calendar.svg' %}" alt="">
+                                <p>{{blog.date_created| date}}</p>
+                            </a></div>
+                    </div>
+    
+                </div>
+    
+                <div class="col featured-image">
+                    <img src="{{blog.featured_image.url}}" alt="blog.title">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="blog-content">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col content">
+                   
+                    {{blog.blog_content | safe}}
+                   
+                </div>
+    
+                <div class="col side-bar">
+                    <h3>Our services</h3>
+                    <div class="services">
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/book.svg" alt="">
+                                <p>
+                                    Bookkeeping and
+                                    Outsourcing of Staff
+                                </p>
+                            </div>
+                        </a>
+    
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/support blue.svg" alt="">
+                                <p>
+                                    Customer Support
+                                    services
+                                </p>
+                            </div>
+                        </a>
+    
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/calculator.svg" alt="">
+                                <p>
+                                    Financial analysis
+                                    and calculations
+                                </p>
+                            </div>
+                        </a>
+    
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/percentage.svg" alt="">
+                                <p>
+                                    Non-deposit-taking
+                                    microfinance
+                                </p>
+                            </div>
+                        </a>
+    
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/table.svg" alt="">
+                                <p>
+                                    Data Entry
+                                    Service
+                                </p>
+                            </div>
+                        </a>
+    
+                        <a href="{% url 'coming-soon' %}">
+                            <div class="service">
+                                <img src="/img/icons/list money.svg" alt="">
+                                <p>
+                                    Payroll Management
+                                    and Funding
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock content %}

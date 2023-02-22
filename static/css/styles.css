@@ -720,36 +720,6 @@ footer .copy .container .row .social-media img {
   right: -30px;
 }
 
-.blogs {
-  padding: 80px;
-}
-.blogs .container {
-  display: grid;
-  grid-template-columns: 21% 21% 21% 21%;
-  gap: 20px;
-  row-gap: 20px;
-}
-.blogs .container a .blog {
-  background-color: #f6f9fe;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.blogs .container a .blog img {
-  border-radius: 2px;
-}
-.blogs .container a .blog .blog-summary {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.blogs .container a .blog .blog-summary .title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
 .description .container {
   padding-top: 100px;
 }
@@ -916,6 +886,83 @@ footer .copy .container .row .social-media img {
 }
 .service-content .container .col img {
   border-radius: 2px;
+}
+
+.blogs {
+  padding: 80px;
+}
+.blogs .container {
+  display: grid;
+  gap: 20px;
+  row-gap: 20px;
+}
+.blogs .container a .blog {
+  background-color: #f6f9fe;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+}
+.blogs .container a .blog img {
+  border-radius: 2px;
+  width: 390px;
+  height: 215px;
+}
+.blogs .container a .blog .blog-summary {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.blogs .container a .blog .blog-summary .title {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Futura";
+}
+.blogs .container a .blog .blog-summary .title-link {
+  display: flex;
+  gap: 32px;
+  color: #0937bb;
+}
+.blogs .container a .blog .blog-summary .title-link .meta {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 12px;
+}
+.blogs .container a .blog .blog-summary .title-link i {
+  display: flex;
+  gap: 12px;
+}
+.blogs .container a .blog-left {
+  display: flex;
+  background-color: #f6f9fe;
+  flex-direction: row-reverse;
+  gap: 15px;
+  width: 100%;
+}
+.blogs .container a .blog-left img {
+  border-radius: 2px;
+  width: 390px;
+  height: 215px;
+}
+.blogs .container a .blog-left .blog-summary {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+.blogs .container a .blog-left .blog-summary .title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.blogs .container a .blog-left .blog-summary .title-link {
+  display: flex;
+  gap: 20px;
+  color: #0937bb;
 }
 
 .blog-header {

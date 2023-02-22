@@ -1,114 +1,72 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block title %}
+
+    <title>CSR | Blog</title>
+
+{% endblock title %}
 {% block content %}
 
 {% include 'navbar.html' %}
+
 <section class="page-intro">
     <div class="container">
         <div class="breadchrums">
-            <a href="{% url 'index' %}"><i class="fas fa-angle-left"></i><span class="prev-page">Home</span></a>/<span
+            <a href="/index.html"><i class="fas fa-angle-left"></i><span class="prev-page">Home</span></a>/<span
                 class="current-page">Our blog</span>
         </div>
-        <h1 class="heading"> Checkout our blog</h1>
+        <h1    h1 class="heading"> Checkout our blog</h1>
         <div class="page-summary">
             <p>We are your trusted of work force for your daily business tasks.</p>
-            <p>We understand the importance of delivering 24/7 business operations to meet your business requirements.
+            <p>We understand the importance of delivering 24/7 business operations to meet your business
+                requirements.
                 We aim to serve you with the best.</p>
         </div>
     </div>
 </section>
+
 <section class="blogs">
     <div class="container">
-        <a href="/single-blog.html">
+        {% for blog in blogs %}
+        <a href="{% url 'blog' blog.slug %}">
             <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
+                <img src="{{ blog.featured_image.url }}" alt="{{blog.title}}">
+                
                 <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
+                    <h3 class="title">{{blog.title}}</h3>
+                    <div class="title-link">
+                        <div class="meta">
+                            <i class="fa fa-user-o" aria-hidden="true"></i> <span>{{blog.author}}</span>
+                        </div>
+                        
+                        <div class="meta">
+                            <i class="fa fa-list" aria-hidden="true"></i> <span>{{blog.category}}</span>
+                        </div>
+                        
+                        <div class="meta">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> <span>{{blog.date_created | date}}</span>
+                        </div>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
+                       {{blog.blog_summary | safe}}
                     </p>
                 </div>
             </div>
         </a>
-
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="/single-blog.html">
-            <div class="blog">
-                <img src="{% static '/img/Data entry service.webp' %}" alt="">
-                <div class="blog-summary">
-                    <h3 class="title">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
-                        urna.
-                    </p>
-                </div>
-            </div>
-        </a>
-
+        {% endfor %}
 
     </div>
 </section>
 
 {% include 'footer.html' %}
+
+
+<script>
+    let blog = document.querySelectorAll('blog-left')
+</script>
+
+<script src="{% static '/js/nav.js' %}"></script>
+<script src="{% static '/js/blog.js' %}"></script>
 
 {% endblock %}

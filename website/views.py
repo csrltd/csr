@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from .forms import *
 from .models import *
 from django.conf import settings
+
 # Create your views here.
 
 def index(request):
@@ -18,16 +19,17 @@ def index(request):
     return render(request, 'index.html', context)
 
 def blog(request, slug):
-    page_title = 'Blog posts'
     blog = Blog.objects.get(slug=slug)
-    context = {'blog':blog}
-    return render(request, 'single-blog.html', context)
+    page_title = blog.title
+    context = {'blog':blog, 'page_title':page_title}
+    return render(request, 'singleBlog.html', context)
+    
 
 def blogs(request):
     page_title = 'Blog posts'
     blogs = Blog.objects.filter(status='Published')
     context = {'blogs':blogs, 'page_title': page_title}
-    return render(request, 'coming-soon.html', context)
+    return render(request, 'blog.html', context)
 
 def contact(request):
     page_title = 'Contact'
@@ -86,3 +88,15 @@ def sitemap(request):
     rendered_template = template.render()
 
     return HttpResponse(rendered_template, content_type = content_type)
+
+
+def blogCategories(request):
+    categories = Category.objects.all()
+    
+    return render(request, 'adminDashboard.html')
+
+def blogCategory(request):
+    return render(request, 'adminDashboard.html')
+
+def comingSoon(request):
+    return render(request, 'coming-soon.html')

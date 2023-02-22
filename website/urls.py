@@ -16,5 +16,10 @@ urlpatterns = [
     path('non-deposit-taking-micorfinance', service5, name='non-deposit-taking-micorfinance'),
     path('financial-analysis-and-calculations-related-services', service6, name='financial-analysis-and-calculations-related-services'),
 
-    path('sitemap', sitemap, name='sitemap')
+    path('sitemap', sitemap, name='sitemap'),
+
+    # Added path to category
+    path('categories',blogCategories, name='categories'),
+    path('category/<slug:slug>', blogCategory, name='category'),
+    path('coming-soon', comingSoon ,name='coming-soon')
 ]
