@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
 import os
 from django.http import HttpResponse
+from django.template import loader
+from django.http import HttpResponse
 from .forms import *
 from .models import *
 from django.conf import settings
-
-# Create your views here.
 
 def index(request):
     page_title = 'Home'
@@ -79,17 +79,6 @@ def gallery(request):
 def thankYou(request):
     return render(request, 'thank-you.html')
 
-
-from django.http import HttpResponse
-from django.template import loader
-def sitemap(request):
-    template = loader.get_template('sitemaps/sitemap.xml')
-    content_type = 'application.xml'
-    rendered_template = template.render()
-
-    return HttpResponse(rendered_template, content_type = content_type)
-
-
 def blogCategories(request):
     categories = Category.objects.all()
     
@@ -100,3 +89,13 @@ def blogCategory(request):
 
 def comingSoon(request):
     return render(request, 'coming-soon.html')
+
+
+
+#SEO
+def sitemap(request):
+    template = loader.get_template('sitemaps/sitemap.xml')
+    content_type = 'application.xml'
+    rendered_template = template.render()
+
+    return HttpResponse(rendered_template, content_type = content_type)

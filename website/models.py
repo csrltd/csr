@@ -52,17 +52,12 @@ class Blog(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=2, null=None)
     category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default='uncategorised')
-
-    # Linking the author to Author model
-    # author = models.CharField(max_length=255)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
-
     status = models.CharField(max_length=255, choices=STATUS_CHOICES, default=draft)
     featured_image = models.ImageField(upload_to='blog/featured_images')
     blog_summary = models.TextField(max_length=255, default=defaul_summary)
     blog_content = RichTextUploadingField()
-    date_created = models.DateTimeField(auto_now_add=True)
-    
+    date_created = models.DateTimeField(auto_now_add=True)  
 
     def __str__(self):
         return self.title
