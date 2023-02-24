@@ -1,4 +1,4 @@
-from django.forms import ModelForm, TextInput, EmailInput, Textarea, ChoiceField
+from django.forms import ModelForm, TextInput, EmailInput, Textarea, ChoiceField, DateField,FileField
 from .models import *
 
 class ContactForm(ModelForm):
@@ -13,16 +13,28 @@ class ContactForm(ModelForm):
             'message': Textarea(attrs={'placeholder': 'Your message', 'rows':'5'})
         }
 
-# class AuthorsForm(ModelForm):
-
-#     # departments = 
-#     class Meta:
-#         model = authorsForm
-#         fields = {'name', 'email', 'department'}
-
-#         widgets = {
-#             'name': TextInput(attrs={'placeholder': "Author's name"}),
-#             'email': EmailInput(attrs={'placeholder':"author@abc.com"}),
-#             'department': ChoiceField(choices= 'departments')
-
-#         }
+class ApplicationForm(ModelForm):
+    class Meta:
+        model = ApplicationForm
+        fields = {'firstName', 'lastName', 'idOrPassport','email','telephone',
+                  'dob','gender','cv','nationalIdOrPassport','workCertificate',
+                  'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation'}
+        
+        widgets = {
+            'firstName': TextInput(attrs={'placeholder': 'First name'}),
+            'lastName': TextInput(attrs={'placeholder': 'Last Name'}),
+            'idOrPassport': TextInput(attrs={'placeholder': 'ID or Passport'}),
+            'email': EmailInput(attrs={'placeholder': 'Email'}),
+            'telephone': TextInput(attrs={'placeholder': 'Telephone'}),
+            'dob': DateField(),
+            'gender': TextInput(attrs={'placeholder': 'Gender'}),
+            'cv': FileField(),
+            'nationalIdOrPassport': FileField(),
+            'workCertificate': FileField(),
+            'refereeName': TextInput(attrs={'placeholder': 'Referee Full Name'}),
+            'refereeAddress': TextInput(attrs={'placeholder': 'Address'}),
+            'refereeTelephone': TextInput(attrs={'placeholder': 'Telephone'}),
+            'refereeInstitution': TextInput(attrs={'placeholder': 'Institution'}),
+            'refereeOccupation': TextInput(attrs={'placeholder': 'Occupation'}),
+           
+        }

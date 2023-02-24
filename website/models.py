@@ -75,5 +75,30 @@ class Feature(models.Model):
     date_featured = models.DateTimeField(auto_now_add=False, null= True)
     def __str__(self):
         return self.title
+    
+class ApplicationForm(models.Model):
+
+    firstName = models.CharField(max_length=255, null=False)
+    lastName = models.CharField(max_length=255, null=False)
+    idOrPassport = models.CharField(max_length=16, null=False)
+    email = models.EmailField(max_length=255, null=False)
+    telephone = models.CharField(max_length=11, null=False)
+    dob = models.DateField(null=False)
+    gender = models.CharField(max_length=1, null=False)
+    cv = models.FileField(null=False)
+    nationalIdOrPassport = models.FileField(null=False)
+    workCertificate = models.FileField(null=True)
+    refereeName = models.CharField(max_length=255, null=False)
+    refereeAddress = models.CharField(max_length=255, null=False)
+    refereeTelephone = models.CharField(max_length=11, null=False)
+    refereeInstitution = models.CharField(max_length=255, null=False)
+    refereeOccupation = models.CharField(max_length=255, null=False)
+
+    def __str__(self):
+        return self.firstName
+    
+
+
+    
 
 

@@ -99,3 +99,16 @@ def sitemap(request):
     rendered_template = template.render()
 
     return HttpResponse(rendered_template, content_type = content_type)
+
+
+def application(request):
+    
+    page_title = 'Application'
+    form = ApplicationForm()
+    if request.method == 'POST':
+        form = ApplicationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('thank-you')
+    context = {'form': form, 'page_title': page_title}
+    return render(request,'application.html',context)
