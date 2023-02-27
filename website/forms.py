@@ -1,6 +1,8 @@
 from django.forms import ModelForm, TextInput, EmailInput, Textarea, ChoiceField, DateField,FileField, DateInput,FileInput
 from .models import *
 
+
+
 class ContactForm(ModelForm):
     class Meta:
         model = contactMessage
@@ -16,9 +18,9 @@ class ContactForm(ModelForm):
 class ApplicationForm(ModelForm):
     class Meta:
         model = ApplicationFormModel
-        fields = {'firstName', 'lastName', 'idOrPassport','email','telephone',
-                  'dob','gender','cv','nationalIdOrPassport','workCertificate',
-                  'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation'}
+        fields = {'firstName', 'lastName', 'idOrPassport','email','telephone'}
+                #   'dob','gender','cv','nationalIdOrPassport','workCertificate',
+                #   'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation'}
         
         widgets = {
             'firstName': TextInput(attrs={'placeholder': 'First name'}),
@@ -26,15 +28,15 @@ class ApplicationForm(ModelForm):
             'idOrPassport': TextInput(attrs={'placeholder': 'ID or Passport'}),
             'email': EmailInput(attrs={'placeholder': 'Email'}),
             'telephone': TextInput(attrs={'placeholder': 'Telephone'}),
-            'dob': DateInput(),
-            'gender': TextInput(attrs={'placeholder': 'Gender'}),
-            'cv': FileInput(),
-            'nationalIdOrPassport': FileInput(),
-            'workCertificate': FileInput(),
-            'refereeName': TextInput(attrs={'placeholder': 'Referee Full Name'}),
-            'refereeAddress': TextInput(attrs={'placeholder': 'Address'}),
-            'refereeTelephone': TextInput(attrs={'placeholder': 'Telephone'}),
-            'refereeInstitution': TextInput(attrs={'placeholder': 'Institution'}),
-            'refereeOccupation': TextInput(attrs={'placeholder': 'Occupation'}),
+            # 'dob': DateInput(),
+            # 'gender': TextInput(attrs={'placeholder': 'Gender'}),
+            # 'cv': FileInput(),
+            # 'nationalIdOrPassport': FileInput(),
+            # 'workCertificate': FileInput(),
+            # 'refereeName': TextInput(attrs={'placeholder': 'Referee Full Name'}),
+            # 'refereeAddress': TextInput(attrs={'placeholder': 'Address'}),
+            # 'refereeTelephone': TextInput(attrs={'placeholder': 'Telephone'}),
+            # 'refereeInstitution': TextInput(attrs={'placeholder': 'Institution'}),
+            # 'refereeOccupation': TextInput(attrs={'placeholder': 'Occupation'}),
            
         }
