@@ -15,6 +15,7 @@ urlpatterns = [
     path('blog/<slug:slug>', blog, name='blog'),
     path('categories',blogCategories, name='categories'),
     path('category/<slug:slug>', blogCategory, name='category'),
+    path('application', application, name='application'),
 
 
     #SEO

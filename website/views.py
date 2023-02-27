@@ -107,8 +107,13 @@ def application(request):
     form = ApplicationForm()
     if request.method == 'POST':
         form = ApplicationForm(request.POST)
+        print('Received')
         if form.is_valid():
+            print('valid')
             form.save()
+            print('saved')
             return redirect('thank-you')
+        else:
+            return redirect('index')
     context = {'form': form, 'page_title': page_title}
     return render(request,'application.html',context)

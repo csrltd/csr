@@ -76,17 +76,17 @@ class Feature(models.Model):
     def __str__(self):
         return self.title
     
-class ApplicationForm(models.Model):
+class ApplicationFormModel(models.Model):
 
     firstName = models.CharField(max_length=255, null=False)
     lastName = models.CharField(max_length=255, null=False)
     idOrPassport = models.CharField(max_length=16, null=False)
     email = models.EmailField(max_length=255, null=False)
     telephone = models.CharField(max_length=11, null=False)
-    dob = models.DateField(null=False)
+    dob = models.DateField(null=True)
     gender = models.CharField(max_length=1, null=False)
-    cv = models.FileField(null=False)
-    nationalIdOrPassport = models.FileField(null=False)
+    cv = models.FileField(null=True)
+    nationalIdOrPassport = models.FileField(null=True)
     workCertificate = models.FileField(null=True)
     refereeName = models.CharField(max_length=255, null=False)
     refereeAddress = models.CharField(max_length=255, null=False)

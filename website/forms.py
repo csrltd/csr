@@ -1,4 +1,4 @@
-from django.forms import ModelForm, TextInput, EmailInput, Textarea, ChoiceField, DateField,FileField
+from django.forms import ModelForm, TextInput, EmailInput, Textarea, ChoiceField, DateField,FileField, DateInput,FileInput
 from .models import *
 
 class ContactForm(ModelForm):
@@ -15,7 +15,7 @@ class ContactForm(ModelForm):
 
 class ApplicationForm(ModelForm):
     class Meta:
-        model = ApplicationForm
+        model = ApplicationFormModel
         fields = {'firstName', 'lastName', 'idOrPassport','email','telephone',
                   'dob','gender','cv','nationalIdOrPassport','workCertificate',
                   'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation'}
@@ -26,11 +26,11 @@ class ApplicationForm(ModelForm):
             'idOrPassport': TextInput(attrs={'placeholder': 'ID or Passport'}),
             'email': EmailInput(attrs={'placeholder': 'Email'}),
             'telephone': TextInput(attrs={'placeholder': 'Telephone'}),
-            'dob': DateField(),
+            'dob': DateInput(),
             'gender': TextInput(attrs={'placeholder': 'Gender'}),
-            'cv': FileField(),
-            'nationalIdOrPassport': FileField(),
-            'workCertificate': FileField(),
+            'cv': FileInput(),
+            'nationalIdOrPassport': FileInput(),
+            'workCertificate': FileInput(),
             'refereeName': TextInput(attrs={'placeholder': 'Referee Full Name'}),
             'refereeAddress': TextInput(attrs={'placeholder': 'Address'}),
             'refereeTelephone': TextInput(attrs={'placeholder': 'Telephone'}),

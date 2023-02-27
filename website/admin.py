@@ -28,7 +28,7 @@ class authorAdmin(admin.ModelAdmin):
 class departmentAdmin(admin.ModelAdmin):
     list_display=('name',)
 
-@admin.register(ApplicationForm)
+@admin.register(ApplicationFormModel)
 class ApplicationFormAdmin(admin.ModelAdmin):
     list_display=('firstName', 'lastName', 'idOrPassport','email','telephone',
                   'dob','gender','cv','nationalIdOrPassport','workCertificate',
