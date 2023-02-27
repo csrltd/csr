@@ -290,6 +290,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        
 
         h1 {
           color: $whitesmoke;
@@ -377,8 +378,9 @@ footer {
         .menu-links {
           display: flex;
           align-items: center;
-          width: 70%;
+          width: 100%;
           gap: 12px;
+          
         }
 
         .social-media {

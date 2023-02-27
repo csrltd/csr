@@ -50,10 +50,11 @@ section {
   height: 100%;
 }
 .container .row .col-form h1 {
-  margin: 40px;
+  color: #2A2D7B;
 }
 .container .row .form-container {
   padding: 0 5rem;
+  margin-top: 200px;
 }
 .container .row .form-container .form {
   display: grid;
@@ -64,9 +65,6 @@ section {
   font-family: "Futura Book", sans-serif;
 }
 .container .row .form-container .form input::-moz-placeholder {
-  font-size: 16px;
-}
-.container .row .form-container .form input:-ms-input-placeholder {
   font-size: 16px;
 }
 .container .row .form-container .form input::placeholder {
@@ -99,9 +97,6 @@ section {
   outline: none;
 }
 .container #form2 input::-moz-placeholder {
-  font-size: 16px;
-}
-.container #form2 input:-ms-input-placeholder {
   font-size: 16px;
 }
 .container #form2 input::placeholder {

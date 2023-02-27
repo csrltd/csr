@@ -30,6 +30,5 @@ class departmentAdmin(admin.ModelAdmin):
 
 @admin.register(ApplicationFormModel)
 class ApplicationFormAdmin(admin.ModelAdmin):
-    list_display=('firstName', 'lastName', 'idOrPassport','email','telephone')
-                #   'dob','gender','cv','nationalIdOrPassport','workCertificate',
-                #   'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation')
+    list_display=('firstName', 'lastName', 'idOrPassport','email','telephone','dateOfBirth','gender','cv','nationalIdOrPassport','workCertificate',
+                'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation')

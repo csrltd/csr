@@ -106,9 +106,11 @@ def application(request):
     page_title = 'Application'
     form = ApplicationForm()
     if request.method == 'POST':
-        form = ApplicationForm(request.POST)
+        form = ApplicationForm(request.POST,request.FILES)
+        
         print('Received')
         if form.is_valid():
+    
             print('valid')
             form.save()
             print('saved')

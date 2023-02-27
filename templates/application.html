@@ -12,73 +12,60 @@
     <div class="container">
         <div class="row">
             <div class="col col-left">
-                <img src="{% static '/img/logo-white 1.png' %}" alt="" >
+                <img src="{% static '/img/logo-white 1.png' %}" alt="">
                 <img src="{% static '/img/Business is growing.png' %}" alt="" class="img2">
             </div>
             <div class="col-form">
-                
-            <div class="form-container">
-                
 
-                <form class="form" id="form2" method='POST'>
-                    {% csrf_token %}
-                    <div id="general">
-                        <h1>General Information</h1>
-                        <div class="names">
-                            {% comment %} <input type="text" name="firstName" placeholder="First Name*"> {% endcomment %}
-                            {{form.firstName}}
-                            {% comment %} <input type="text" name="lastName" placeholder="Last Name*"> {% endcomment %}
-                            {{form.lastName}}
-                        </div>
-                            {% comment %} <input type="id" name="idOrPassport" class="idOrPassport" placeholder="National ID or Passport*"> {% endcomment %}
+                <div class="form-container">
+
+
+                    <form class="form" id="form2" method='post' enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div id="general">
+                            <h1>General Information</h1>
+                            <div class="names">
+
+                                {{form.firstName}}
+                                {{form.lastName}}
+                            </div>
+
                             {{form.idOrPassport}}
                             <div class="names">
-                            {% comment %} <input type="email" name="email" placeholder="Email*"> {% endcomment %}
-                            {{form.email}}
-                            {% comment %} <input type="text" name="telephone" placeholder="Telephone*"> {% endcomment %}
-                            {{form.telephone}}
-                        </div>
-                        <!-- <div class="names">
-                            {% comment %} <input type="date" name="dob" placeholder="Date of birth"> {% endcomment %}
-                            {{form.dob}}
-                            {% comment %} <input type="text" name="gender" placeholder="Gender"> {% endcomment %}
+
+                                {{form.email}}
+                                {{form.telephone}}
+                            </div>
+
+                            {{form.dateOfBirth}}
                             {{form.gender}}
-                        </div>
+
                             <button id="btnGeneral">Next</button>
-                    </div>
-                   <div id="documents">
-                    <h1>Applicant Documents</h1>
-                    {% comment %} <input type="file" name="cv" placeholder="CV*"> {% endcomment %}
-                    {{form.cv}}
-                    {% comment %} <input type="file" name="nationalIdOrPassport" placeholder="National ID or Passport*"> {% endcomment %}
-                    {{form.nationalIdOrPassport}}
-                    {% comment %} <input type="file" name="workCertificate"  placeholder="Work  Certificate*"> {% endcomment %}
-                    {{form.workCertificate}}
-                    <button id="btnDocuments">Next</button>
-                   </div>
-                    
-                    <div id="reference">
-                        <h1>References</h1>
-                        {% comment %} <input type="text" name="refereeName" placeholder="Full Names*"> {% endcomment %}
-                        {{form.refereeName}}
-                    {% comment %} <input type="text" name="refereeAddress" placeholder="Address*"> {% endcomment %}
-                    {{form.refereeAddress}}
+                        </div>
+                        <div id="documents">
+                            <h1>Applicant Documents</h1> 
+
+                            {{form.cv}}
+                            {{form.nationalIdOrPassport}}
+                            {{form.workCertificate}}
+                            <button id="btnDocuments">Next</button>
+                        </div>
+
+                        <div id="reference">
+                            {{form.refereeName}}
+                            {{form.refereeAddress}}
+                            {{form.refereeTelephone}}
+                            {{form.refereeInstitution}}
+                            {{form.refereeOccupation}}
+    
+                            <button type="submit" id="btnFinish">Finish</button> 
+                        </div>
                 
-                    {% comment %} <input type="text" name="refereeTelephone"  placeholder="Telephone*"> {% endcomment %}
-                    {{form.refereeTelephone}}
-                   
-                    {% comment %} <input type="text" name="refereeInstitution" placeholder="Referee institution*"> {% endcomment %}
-                    {{form.refereeInstitution}}
-                    {% comment %} <input type="text" name="refereeOccupation" placeholder="Referee Ocupation*"> {% endcomment %}
-                    {{form.refereeOccupation}} -->
-                
-                    <button type="submit" id="btnFinish">Finish</button>
-                    </div>
                 </form>
 
             </div>
         </div>
-        </div>
+    </div>
     </div>
 
 </section>
