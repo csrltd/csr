@@ -9,6 +9,7 @@ urlpatterns = [
     path('features', features, name='features'),
     path('thank-you', thankYou, name='thank-you'),
     path('coming-soon', comingSoon ,name='coming-soon'),
+    path('social-media',socialMediaPage, name='social-media'),
 
     #Blog
     path('blogs/', blogs, name='blogs'),

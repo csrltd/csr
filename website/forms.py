@@ -29,7 +29,7 @@ class ApplicationForm(ModelForm):
             'telephone': TextInput(attrs={'placeholder': 'Telephone'}),
             'dateOfBirth': DateInput(),
             'gender': TextInput(attrs={'placeholder': 'Gender'}),
-            'cv': FileInput(attrs={'class': 'form-control-file'}),
+            'cv': FileInput(attrs={'class': 'form-control-file', 'name':'cv'}),
             'nationalIdOrPassport': FileInput(),
             'workCertificate': FileInput(),
             'refereeName': TextInput(attrs={'placeholder': 'Referee Full Name'}),

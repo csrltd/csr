@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}">
+<link rel="stylesheet" href="{% static '/css/social-media.css' %}">
+<link rel="icon" type="stylesheet" href="{% static 'css/social-media-mobile.css' %}">
+{% endblock pageLinks %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<section class="hero-social-media">
+    <div class="container">
+        <div class="row">
+            <div class="col col-social">
+                <h1 class="heading hero-heading">We are a full-service digital marketing provider
+                    that specializes in helping businesses succeed in the digital world.</h1>
+                <p>Let us help your business grow and succeed in the digital world. Contact us today to learn more
+                    about our services and how we can help your business reach new heights.</p>
+                <div>
+                    <a href="/contact.html">
+                        <button class="btn-blue btn-social">Get quotation</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static '/img/Mobile application.svg' %}" />
+            </div>
+
+        </div>
+        <div class="social-media">
+            <a href="https:https://www.instagram.com/csr.rw/"><img class="facebook"
+                    src="{% static '/img/dev-icons/logos_facebook.svg' %}" alt="" id="spin"></a>
+            <a href="https:https://www.instagram.com/csr.rw/"><img class="instagram"
+                    src="{% static '/img/dev-icons/instagram.svg' %}" alt="" id="spin"></a>
+            <a href="https://www.linkedin.com/company/comprehensive-staffing-resources-ltd/"> <img class="linkedin"
+                    src="{% static '/img/dev-icons/linkedin.svg' %}" alt="" id="spin"></a>
+            <a href="https://www.youtube.com/embed/9KcvJozkbSQ"><img class="youtube"
+                    src="{% static '/img/dev-icons/logos_youtube-icon.svg' %}" alt="" id="spin"></a>
+            <a href="https://twitter.com/csr_rw"><img class="twitter" src="{% static '/img/dev-icons/skill-icons_twitter.svg' %}"
+                    alt="" id="spin"></a>
+        </div>
+
+        <div class="pattern">
+            <img src="{% static '/img/Pattern1 5.svg' %}" alt="">
+        </div>
+
+
+    </div>
+</section>
+
+<!-- Our services -->
+<section class="social-media-services">
+    <div class="container">
+
+        <h1 class="heading"> Our services includes:</h1>
+
+        <p>Let us help your business grow and succeed in the digital world. Contact us today <br>to learn more
+            about our services and how we can help your business reach new heights.</p>
+
+        <div class="row">
+
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <h2>Search Engine Optimization (SEO)</h2>
+                <p>We use proven strategies and techniques to improve your
+                    website & ranking on search engines like Google, driving more organic traffic to your site.</p>
+            </div>
+
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </div>
+                <h2>Content Marketing </h2>
+                <p>rom blog posts and infographics to videos and e books, our team will create
+                engaging and informative content that helps drive traffic
+                to your website and establishes your
+                brand as a thought leader
+                in your industry.
+                </p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <h2 class=>Social Media Marketing (SMM)</h2>
+                <p>We can help you build a strong presence on social media
+                    platforms like Facebook, Instagram, and Twitter, engaging with your followers and growing your
+                    online community.
+                </p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-paypal" aria-hidden="true"></i>
+                </div>
+                <h2>Pay-Per-Click Advertising (PPC)</h2>
+                <p>Our PPC experts will help you create and manage effective
+                    advertising campaigns on platforms like Google Ads and Facebook Ads, reaching your target
+                    audience where they spend their time online.
+                </p>
+            </div>
+
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <h2 class=>Email Marketing</h2>
+                <p>We will help you create and execute email campaigns that engage with your
+                    subscribers and drive conversions.
+                </p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                </div>
+                <h2 class=> Website Design and Development</h2>
+                <p>Our design and development team will create a website that
+                    not only looks great but also functions seamlessly, providing an exceptional user experience for
+                    your visitors.
+                </p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-area-chart" aria-hidden="true"></i>
+                </div>
+                <h2>Graphic Designing</h2>
+                <p class>Our talented graphic designers will help you create visually appealing and
+                    eye-catching graphics that effectively communicate your brand message and increase
+                    engagement with your target audience.
+                </p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+                </div>
+                <h2>Brand Guidelines</h2>
+                <p class=>We will work with you to develop a comprehensive brand guideline document
+                    that outlines your brand's visual identity, messaging, logo, fonts, primary colors and tone of
+                    voice, ensuring consistency across all marketing materials.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- software bottom -->
+<section class="social-media-section">
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col col-bottom">
+
+                <h1 class="heading">Our client, Our
+                    priority</h1>
+                <p>At CSR Ltd Digital Marketing Services, we believe in a data-driven approach to marketing, and we
+                    are committed to delivering measurable results for our clients. Our team of experts stays
+                    up-to-date on the
+                    latest industry trends and techniques, ensuring that you receive the most effective and
+                    efficient
+                    marketing services possible.
+                </p>
+            </div>
+            <div class="col">
+                <img src="{% static '/img/dev-icons/undraw_buffer_wq43 1.svg' %}" alt="">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+
+{% endblock %}

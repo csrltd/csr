@@ -102,6 +102,8 @@ def sitemap(request):
 
 
 def application(request):
+    from django.core.files.storage import default_storage
+    from django.core.files.base import ContentFile
     
     page_title = 'Application'
     form = ApplicationForm()
@@ -110,12 +112,21 @@ def application(request):
         
         print('Received')
         if form.is_valid():
-    
-            print('valid')
+            # cv_file = form.cleaned_data['cv']
+            # print(cv_file)
+            # uploaded_file = request.FILES['cv']
+            # print(uploaded_file)
             form.save()
-            print('saved')
             return redirect('thank-you')
         else:
             return redirect('index')
     context = {'form': form, 'page_title': page_title}
     return render(request,'application.html',context)
+
+
+def socialMediaPage(request):
+    page_title = 'Social Media'
+
+    context = {'page_title': page_title}
+
+    return render(request, 'social-media.html', context)
