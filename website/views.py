@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
 import os
 from django.http import HttpResponse
+from django.template import loader
+from django.http import HttpResponse
 from .forms import *
 from .models import *
 from django.conf import settings
-
-# Create your views here.
 
 def index(request):
     page_title = 'Home'
@@ -79,17 +79,6 @@ def gallery(request):
 def thankYou(request):
     return render(request, 'thank-you.html')
 
-
-from django.http import HttpResponse
-from django.template import loader
-def sitemap(request):
-    template = loader.get_template('sitemaps/sitemap.xml')
-    content_type = 'application.xml'
-    rendered_template = template.render()
-
-    return HttpResponse(rendered_template, content_type = content_type)
-
-
 def blogCategories(request):
     categories = Category.objects.all()
     
@@ -100,3 +89,44 @@ def blogCategory(request):
 
 def comingSoon(request):
     return render(request, 'coming-soon.html')
+
+
+
+#SEO
+def sitemap(request):
+    template = loader.get_template('sitemaps/sitemap.xml')
+    content_type = 'application.xml'
+    rendered_template = template.render()
+
+    return HttpResponse(rendered_template, content_type = content_type)
+
+
+def application(request):
+    from django.core.files.storage import default_storage
+    from django.core.files.base import ContentFile
+    
+    page_title = 'Application'
+    form = ApplicationForm()
+    if request.method == 'POST':
+        form = ApplicationForm(request.POST,request.FILES)
+        
+        print('Received')
+        if form.is_valid():
+            # cv_file = form.cleaned_data['cv']
+            # print(cv_file)
+            # uploaded_file = request.FILES['cv']
+            # print(uploaded_file)
+            form.save()
+            return redirect('thank-you')
+        else:
+            return redirect('index')
+    context = {'form': form, 'page_title': page_title}
+    return render(request,'application.html',context)
+
+
+def socialMediaPage(request):
+    page_title = 'Social Media'
+
+    context = {'page_title': page_title}
+
+    return render(request, 'social-media.html', context)

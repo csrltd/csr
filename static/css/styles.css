@@ -314,7 +314,7 @@ footer .copy .container .row {
 footer .copy .container .row .menu-links {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 100%;
   gap: 12px;
 }
 footer .copy .container .row .social-media {

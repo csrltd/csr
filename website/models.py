@@ -52,17 +52,12 @@ class Blog(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=2, null=None)
     category = models.ForeignKey(Category, on_delete=models.SET_DEFAULT, default='uncategorised')
-
-    # Linking the author to Author model
-    # author = models.CharField(max_length=255)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
-
     status = models.CharField(max_length=255, choices=STATUS_CHOICES, default=draft)
     featured_image = models.ImageField(upload_to='blog/featured_images')
     blog_summary = models.TextField(max_length=255, default=defaul_summary)
     blog_content = RichTextUploadingField()
-    date_created = models.DateTimeField(auto_now_add=True)
-    
+    date_created = models.DateTimeField(auto_now_add=True)  
 
     def __str__(self):
         return self.title
@@ -80,5 +75,30 @@ class Feature(models.Model):
     date_featured = models.DateTimeField(auto_now_add=False, null= True)
     def __str__(self):
         return self.title
+    
+class ApplicationFormModel(models.Model):
+
+    firstName = models.CharField(max_length=255, null=False)
+    lastName = models.CharField(max_length=255, null=False)
+    idOrPassport = models.CharField(max_length=16, null=False)
+    email = models.EmailField(max_length=255, null=False)
+    telephone = models.CharField(max_length=11, null=False)
+    dateOfBirth = models.DateField(null=True)
+    gender = models.CharField(max_length=1, null=False)
+    cv = models.FileField(null=True,upload_to='application/applicationCV')
+    nationalIdOrPassport = models.FileField(null=True,upload_to='application/applicationIDorPassport')
+    workCertificate = models.FileField(null=True,upload_to='application/applicationWorkCertificate')
+    refereeName = models.CharField(max_length=255, null=False)
+    refereeAddress = models.CharField(max_length=255, null=False)
+    refereeTelephone = models.CharField(max_length=11, null=False)
+    refereeInstitution = models.CharField(max_length=255, null=False)
+    refereeOccupation = models.CharField(max_length=255, null=False)
+
+    def __str__(self):
+        return self.firstName
+    
+
+
+    
 
 

@@ -27,3 +27,8 @@ class authorAdmin(admin.ModelAdmin):
 @admin.register(Department)
 class departmentAdmin(admin.ModelAdmin):
     list_display=('name',)
+
+@admin.register(ApplicationFormModel)
+class ApplicationFormAdmin(admin.ModelAdmin):
+    list_display=('firstName', 'lastName', 'idOrPassport','email','telephone','dateOfBirth','gender','cv','nationalIdOrPassport','workCertificate',
+                'refereeName','refereeAddress','refereeTelephone','refereeInstitution','refereeOccupation')
