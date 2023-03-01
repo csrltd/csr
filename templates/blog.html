@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static '/css/pages/blog/blog.css' %}">
+<link rel="stylesheet" href="{% static '/css/pages/blog/mobile.css' %}">
+{% endblock pageLinks %}
+
 {% block title %}
 
     <title>CSR | Blog</title>

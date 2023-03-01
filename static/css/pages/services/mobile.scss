@@ -1,0 +1,15 @@
+@media screen and (max-width: 540px) {
+    .section-header {
+        display: none;
+    }
+    .service-content {
+        padding: 50px 0;
+
+        .container {
+            flex-direction: column-reverse;
+            .col {
+                width: 100%;
+            }
+        }
+    }
+}

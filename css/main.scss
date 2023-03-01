@@ -1,0 +1,192 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+
+//fonts
+@font-face {
+  font-family: "Futura Book";
+  src: url('/fonts/FuturaBook/Futura\ Book\ Regular.otf');
+}
+@font-face {
+  font-family: "Redwing";
+  src: url('/fonts/Redwing/Redwing-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Redwing light';
+  src: url('/fonts/Redwing/Redwing-Light.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Futura Book", sans-serif;
+  color: $tex-color;
+  font-size: 20px;
+  background-color: white;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Redwing", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: "Redwing light";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $tex-color;
+  cursor: pointer;
+}
+
+li a {
+  color: white;
+  text-transform: capitalize;
+}
+
+input,
+textarea {
+  padding: 17px 35px;
+  border-radius: $border-radius;
+  transition: linear 0.3s;
+}
+
+//Added custom classes
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  padding: 15px 35px;
+  border-radius: $border-radius;
+  border: 2px solid transparent;
+  transition: linear 0.2s;
+  font-family: "Futura Book", sans-serif;
+  font-size: 18PX;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2d7c;
+  color: white;
+  border-radius: $border-radius;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+//White btn
+
+.btn-white {
+  background-color: white;
+  color: $primary-color;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+.btn-blue {
+  background-color: $primary-color;
+  color: white;
+  &:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+}
+
+.btn-blue-outline {
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.sub-heading {
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.page-intro {
+  color: white;
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%),
+    url("/img/office.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 100px 0;
+
+  .container {
+    padding-top: 100px;
+    display: grid;
+    gap: 24px;
+
+    .breadchrums {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    
+      a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    
+        color: white;
+        text-decoration: underline;
+    
+        .prev-page {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .page-summary {
+      margin-right: 40%;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+  .col {
+    width: 50%;
+  }
+}

@@ -1,0 +1,172 @@
+@media screen and (max-width: 540px) {
+    .hero {
+      text-align: center;
+      padding-top: 250px;
+      height: 855px;
+      .hero-btns {
+        flex-direction: column;
+      }
+    }
+    .services-section {
+      margin-top: -25px;
+      .container {
+        .row {
+          flex-direction: column;
+          gap: 60px;
+  
+          .col {
+            width: 100%;
+            justify-content: center;
+            
+          }
+        }
+      }
+    }
+  
+    .partnership {
+      padding: 0;
+    }
+  
+    //Partners
+  
+    .partners {
+      .container {
+        .row {
+          grid-template-columns: 33% 33% ;
+        }
+      }
+    }
+  
+    //Testimonies
+  
+    .testimonials {
+      display: none;
+      padding: 50px 0;
+  
+      .container {
+        .slider-container {
+          .slider {
+            flex-direction: column;
+            .card {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+    //Contact
+  
+    .contacts {
+      .container {
+        .col {
+          flex-direction: column;
+          .row {
+            width: 100%;
+  
+            .col-1 {
+              flex-direction: column;
+              width: 100%;
+  
+              .row-1 {
+                width: 100%;
+                height: auto;
+                padding: 30px;
+              }
+            }
+          }
+  
+          .row {
+            width: 100%;
+          }
+        }
+  
+        .location {
+          flex-direction: column;
+  
+          .row {
+            width: 100%;
+            img {
+              border-radius: $border-radius $border-radius 0 0;
+            }
+          }
+  
+          .map {
+            width: 100%;
+            margin-top: 0;
+  
+            iframe {
+              border-radius: 0 0 $border-radius $border-radius;
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    //about section
+    .about {
+      .container {
+        .col {
+          .about-description {
+            padding: 24px 0;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 928px) {
+    //services section
+    .services-section {
+      margin-top: -90px;
+      .container {
+        .row {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          gap: 20px;
+          row-gap: 20px;
+
+          .col {
+            flex-direction: column;
+            padding: 20px;
+            width: auto;
+            height: auto;
+            margin: 0;
+          }
+          
+        }
+      }
+    }
+  }
+    
+  
+  @media screen and (max-width: 1096px) {
+    .services-details {
+      .container {
+        .col {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 810px) {
+    .contacts {
+      .container {
+        .location {
+          display: flex;
+          flex-direction: column;
+  
+          .map {
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }

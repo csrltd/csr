@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block pageLinks %}
+    <link rel="stylesheet" href="{% static '/css/pages/about/about.css' %}">
+    <link rel="stylesheet" href="{% static '/css/pages/about/mobile.css' %}">
+{% endblock pageLinks %}
 {% block content %}
 
 {% include 'navbar.html' %}

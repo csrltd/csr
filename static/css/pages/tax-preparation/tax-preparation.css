@@ -1,0 +1,31 @@
+.tax-section {
+  padding: 5rem 14rem;
+}
+.tax-section .tax-section-one {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+.tax-section .tax-section-one div:first-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.tax-section .tax-section-one div:first-child p {
+  font-size: 16px;
+}
+.tax-section .tax-section-one div:last-child img {
+  height: 35vh;
+  width: 35vh;
+}
+.tax-section .tax-section-two {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.tax-section .tax-section-two p {
+  padding: 2rem;
+  background-color: #F1F2FF;
+  font-size: 14px;
+}/*# sourceMappingURL=tax-preparation.css.map */
