@@ -22,14 +22,14 @@ def blog(request, slug):
     blog = Blog.objects.get(slug=slug)
     page_title = blog.title
     context = {'blog':blog, 'page_title':page_title}
-    return render(request, 'singleBlog.html', context)
+    return render(request, 'coming-soon.html', context)
     
 
 def blogs(request):
     page_title = 'Blog posts'
     blogs = Blog.objects.filter(status='Published')
     context = {'blogs':blogs, 'page_title': page_title}
-    return render(request, 'blog.html', context)
+    return render(request, 'coming-soon.html', context)
 
 def contact(request):
     page_title = 'Contact'

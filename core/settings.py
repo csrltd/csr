@@ -13,15 +13,18 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-# load_dotenv()
-load_dotenv("/home/admin/csr/core/.env")
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DEBUG = False
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
+if DEBUG:
+    load_dotenv()
+else:
+    load_dotenv("/home/admin/csr/core/.env")
 
+<<<<<<< HEAD
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = os.getenv('SECRET_KEY')
 # SECRET_KEY = os.getenv('SECTRET_KEY')
@@ -37,6 +40,9 @@ else:
     
 
 COMMING_SOON = False
+=======
+SECRET_KEY = os.getenv('SECRET_KEY')
+>>>>>>> main
 
 ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
 
