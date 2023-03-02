@@ -24,7 +24,25 @@ if DEBUG:
 else:
     load_dotenv("/home/admin/csr/core/.env")
 
+<<<<<<< HEAD
+# SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = os.getenv('SECTRET_KEY')
+
+# SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = False
+DEBUG = False
+
+if DEBUG:
+    SECRET_KEY = 'django-insecure-9^+u)uzrec5688lmii7x=30jrqyuc*i4s$u1@3^gb#!)inwofh'
+else:
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    
+
+COMMING_SOON = False
+=======
 SECRET_KEY = os.getenv('SECRET_KEY')
+>>>>>>> main
 
 ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
 

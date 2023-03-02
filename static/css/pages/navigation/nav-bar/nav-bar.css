@@ -1,0 +1,62 @@
+.header {
+  transition: linear 0.3s;
+  background-color: transparent;
+  height: 100px;
+  margin-bottom: -100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.header .container .nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.header .container .nav-header .brand {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .container .nav-header .brand h1 {
+  text-transform: capitalize;
+  color: white;
+  font-size: 20px;
+}
+.header .container .nav-header .brand .logo {
+  width: 150px;
+  pointer-events: none;
+}
+.header .container .nav-header .brand .blue-logo {
+  display: none;
+}
+.header .container .nav-header .nav-menu .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .container .nav-header .nav-menu .links .link {
+  font-size: 18px;
+}
+.header .container .nav-header .nav-menu .links .link .nav-link {
+  font-family: "Futura Book" sans-serif !important;
+}
+.header .container .nav-header .nav-toggle {
+  display: none;
+  color: #f6f9fe;
+  font-size: 30px;
+}
+.header .container .nav-header .nav-fixed {
+  display: none;
+}
+.header .container .nav-header .nav-close-btn {
+  color: #f6f9fe;
+  font-size: 30px;
+  color: #2A2D7C;
+  display: none;
+}/*# sourceMappingURL=nav-bar.css.map */

@@ -1,0 +1,30 @@
+@media screen and (max-width: 740px) {
+  .blog-header {
+    padding-top: 20px;
+  }
+  .blog-header .container {
+    flex-direction: column-reverse;
+  }
+  .blog-header .container .col .blog-title {
+    font-size: 24px;
+  }
+  .blog-header .container .col .meta .meta-item a {
+    gap: 5px;
+  }
+  .blog-header .container .col .meta .meta-item a img {
+    width: 22px;
+  }
+  .blog-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .blog-content .container {
+    flex-direction: column;
+  }
+  .blog-content .container .content {
+    width: 100%;
+  }
+  .blog-content .container .side-bar {
+    display: none;
+  }
+}/*# sourceMappingURL=mobile.css.map */

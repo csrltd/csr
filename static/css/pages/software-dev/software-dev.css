@@ -1,0 +1,119 @@
+body {
+  background-color: #f6f9fe;
+}
+
+.header {
+  background-color: whitesmoke;
+}
+.header .container .nav-header .brand .blue-logo {
+  display: block;
+}
+.header .container .nav-header .brand .white-logo {
+  display: none;
+}
+.header .container .nav-header .nav-menu .links .link .nav-link {
+  color: #2A2D7C;
+}
+
+.software-dev-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50vh;
+  padding-bottom: 100px;
+}
+.software-dev-hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.software-dev-hero .container .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+.software-dev-hero .container .row .hero-img-col .hero-img .big-hero-img {
+  width: 68%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.software-dev-hero .container .what-we-do {
+  max-width: 100%;
+}
+.software-dev-hero .container .services {
+  align-items: start;
+}
+.software-dev-hero .container .services .service {
+  transition: linear 0.2s;
+  margin-right: 20px;
+  padding: 20px 0;
+}
+.software-dev-hero .container .services .service:hover {
+  margin: 0 20px 20px 0;
+  background-color: #4365AF;
+  padding: 20px;
+  color: white;
+}
+.software-dev-hero .container .services .service:hover .icon {
+  background-color: white;
+  color: #4365AF;
+}
+
+.process {
+  background-color: #2A2D7C;
+  color: white;
+  position: relative;
+  padding-bottom: 100px;
+}
+.process .cta {
+  padding-top: 800px;
+  padding-bottom: 200px;
+  max-width: 100%;
+  background: linear-gradient(180deg, rgba(42, 45, 124, 0.4) 44.53%, rgb(42, 45, 124) 83.52%), url("/img/hero-img2.JPG");
+}
+.process .cta .container {
+  display: grid;
+  gap: 24px;
+}
+.process .cta .container .cta-text {
+  max-width: 80%;
+}
+.process .container .row .col .processes {
+  margin-top: 50px;
+}
+.process .container .row .col .processes .process {
+  display: flex;
+  align-items: start;
+  gap: 24px;
+  height: 120px;
+}
+.process .container .row .col .processes .process .number {
+  background-color: #f6f9fe;
+  color: #2A2D7C;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.process .container .row .col img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36%;
+}
+
+.projects-section {
+  padding: 100px 0;
+}
+.projects-section .container .projects {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  row-gap: 18px;
+  justify-content: space-between;
+}/*# sourceMappingURL=software-dev.css.map */

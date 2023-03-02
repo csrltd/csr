@@ -1,0 +1,48 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+
+@media screen and (max-width: 540px) {
+    .software-dev-hero {
+        display: none;
+        padding: 150px 0;
+        .container {
+            .row {
+                gap: 50px;
+                .col {
+                    width: 100%;
+                    .heading {
+                        width: 80%;
+                        font-size: 28px;
+                        margin-top: -40px;
+                    }
+
+                    .intro-text {
+                        margin-top: 170px;
+                        width: 70%;
+                    }
+                }
+                flex-direction: column-reverse;
+                .hero-img-col {
+                    .hero-img {
+                        .big-hero-img {
+                            width: 100%;
+                            right: -50px;
+                            top: 60px;
+
+                        }
+                        .big-screen {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+
+}
