@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.deposit-services {
+
+    padding: 5%;
+    // background-color: aquamarine;
+
+    .container {
+
+        p{
+            width: 60%;
+        }
+        .row{
+            display: flex;
+                // flex-wrap: wrap;
+                gap: 5%;
+            .col {
+                // width: 18vw;
+                padding: 20px;
+                background-color: aliceblue;
+
+            }
+        }
+        .factoring-services{
+            margin-top: 5%;
+            width: 90%;
+            .row {
+                display: flex;
+                // flex-wrap: wrap;
+                gap: 5%;
+                
+               
+    
+                // padding-top: 15px;
+                // display: grid;
+                // grid-template-columns: 35% 35% 35%;
+    
+                .col {
+                    // width: 18vw;
+                    padding: 20px;
+                    background-color: aliceblue;
+    
+                }
+    
+            }
+    
+            h1 {
+                padding-top: 10vh;
+            }
+    
+            p {
+                padding: 20px 0;
+            }
+    
+            .text {
+                margin: 5vh 0 10vh 0;
+                width: 100%;
+                padding: 20px;
+                background-color: aliceblue;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
+
+.payroll-services {
+
+    .container {
+
+        .row {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5%;
+            
+           
+
+            .col {
+                width: 18vw;
+                padding: 20px;
+                background-color: aliceblue;
+
+            }
+
+        }
+
+        h1 {
+            padding-top: 8vh;
+        }
+
+        p {
+            padding: 20px 0;
+        }
+
+        .text {
+            margin: 5vh 0 5vh 0;
+            width: 60vw;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+
+        .btn-blue:hover {
+            background-color: transparent;
+            color: #2A2D7C;
+            border-color: #2A2D7C
+        }
+
+        a {
+            button {
+                margin-bottom: 10vh;
+            }
+
+
+        }
+       
+
+    }
+}
+
+
+//mobile
+// @media screen and (max-width:540px) {
+//     .deposit-services {
+//         .container {
+//             .row{
+    
+//             .col{
+              
+             
+//             }
+    
+//             }
+//         }
+//     }
+
+//     .payroll-services {
+//         .container{
+//             gap: 0;
+//         }
+//     }
+
+// }
+
+// @media screen and (max-width:904px) {
+//     .deposit-services {
+//         .container {
+
+//             .row {
+
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 40vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 89vw;
+//             }
+//         }
+//     }
+
+//     .payroll-services {
+//         .container {
+
+//             .row {
+
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 40vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 89vw;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width:1020px) {
+//     .deposit-services {
+//         .container {
+
+//             .row {
+
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 40vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 89vw;
+//             }
+//         }
+//     }
+
+//     .payroll-services {
+//         .container {
+
+//             .row {
+
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 40vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 89vw;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width:1250px) {
+
+//     .deposit-services {
+//         .container {
+
+//             .row {
+//                 grid-template-columns: 30% 30% 30%;
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 28vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 88vw;
+//             }
+//         }
+//     }
+
+//     .payroll-services {
+//         .container {
+
+//             .row {
+//                 grid-template-columns: 30% 30% 30%;
+//                 display: flex;
+//                 gap: 24px;
+
+//                 .col {
+//                     width: 28vw;
+//                     padding: 30px;
+//                     background-color: aliceblue;
+
+//                 }
+
+//             }
+
+//             .text {
+//                 width: 88vw;
+//             }
+//         }
+//     }
+// }
+
+
+    
+@media screen and (max-width:540px) {
+    .deposit-services{
+        .container{
+            .row{
+           
+                .col{
+                   
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:760px) {
+   .deposit-services{
+    .container{
+        .row{
+            gap: 40%;
+            row-gap: 20px;
+           .col{
+            width: 80vw;
+           } 
+        }
+        .text{
+            width: 80vw;
+        }
+    }
+   } 
+   .payroll-services{
+    .container{
+        .row{
+            gap: 40%;
+            row-gap: 20px;
+           .col{
+            width: 80vw;
+           } 
+        }
+        .text{
+            width: 80vw;
+        }
+    }
+   } 
+    
+}
+@media screen and (max-width:1200px) {
+    .deposit-services{
+        .container{
+            .row{
+                
+                .col{
+                    width: 27vw;
+                }
+                
+            }
+            .text{
+                width: 90vw;
+            }
+        }
+       
+    }
+    .payroll-services{
+        .container{
+            .row{
+                .col{
+                    width: 27vw;
+                }
+                
+            }
+            .text{
+                width: 90vw;
+            }
+        }
+       
+    }
+
+}
+@media screen and (max-width:1250px) {
+    .deposit-services{
+        .container{
+            .row{
+                gap: 1%;
+                .col{
+                   width: 28vw; 
+                }
+            }
+            .text{
+                width: 86vw;
+            }
+        }
+    }
+    .payroll-services{
+        .container{
+            .row{
+                gap: 1%;
+                .col{
+                   width: 28vw; 
+                }
+            }
+            .text{
+                width: 86vw;
+            }
+        }
+    }
+    
+}

@@ -107,4 +107,31 @@ footer .copy .container .row .social-media {
 }
 footer .copy .container .row .social-media img {
   width: 24px;
+}
+
+@media screen and (max-width: 540px) {
+  footer .copy {
+    padding: 20px 12px;
+    text-align: center;
+  }
+  footer .copy .container .row {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 25px;
+  }
+  footer .copy .container .row .copy-text {
+    width: 100%;
+  }
+  footer .copy .container .row .menu-links {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 15px;
+    justify-content: center;
+  }
+  footer .copy .container .row .social-media {
+    justify-content: center;
+  }
+  footer .copy .container .row .social-media .icon {
+    height: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */

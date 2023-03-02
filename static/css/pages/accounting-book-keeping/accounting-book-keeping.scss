@@ -1,0 +1,270 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+// ACCOUNTING & BOOK KEEPING
+.accounting-services {
+    padding-top: 10vh;
+    color: $tex-color;
+    text-align: start;
+    position: relative;
+  
+    .container {
+      .row {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 31% 31% 31%;
+        align-items: start;
+        gap: 3%;
+  
+        .col {
+          width: 100%;
+          height: 12vh;
+          padding: 20px;
+          background-color: #F6F9FE;
+          gap: 12px;
+  
+  
+  
+        }
+  
+      }
+    }
+  
+  }
+  
+  .bookkeeping-services {
+    height: 80vh;
+    padding-top: 15vh;
+    color: $tex-color;
+    text-align: start;
+    position: relative;
+  
+    .container {
+      .row {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        align-items: start;
+        gap: 3%;
+  
+        .col {
+          width: 100%;
+          height: 50vh;
+          padding: 20px;
+          gap: 12px;
+  
+          .heading-book {
+         padding: 10px;
+            height: 60px;
+            background-color: $primary-color;
+            h2 {
+              
+              color: $whitesmoke;
+            }
+          }
+  
+          .book-list {
+            height: 35vh;
+            background-color: #F6F9FE;
+  
+            ul {
+              li {
+                padding-bottom: 12px;
+              }
+            }
+          }
+  
+  
+        }
+  
+      }
+    }
+  
+  }
+  
+  //ACCOUNTING & BOOK KEEPING MOBILE
+  @media screen and (max-width: 1200px) {
+  
+    .accounting-services {
+      .heading {
+        font-size: 30px;
+      }
+  
+      .container {
+        .row {
+          grid-template-columns: 48% 48%;
+  
+          .col {
+            height: 15vh;
+  
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+  
+    }
+  
+    .bookkeeping-services {
+      .heading {
+        font-size: 30px;
+      }
+  
+      height: 100vh;
+      padding-top: 30vh;
+  
+      .container {
+        .row {
+          .col {
+            h2 {
+              font-size: 22px;
+            }
+          }
+  
+        }
+      }
+    }
+  
+  }
+  @media screen and (max-width: 950px) {
+    .accounting-services {
+      .heading {
+        font-size: 30px;
+      }
+  
+      .container {
+        .row {
+          grid-template-columns: 48% 48%;
+  
+          .col {
+  
+            .book-list{
+  height: 38vh;
+            }
+          }
+        }
+      }
+  
+    }
+  
+    .bookkeeping-services {
+      .heading {
+        font-size: 30px;
+      }
+  
+      padding-top: 30vh;
+      margin-bottom: 50vh;
+  
+      .container {
+        .row {
+          grid-template-columns: 48% 48%;
+  
+        }
+      }
+    }
+  
+  }
+  @media screen and (max-width: 760px) {
+    .page-intro{
+      .container{
+        .breadchrums{
+          .heading{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .accounting-services {
+      margin: 0px;
+      padding: 0p;
+      .heading {
+        font-size: 30px;
+      }
+  
+      .container {
+        .row {
+          grid-template-columns: 48% 48%;
+  
+          .col {
+  
+            .book-list{
+  max-height: 20vh;
+            }
+          }
+        }
+      }
+  
+    }
+  
+    .bookkeeping-services {
+      .heading {
+        font-size: 30px;
+      }
+  
+      padding-top: 30vh;
+      margin-bottom: 50vh;
+  
+      .container {
+        .row {
+          grid-template-columns: 48% 48%;
+  
+        }
+      }
+    }
+  
+  }
+  @media screen and (max-width: 540px) {
+    .accounting-services {
+      padding-top: 5vh;
+  margin-bottom: 45vh;
+      .container {
+        
+        .row {
+        grid-template-columns: 100%;
+       
+          .col {
+           
+            height: auto;
+            width: 80%;
+  
+          }
+  
+        }
+      }
+  
+    }
+  
+    .bookkeeping-services {
+      padding-top: 20vh;
+      margin-bottom: 70vh;
+  
+      .container {
+        .row {
+          grid-template-columns: 100%;
+  
+          .col {
+            width: 70%;
+            height: 40vh;
+  
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+  
+    }
+  
+  
+  
+  
+  }
+  
+ 
+  
+  
+  

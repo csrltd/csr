@@ -1,0 +1,33 @@
+@media screen and (max-width: 540px) {
+  .tax-section {
+    padding: 5rem 3rem;
+  }
+  .tax-section .tax-section-one {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 15px;
+  }
+  .tax-section .tax-section-one div:first-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .tax-section .tax-section-one div:first-child p {
+    font-size: 16px;
+  }
+  .tax-section .tax-section-one div:last-child img {
+    height: 35vh;
+    width: 100%;
+  }
+  .tax-section .tax-section-two {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .tax-section .tax-section-two p {
+    padding: 2rem;
+    background-color: #F1F2FF;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
