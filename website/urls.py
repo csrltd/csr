@@ -4,6 +4,7 @@ urlpatterns = [
     #Website
     path('', index, name='index'),
     path('about/',about_us,name='about'),
+    path('software-dev/',softwareDev,name='software-dev'),
     path('gallery/', gallery, name='gallery'),
     path('contact/', contact, name='contact'),
     path('features', features, name='features'),

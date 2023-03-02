@@ -7,9 +7,10 @@ $border-radius: 2px;
 
 @media screen and (max-width: 540px) {
     .software-dev-hero {
-        display: none;
-        padding: 150px 0;
+        padding-top: 150px;
+        padding-bottom: 50px;
         .container {
+            gap: 80px;
             .row {
                 gap: 50px;
                 .col {
@@ -40,7 +41,48 @@ $border-radius: 2px;
                     }
                 }
             }
+
+            .services {
+                .service {
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: $border-radius;
+                }
+            }
             
+        }
+    }
+
+    .process {
+        padding-bottom: 50px;
+        .cta {
+            padding-top: 300px;
+            padding-bottom: 10px;
+            .container {
+                .cta-text {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .container {
+            .row {
+                flex-direction: column;
+                gap: 50px;
+                .col {
+                    .processes {
+                        display: grid;
+                        gap: 32px;
+                    }
+                }
+                .col {
+                    width: 100%;
+                    img {
+                        position: relative;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 
