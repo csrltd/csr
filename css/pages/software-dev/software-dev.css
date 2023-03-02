@@ -40,6 +40,9 @@ body {
   top: 0;
   bottom: 0;
 }
+.software-dev-hero .container .row .hero-img-col .hero-img .small-screen {
+  display: none;
+}
 .software-dev-hero .container .what-we-do {
   max-width: 100%;
 }

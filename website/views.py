@@ -7,6 +7,8 @@ from .forms import *
 from .models import *
 from django.conf import settings
 
+
+#website
 def index(request):
     page_title = 'Home'
     form = ContactForm()
@@ -18,18 +20,30 @@ def index(request):
     context = {'form': form, 'page_title':page_title}
     return render(request, 'index.html', context)
 
-def blog(request, slug):
-    blog = Blog.objects.get(slug=slug)
-    page_title = blog.title
-    context = {'blog':blog, 'page_title':page_title}
-    return render(request, 'coming-soon.html', context)
-    
+def about_us(request):
+    page_title = 'About Us'
+    context = {'page_title': page_title}
+    return render(request, 'about.html', context)
 
-def blogs(request):
-    page_title = 'Blog posts'
-    blogs = Blog.objects.filter(status='Published')
-    context = {'blogs':blogs, 'page_title': page_title}
-    return render(request, 'coming-soon.html', context)
+def softwareDev(request):
+    page_title = 'Software Development'
+    context = {'page_title': page_title}
+    return render(request, 'software-dev.html')
+
+def features(request):
+    features = Feature.objects.all()
+    context = {'features':features}
+    return render(request, 'features.html', context)
+
+def thankYou(request):
+    return render(request, 'thank-you.html')
+
+def gallery(request):
+    return render(request, 'coming-soon.html')
+
+def comingSoon(request):
+    return render(request, 'coming-soon.html')
+
 
 def contact(request):
     page_title = 'Contact'
@@ -42,42 +56,19 @@ def contact(request):
     context = {'form': form, 'page_title': page_title}
     return render(request, 'contact.html', context)
 
-def features(request):
-    features = Feature.objects.all()
-    context = {'features':features}
-    return render(request, 'features.html', context)
 
-def thankYou(request):
-    return render(request, 'thank-you.html')
-
-def service1(request):
-    return render(request, 'book-keeping-and-outsourcing-of-staff.html')
-
-def service2(request):
-    return render(request, 'customer-support.html')
-
-def service3(request):
-    return render(request, 'data-entry.html')
-
-def service4(request):
-    return render (request, 'payroll-management-and-funding.html')
-
-def service5(request):
-    return render(request, 'non-deposit-taking-micorfinance.html')
-
-def service6(request):
-    return render(request, 'financial-analysis-and-calculations-related-services.html')
-
-def about_us(request):
-    page_title = 'About Us'
-    context = {'page_title': page_title}
-    return render(request, 'about.html', context)
-
-def gallery(request):
-    return render(request, 'coming-soon.html')
-
-def thankYou(request):
-    return render(request, 'thank-you.html')
+def blog(request, slug):
+    blog = Blog.objects.get(slug=slug)
+    page_title = blog.title
+    context = {'blog':blog, 'page_title':page_title}
+    return render(request, 'coming-soon.html', context)
+    
+#blog
+def blogs(request):
+    page_title = 'Blog posts'
+    blogs = Blog.objects.filter(status='Published')
+    context = {'blogs':blogs, 'page_title': page_title}
+    return render(request, 'coming-soon.html', context)
 
 def blogCategories(request):
     categories = Category.objects.all()
@@ -86,9 +77,6 @@ def blogCategories(request):
 
 def blogCategory(request):
     return render(request, 'adminDashboard.html')
-
-def comingSoon(request):
-    return render(request, 'coming-soon.html')
 
 
 
