@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static '/css/pages/tax-preparation/tax-preparation.css' %}">
+{% endblock pageLinks %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+{% include 'accountingServicesBase.html' %}
+
+ <section class="tax-section">
+    <div class="tax-section-one">
+        <div >
+            <h1>Tax Preparation</h1>
+            <p>Commercial tax preparation can be extremely complex. Records and submissions must be prepared carefully to minimize your risk of unforeseen tax liabilities, fees, and penalties.</p>
+            <p>Our team will work with you to prepare complete and accurate corporate fillings on a quarterly and Annually basis.</p>
+        </div>
+        <div>
+            <img src="{% static '/img/tax-preparation.png' %}" alt="">
+        </div>
+    </div>
+    <div class="tax-section-two">
+        <p>Corporate Income Tax Return (Annually/quarterly)</p>
+        <p>Personal Income Tax Return (Annually/quarterly)</p>
+        <p>Payroll Taxes and submission of all deductions.</p>
+        <p>VAT declaration</p>
+    </div>
+ </section>
+{% include 'footer.html' %}
+
+{% endblock %}

@@ -1,0 +1,34 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+
+.section-header {
+    background: url("/img/brooke-cagle--uHVRvDr7pg-unsplash.jpg");
+  }
+  
+  .service-content {
+    padding: 80px 0;
+  
+    .container {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: center;
+  
+      .col {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+  
+        img {
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }

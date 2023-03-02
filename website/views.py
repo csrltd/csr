@@ -130,3 +130,13 @@ def socialMediaPage(request):
     context = {'page_title': page_title}
 
     return render(request, 'social-media.html', context)
+
+def taxPreparation(request):
+    page_title = 'Tax Preparation'
+    page = 'Services'
+    title = 'Tax Preparation'
+    description = 'An excellent seal of thought went into crafting a proposal for services that adequately meet your accounting needs, and we are confident that you will find precisely what you are looking for in this proposal.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'taxPreparation.html', context)

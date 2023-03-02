@@ -1,0 +1,142 @@
+.description .container {
+  padding-top: 100px;
+}
+.description .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.description .container .row .col {
+  border-radius: 2px;
+  width: 45%;
+}
+.description .container .row .col h1 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.description .container .row .col p {
+  padding-top: 20px;
+}
+.description .container .row .col-description {
+  background-color: transparent;
+  width: 55%;
+}
+
+.mission {
+  padding-top: 100px;
+}
+.mission .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.mission .container .row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  gap: 12px;
+}
+.mission .container .row .col img {
+  border-radius: 2px;
+}
+.mission .container .row-vision-mission {
+  gap: 30px;
+  padding-top: 100px;
+}
+.mission .container .row-vision-mission .col-vision-mission {
+  border-radius: 2px;
+  padding: 50px;
+  background-color: #2A2D7C;
+  color: #f6f9fe;
+}
+.mission .container .row-vision-mission .img-frame img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our-team {
+  position: relative;
+  z-index: 0;
+}
+.our-team .overlay {
+  background-color: rgba(0, 0, 0, 0.659);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-content: center;
+  visibility: hidden;
+}
+.our-team .overlay .popup {
+  background-color: #f6f9fe;
+  width: 800px;
+  border-radius: 2px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.our-team .overlay .popup .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 48px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+.our-team .overlay .popup img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2px;
+}
+.our-team .container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-team .container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 2px;
+}
+.our-team .container h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.our-team .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.our-team .container .row .col {
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+  position: relative;
+}
+.our-team .container .row .profile .profile-pic-and-title {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.our-team .container .row .profile .profile-pic-and-title img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-team .container .row .profile h4 {
+  color: #2A2D7C;
+  font-size: 18px;
+}/*# sourceMappingURL=about.css.map */
