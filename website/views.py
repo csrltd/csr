@@ -30,6 +30,11 @@ def softwareDev(request):
     context = {'page_title': page_title}
     return render(request, 'software-dev.html')
 
+def financeAccounting(request):
+    page_title = 'Accounting and finance services'
+    context = {'page_title': page_title}
+    return render(request, 'finance-acc.html', context)
+
 def features(request):
     features = Feature.objects.all()
     context = {'features':features}
@@ -141,6 +146,7 @@ def accountingBookKeeping(request):
     description = 'An excellent seal of thought went into crafting a proposal for services that adequately meet your accounting needs, and we are confident that you will find precisely what you are looking for in this proposal.'
 
     context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
 
     return render(request, 'accounting-book-keeping.html', context)
 def microFinance(request):
