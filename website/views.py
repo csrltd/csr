@@ -30,6 +30,11 @@ def softwareDev(request):
     context = {'page_title': page_title}
     return render(request, 'software-dev.html')
 
+def financeAccounting(request):
+    page_title = 'Accounting and finance services'
+    context = {'page_title': page_title}
+    return render(request, 'finance-acc.html', context)
+
 def features(request):
     features = Feature.objects.all()
     context = {'features':features}
@@ -128,3 +133,48 @@ def taxPreparation(request):
     context = {'page_title': page_title,'page':page,'title':title,'description':description}
 
     return render(request, 'taxPreparation.html', context)
+
+def accountingBookKeeping(request):
+
+    return render(request, 'accounting-book-keeping.html')
+
+
+def accountingBookKeeping(request):
+    page_title = 'Accounting and Book Keeping'
+    page = 'Services'
+    title = 'Accounting and book keeping services'
+    description = 'An excellent seal of thought went into crafting a proposal for services that adequately meet your accounting needs, and we are confident that you will find precisely what you are looking for in this proposal.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+
+    return render(request, 'accounting-book-keeping.html', context)
+def microFinance(request):
+    page_title = 'Non Deposit Microfinance'
+    page = 'Services'
+    title = 'Non-deposit-Microfinance'
+    description = 'CSR aims to be part of the non-deposit-taking microfinance institutions offering custom-made working capital solutions to small and medium businesses.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'non-deposit-microfinance.html', context)
+
+def controllerServices(request):
+    page_title = 'Controller Services'
+    page = 'Services'
+    title = 'Controller services'
+    description = 'On or after supervision of accounting and bookkeeping processes to examining strategic goals to assisting make sure compliance with established budgets and growth goals, controllers are the influence that operate perfect financial health.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'controller-services.html', context)
+
+def financialConsulting(request):
+    page_title = 'Financial Consulting'
+    page = 'Services'
+    title = 'Financial Consulting services'
+    description = 'Our financial consulting service are designed to provide you with expert analysis and advice regarding your company’s strategic decisions.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'financial.html', context)

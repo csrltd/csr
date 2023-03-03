@@ -11,7 +11,12 @@ urlpatterns = [
     path('thank-you', thankYou, name='thank-you'),
     path('coming-soon', comingSoon ,name='coming-soon'),
     path('social-media',socialMediaPage, name='social-media'),
+    path('finance-acc',financeAccounting, name='finance-acc'),
     path("tax-preparation",taxPreparation, name="tax-preparation"),
+    path("accounting-book-keeping", accountingBookKeeping, name="accounting-book-keeping"),
+    path("micro-finance", microFinance, name='micro-finance'),
+    path('controller-services', controllerServices, name='controller-services'),
+    path('financial-consulting',financialConsulting,name='financial-consulting'),
 
     #Blog
     path('blogs/', blogs, name='blogs'),

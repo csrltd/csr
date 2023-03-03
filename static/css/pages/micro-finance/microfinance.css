@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.deposit-services {
+  padding: 5%;
+}
+.deposit-services .container p {
+  width: 60%;
+}
+.deposit-services .container .row {
+  display: flex;
+  gap: 5%;
+}
+.deposit-services .container .row .col {
+  padding: 20px;
+  background-color: aliceblue;
+}
+.deposit-services .container .factoring-services {
+  margin-top: 5%;
+  width: 90%;
+}
+.deposit-services .container .factoring-services .row {
+  display: flex;
+  gap: 5%;
+}
+.deposit-services .container .factoring-services .row .col {
+  padding: 20px;
+  background-color: aliceblue;
+}
+.deposit-services .container .factoring-services h1 {
+  padding-top: 10vh;
+}
+.deposit-services .container .factoring-services p {
+  padding: 20px 0;
+}
+.deposit-services .container .factoring-services .text {
+  margin: 5vh 0 10vh 0;
+  width: 100%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.deposit-services .container .factoring-services .text p {
+  width: 100%;
+}
+
+.payroll-services .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.payroll-services .container .row .col {
+  width: 18vw;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.payroll-services .container h1 {
+  padding-top: 8vh;
+}
+.payroll-services .container p {
+  padding: 20px 0;
+}
+.payroll-services .container .text {
+  margin: 5vh 0 5vh 0;
+  width: 60vw;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.payroll-services .container .btn-blue:hover {
+  background-color: transparent;
+  color: #2A2D7C;
+  border-color: #2A2D7C;
+}
+.payroll-services .container a button {
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 760px) {
+  .deposit-services .container .row {
+    gap: 40%;
+    row-gap: 20px;
+  }
+  .deposit-services .container .row .col {
+    width: 80vw;
+  }
+  .deposit-services .container .text {
+    width: 80vw;
+  }
+  .payroll-services .container .row {
+    gap: 40%;
+    row-gap: 20px;
+  }
+  .payroll-services .container .row .col {
+    width: 80vw;
+  }
+  .payroll-services .container .text {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .deposit-services .container .row .col {
+    width: 27vw;
+  }
+  .deposit-services .container .text {
+    width: 90vw;
+  }
+  .payroll-services .container .row .col {
+    width: 27vw;
+  }
+  .payroll-services .container .text {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .deposit-services .container .row {
+    gap: 1%;
+  }
+  .deposit-services .container .row .col {
+    width: 28vw;
+  }
+  .deposit-services .container .text {
+    width: 86vw;
+  }
+  .payroll-services .container .row {
+    gap: 1%;
+  }
+  .payroll-services .container .row .col {
+    width: 28vw;
+  }
+  .payroll-services .container .text {
+    width: 86vw;
+  }
+}/*# sourceMappingURL=microfinance.css.map */
