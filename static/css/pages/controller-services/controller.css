@@ -1,6 +1,5 @@
 .controller-section {
   width: 1054px;
-  height: 665px;
   margin-left: 110px;
   margin-right: 120px;
 }
@@ -63,14 +62,18 @@
 /* For mobile phones: */
 @media only screen and (max-width: 540px) {
   .controller-section {
-    max-width: 100%;
-    margin-left: 1%;
+    max-width: 100vh;
+    margin-left: 0;
+    margin-right: 0;
   }
   .controller-section .container {
     max-width: 100%;
   }
   .controller-section .container h3 {
     padding-right: 3px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 20px;
   }
   .controller-section .container .cont-services {
     font-weight: 400px;
