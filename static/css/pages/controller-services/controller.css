@@ -1,0 +1,111 @@
+.controller-section {
+  width: 1054px;
+  height: 665px;
+  margin-left: 110px;
+  margin-right: 120px;
+}
+.controller-section .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.controller-section .container h3 {
+  width: 456px;
+  height: 78px;
+  left: 0px;
+  top: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 60px;
+  padding-left: 34px;
+  color: #000000;
+}
+.controller-section .container .cont-services {
+  width: 644px;
+  left: 1px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 34px;
+  color: #3D3D3D;
+}
+.controller-section .container .acces-services .row-access {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  flex-direction: row;
+  left: 0px;
+  top: 182px;
+  border-radius: 0px;
+  padding: 12px 24px 12px 24px;
+  margin-top: 40px;
+  gap: 24px;
+}
+.controller-section .container .acces-services .row-access p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  background: #F6F9FE;
+  padding: 20px 10px 20px 10px;
+  color: #000000;
+}
+.controller-section .container .acces-services .row-access .col-access {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 12px;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 540px) {
+  .controller-section {
+    max-width: 100%;
+    margin-left: 1%;
+  }
+  .controller-section .container {
+    max-width: 100%;
+  }
+  .controller-section .container h3 {
+    padding-right: 3px;
+  }
+  .controller-section .container .cont-services {
+    font-weight: 400px;
+    max-width: 100%;
+    font-size: 30px;
+  }
+  .controller-section .container .acces-services .row-access {
+    grid-template-columns: 2fr;
+    width: 100%;
+  }
+  .controller-section .container .acces-services .row-access .col-access p {
+    font-size: 18px;
+    line-height: 15px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .controller-section {
+    max-width: 100%;
+    margin-left: 3px;
+  }
+  .controller-section .container {
+    max-width: 100%;
+  }
+  .controller-section .container h3 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .controller-section .container .acces-services .row-access {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .controller-section .container .acces-services .row-access .col-access p {
+    font-size: 12px;
+    line-height: 12px;
+    height: 60px;
+  }
+}/*# sourceMappingURL=controller.css.map */

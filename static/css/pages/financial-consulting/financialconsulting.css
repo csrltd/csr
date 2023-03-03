@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-image: url("./bg-image\ \(1\).png");
+    width: 200%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.block1{
+    padding-bottom: 30px;
+    font-family:'Nunito Sans';
+}
+
+
+
+.bj{
+    color: white;
+    text-decoration: none;
+}
+
+
+.und{
+    color: white;
+} 
+
+
+
+#navbar {
+    display: flex;
+    gap: 220px;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+.row{
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    gap: 100px;
+}
+
+.bluebutton{
+    padding-top: 50px;
+
+
+}
+
+.textwhite{
+    background-color: #2A2D7C;
+        padding: 12px 25px 12px 25px;
+        border-radius: 2px;
+        text-decoration: none;
+}
+
+
+
+.twoparagra{
+    padding-top: 40px;
+}
+
+.oneparagra{
+    padding-top: 40px;
+}

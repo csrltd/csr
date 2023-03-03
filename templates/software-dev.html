@@ -1,0 +1,236 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static '/css/pages/software-dev/software-dev.css' %}">
+<link rel="stylesheet" href="{% static '/css/pages/software-dev/mobile.css' %}">
+{% endblock pageLinks %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<section class="software-dev-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="heading">
+                    Experienced Software <br> <span>{</span> Developers <span>}</span> <span>[</span>
+                    Designers<span>]</span>
+                </h1>
+
+                <P class="intro-text">
+                    Whether you are looking to improve your online presence or streamline your business operations,
+                    our
+                    team is here to help you achieve your goals
+                </P>
+
+                <a href="">
+                    <button class="btn-blue">Get in touch</button>
+                </a>
+            </div>
+            <div class="col hero-img-col">
+                <div class="hero-img">
+                    <div class="big-hero-img">
+                        <img class="big-hero-img big-screen" src="{% static '/img/software-dev-img.png' %}" alt="">
+                        <img class="big-hero-img small-screen" src="{% static '/img/hero-item mobile.svg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row what-we-do">
+            <div class="col">
+                <h1 class="heading">What We Do</h1>
+                <p>
+                    We provide innovative and efficient solutions to meet your software development needs. Our
+                    department offers a full range of services, including website design and development, mobile app
+                    development, and maintenance, using the latest industry-leading technologies.
+                </p>
+            </div>
+        </div>
+
+        <div class="row services">
+            <div class="col service">
+                <div class="icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                </div>
+                <h3 class="service-title">Mockup Design</h3>
+                <p>
+                    Our designers create visually appealing, user-friendly mockups for websites and mobile apps
+                    to reflect our clients' vision.
+                </p>
+            </div>
+
+            <div class="col service">
+                <div class="icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="service-title">Web Development</h3>
+                <p>
+                    Our developers use leading tech to build high-quality websites and mobile apps, ensuring optimal
+                    performance
+                </p>
+            </div>
+
+            <div class="col service">
+                <div class="icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3 class="service-title">Hosting</h3>
+                <p>
+                    We offer reliable, secure hosting for websites and mobile apps, keeping them accessible 24/7.
+                </p>
+            </div>
+
+            <div class="col service">
+                <div class="icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3 class="service-title">MainteMaintenance</h3>
+                <p>
+                    We provide ongoing maintenance and support for websites and mobile apps, keeping them up-to-date
+                    and secure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+
+<section class="process">
+    <div class="container cta">
+        <div class="container">
+            <h3>
+                Ready to elevate your digital presence and achieve your business goals?
+            </h3>
+            <p class="cta-text">
+                Transform your digital presence with our cutting-edge software solutions. Contact us today to request a
+                quote and take the first step towards a brighter future for your business.
+            </p>
+            <a href="">
+                <button class="btn-white">Get in touch</button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1 class="heading">
+            Our Process
+        </h1>
+
+        <div class="row">
+            <div class="col">
+                <div class="processes">
+                    <div class="process">
+                        <div class="number">
+                            <p>1</p>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <p> Discovery & Planning</p>
+                            </div>
+                            <div class="process-desc">
+                                <p>
+                                    We collaborate with clients to grasp their business needs and objectives, then
+                                    tailor a plan for their software project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process">
+                        <div class="number">
+                            <p>2</p>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <p> Design</p>
+                            </div>
+                            <div class="process-desc">
+                                <p>
+                                    Our skilled designers craft mockups that capture our clients' vision with style and user-friendliness
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process">
+                        <div class="number">
+                            <p>3</p>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <p> Design and discovery</p>
+                            </div>
+                            <div class="process-desc">
+                                <p>
+                                    We collaborate with clients to grasp their business needs and objectives, then tailor a plan for their software project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process">
+                        <div class="number">
+                            <p>1</p>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <p> Development</p>
+                            </div>
+                            <div class="process-desc">
+                                <p>
+                                    We employ top-tier technologies to develop websites and mobile/web apps with exceptional quality and performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process">
+                        <div class="number">
+                            <p>1</p>
+                        </div>
+                        <div class="process-content">
+                            <div class="process-title">
+                                <p> Testing and Launch</p>
+                            </div>
+                            <div class="process-desc">
+                                <p>
+                                    We test, launch, and maintain software to ensure quality, security, and up-to-date functionality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="{% static '/img/software dev process.svg' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="projects-section">
+    <div class="container">
+        <h1 class="heading">Most resent project</h1>
+
+        <div class="projects">
+            
+                <a class="project" href="">
+                    <img src="{% static '/img/project one.png' %}" alt="">
+                </a>
+
+                <a class="project" href="">
+                    <img src="{% static '/img/project two.png' %}" alt="">
+                </a>
+                <a class="project" href="">
+                    <img src="{% static '/img/project three.png' %}" alt="">
+                </a>
+                <a class="project" href="">
+                    <img src="{% static '/img/project four.png' %}" alt="">
+                </a>      
+        </div>
+    </div>
+</div>
+
+{% endblock %}

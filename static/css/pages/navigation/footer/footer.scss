@@ -145,3 +145,45 @@ footer {
       }
     }
   }
+
+
+  @media screen and (max-width:540px) {
+    
+    footer{
+      
+      .copy{
+        padding: 20px 12px;
+        text-align: center;
+        .container{
+          .row{
+            flex-direction: column-reverse;
+            
+            justify-content: center;
+            gap: 25px;
+
+
+            .copy-text{
+              width: 100%;
+            }
+            .menu-links {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              row-gap: 15px;
+              
+              justify-content: center;
+              
+            }
+            .social-media{
+                justify-content: center;
+              .icon{
+                
+                height: 20px;
+                
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }

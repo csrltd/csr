@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+
+<link rel="stylesheet" href="{% static '/css/pages/financial-consulting/financialconsulting.css' %}">
+
+{% endblock pageLinks %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+{% include 'accountingServicesBase.html' %}
+
+
+    <!-- section body -->
+
+    <section class="paragraphandimage">
+
+        <div class="row">
+         <div class="col">
+
+                <h1 class="headingfinanci"> financial Consulting </h1>
+           
+            <div class="oneparagra">
+                <p>
+                    As you consider exploring business opportunities,<br> investments, and partnerships, <br>it is important to understand the short<br>, medium, and long-term ramifications of your decisions.
+                </p>
+            </div>
+
+
+             <div class="twoparagra">
+                <p>  
+                    Our financial consulting services make it easy to understand <br> the financial impact your decisions <br>will have on your company’s future.
+                </p>
+            </div>
+
+             <div class="bluebutton">
+                <button class="textwhite"> Get a questio  </button>
+            </div>
+
+            </div>
+
+
+                <div class="col2">
+                    <img src="./pict.png" alt="">
+                </div>
+
+
+        </div>
+    </section>
+    
+{% include 'footer.html' %}
+
+{% endblock %}

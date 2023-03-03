@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pageLinks %}
+
+<link rel="stylesheet" href="{% static '/css/pages/controller-services/controller.css' %}">
+
+{% endblock pageLinks %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+  {% include 'accountingServicesBase.html' %}
+  <!-- Controller Section -->
+  <section class="controller-section">
+    <div class="container">
+      <h3>Controller Services</h3>
+      <p class="cont-services">
+        Our controller-level services provide businesses with comprehensive accounting knowledge that also play another
+        as a complete in-house accounting department.
+      </p>
+      <div class="acces-services">
+        <div class="row-access">
+          <!-- <div class="col-access"> -->
+            <p>Management of Accounting</p>
+            <p>Budgeting and Forecasting</p>
+            <p>Cash Flow Management</p>
+            <p>Reporting of Month-End Closings</p>
+            <p>Adjustment Entry Preparation</p>
+          <!-- </div> -->
+
+          <!-- <div class="col-access"> -->
+            <p>Financial Statement Preparation</p>
+            <p>Accounting Documentation</p>
+            <p>Audit Preparation and Advisory Services</p>
+            <p>Key Metrics Benchmarking</p>
+            <p>Closing Entries</p>
+          <!-- </div> -->
+
+          <!-- <div class="col-access"> -->
+            <p>Review Financial</p>
+            <p>Budgeting</p>
+            <p>Client Work Supervision</p>
+            <p>Budgeting and Forecasting</p>
+            <p>Management of Ac Job Costing and 
+              Inventory Tracking counting</p>
+          <!-- </div> -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% include 'footer.html' %}
+
+{% endblock %}
+  

@@ -29,7 +29,11 @@ window.addEventListener('scroll', () => {
       logoBlue.style.display = 'block'
       logoWhite.style.display = 'none'
     })
-  } else {
+  } else if (headerBg.classList.contains('finance-acc-header')) {
+    headerBg.style.background = 'white'
+  }
+  
+  else {
     headerBg.style.background = 'transparent'
     headerBg.style.boxShadow = 'none'
     logoBlue.style.display = 'none'

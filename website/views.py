@@ -7,6 +7,8 @@ from .forms import *
 from .models import *
 from django.conf import settings
 
+
+#website
 def index(request):
     page_title = 'Home'
     form = ContactForm()
@@ -18,18 +20,35 @@ def index(request):
     context = {'form': form, 'page_title':page_title}
     return render(request, 'index.html', context)
 
-def blog(request, slug):
-    blog = Blog.objects.get(slug=slug)
-    page_title = blog.title
-    context = {'blog':blog, 'page_title':page_title}
-    return render(request, 'coming-soon.html', context)
-    
+def about_us(request):
+    page_title = 'About Us'
+    context = {'page_title': page_title}
+    return render(request, 'about.html', context)
 
-def blogs(request):
-    page_title = 'Blog posts'
-    blogs = Blog.objects.filter(status='Published')
-    context = {'blogs':blogs, 'page_title': page_title}
-    return render(request, 'coming-soon.html', context)
+def softwareDev(request):
+    page_title = 'Software Development'
+    context = {'page_title': page_title}
+    return render(request, 'software-dev.html')
+
+def financeAccounting(request):
+    page_title = 'Accounting and finance services'
+    context = {'page_title': page_title}
+    return render(request, 'finance-acc.html', context)
+
+def features(request):
+    features = Feature.objects.all()
+    context = {'features':features}
+    return render(request, 'features.html', context)
+
+def thankYou(request):
+    return render(request, 'thank-you.html')
+
+def gallery(request):
+    return render(request, 'coming-soon.html')
+
+def comingSoon(request):
+    return render(request, 'coming-soon.html')
+
 
 def contact(request):
     page_title = 'Contact'
@@ -42,42 +61,19 @@ def contact(request):
     context = {'form': form, 'page_title': page_title}
     return render(request, 'contact.html', context)
 
-def features(request):
-    features = Feature.objects.all()
-    context = {'features':features}
-    return render(request, 'features.html', context)
 
-def thankYou(request):
-    return render(request, 'thank-you.html')
-
-def service1(request):
-    return render(request, 'book-keeping-and-outsourcing-of-staff.html')
-
-def service2(request):
-    return render(request, 'customer-support.html')
-
-def service3(request):
-    return render(request, 'data-entry.html')
-
-def service4(request):
-    return render (request, 'payroll-management-and-funding.html')
-
-def service5(request):
-    return render(request, 'non-deposit-taking-micorfinance.html')
-
-def service6(request):
-    return render(request, 'financial-analysis-and-calculations-related-services.html')
-
-def about_us(request):
-    page_title = 'About Us'
-    context = {'page_title': page_title}
-    return render(request, 'about.html', context)
-
-def gallery(request):
-    return render(request, 'coming-soon.html')
-
-def thankYou(request):
-    return render(request, 'thank-you.html')
+def blog(request, slug):
+    blog = Blog.objects.get(slug=slug)
+    page_title = blog.title
+    context = {'blog':blog, 'page_title':page_title}
+    return render(request, 'coming-soon.html', context)
+    
+#blog
+def blogs(request):
+    page_title = 'Blog posts'
+    blogs = Blog.objects.filter(status='Published')
+    context = {'blogs':blogs, 'page_title': page_title}
+    return render(request, 'coming-soon.html', context)
 
 def blogCategories(request):
     categories = Category.objects.all()
@@ -86,9 +82,6 @@ def blogCategories(request):
 
 def blogCategory(request):
     return render(request, 'adminDashboard.html')
-
-def comingSoon(request):
-    return render(request, 'coming-soon.html')
 
 
 
@@ -140,3 +133,48 @@ def taxPreparation(request):
     context = {'page_title': page_title,'page':page,'title':title,'description':description}
 
     return render(request, 'taxPreparation.html', context)
+
+def accountingBookKeeping(request):
+
+    return render(request, 'accounting-book-keeping.html')
+
+
+def accountingBookKeeping(request):
+    page_title = 'Accounting and Book Keeping'
+    page = 'Services'
+    title = 'Accounting and book keeping services'
+    description = 'An excellent seal of thought went into crafting a proposal for services that adequately meet your accounting needs, and we are confident that you will find precisely what you are looking for in this proposal.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+
+    return render(request, 'accounting-book-keeping.html', context)
+def microFinance(request):
+    page_title = 'Non Deposit Microfinance'
+    page = 'Services'
+    title = 'Non-deposit-Microfinance'
+    description = 'CSR aims to be part of the non-deposit-taking microfinance institutions offering custom-made working capital solutions to small and medium businesses.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'non-deposit-microfinance.html', context)
+
+def controllerServices(request):
+    page_title = 'Controller Services'
+    page = 'Services'
+    title = 'Controller services'
+    description = 'On or after supervision of accounting and bookkeeping processes to examining strategic goals to assisting make sure compliance with established budgets and growth goals, controllers are the influence that operate perfect financial health.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'controller-services.html', context)
+
+def financialConsulting(request):
+    page_title = 'Financial Consulting'
+    page = 'Services'
+    title = 'Financial Consulting services'
+    description = 'Our financial consulting service are designed to provide you with expert analysis and advice regarding your company’s strategic decisions.'
+
+    context = {'page_title': page_title,'page':page,'title':title,'description':description}
+
+    return render(request, 'financial.html', context)

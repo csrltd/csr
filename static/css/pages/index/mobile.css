@@ -1,0 +1,110 @@
+@media screen and (max-width: 540px) {
+  .hero {
+    text-align: center;
+    padding-top: 250px;
+    height: 855px;
+  }
+  .hero .hero-btns {
+    flex-direction: column;
+  }
+  .services-section {
+    margin-top: -25px;
+  }
+  .services-section .container .row {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .services-section .container .row .col {
+    width: 100%;
+    justify-content: center;
+  }
+  .partnership {
+    padding: 0;
+  }
+  .partners .container .row {
+    grid-template-columns: 33% 33%;
+  }
+  .testimonials {
+    display: none;
+    padding: 50px 0;
+  }
+  .testimonials .container .slider-container .slider {
+    flex-direction: column;
+  }
+  .testimonials .container .slider-container .slider .card {
+    width: 100%;
+  }
+  .contacts .container .col {
+    flex-direction: column;
+  }
+  .contacts .container .col .row {
+    width: 100%;
+  }
+  .contacts .container .col .row .col-1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts .container .col .row .col-1 .row-1 {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .contacts .container .col .row {
+    width: 100%;
+  }
+  .contacts .container .location {
+    flex-direction: column;
+  }
+  .contacts .container .location .row {
+    width: 100%;
+  }
+  .contacts .container .location .row img {
+    border-radius: 2px 2px 0 0;
+  }
+  .contacts .container .location .map {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contacts .container .location .map iframe {
+    border-radius: 0 0 2px 2px;
+    width: 100%;
+    top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .container .col .about-description {
+    padding: 24px 0;
+  }
+}
+@media screen and (max-width: 928px) {
+  .services-section {
+    margin-top: -90px;
+  }
+  .services-section .container .row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    row-gap: 20px;
+  }
+  .services-section .container .row .col {
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1096px) {
+  .services-details .container .col {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 810px) {
+  .contacts .container .location {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts .container .location .map iframe {
+    width: 100%;
+  }
+}/*# sourceMappingURL=mobile.css.map */

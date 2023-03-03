@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block pageLinks %}
-<link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}">
+
 <link rel="stylesheet" href="{% static '/css/pages/index/index.css' %}">
 <link rel="stylesheet" href="{% static '/css/pages/index/mobile.css' %}">
 {% endblock pageLinks %}
@@ -39,19 +39,19 @@
 <section class="services-section">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <a href="{% url 'finance-acc' %}" class="col">
                 <i class="fas fa-chart-line"></i>
                 <h3>accounting <br> services</h3>
-            </div>
+            </a>
             <div class="col">
                 <i class="fas fa-pencil-ruler"></i>
                 <h3>Business <br> branding</h3>
             </div>
 
-            <div class="col">
+            <a class="col">
                 <i class="fas fa-code"></i>
                 <h3>software <br> development</h3>
-            </div>
+            </a>
             <a href="{% url 'social-media' %}" class="col">
                 <i class="fas fa-share-alt"></i>
                 <h3>digital <br> marketing</h3>

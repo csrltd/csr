@@ -1,0 +1,102 @@
+    {% extends 'base.html' %}
+    {% load static %}
+    {% load static %}
+    
+    {% block pageLinks %}
+    
+    <link rel="stylesheet" href="{% static '/css/pages/micro-finance/microfinance.css' %}">
+    {% endblock pageLinks %}
+    
+    {% block content %}
+    
+    {% include 'navbar.html' %}
+
+    {% include 'accountingServicesBase.html' %}
+
+
+    <section class="deposit-services">
+        <div class="container">
+                <h1 class="heading">Non-deposit-taking microfinance</h1>
+                <p >CSR aims to be part of the non-deposit-taking microfinance institutions offering custom-made working
+                    capital solutions to small and medium businesses</p>
+            <div class="row">
+                <div class="col">
+                    <h3>Factoring</h3>
+                </div>
+                <div class="col">
+                    <h3>Inventory Financing</h3>
+                </div>
+                <div class="col">
+                    <h3>Payroll Funding</h3>
+                </div>
+            </div>
+
+                <h1>CSR Factoring services</h1>
+                <p>CSR factoring services is a way for you to accelerate cash flow and improve collections from
+                    customers that owe you money</p>
+            
+            <div class="factoring-services">
+                <div class="row">
+                    <div class="col">
+                        <h3>Factoring</h3>
+                    </div>
+                    <div class="col">
+                        <h3>Inventory Financing</h3>
+                    </div>
+                    <div class="col">
+                        <h3>Payroll Funding</h3>
+                    </div>
+                </div>
+                <div class="text">
+                <p>We provide 70% to 80% of the invoice within only 15 to 30 days.
+                    We become your accounts receivable department when you engage us as your factor.
+                    We handle collections and allow you to see and manage your receivables online.
+                    We’ll modernize your accounts receivable and serve as your credit department,
+                    performing unlimited credit checks. As a bonus, we insure your eligible receivables.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="payroll-services">
+        <div class="container">
+                <h1 class="heading">Payroll Management and Funding services</h1>
+                <p>It is critical that every business needs a function performed by our Payroll professionals under the CSR
+                    accounting team.</p>
+                    
+                    <p>The payroll involves managing all employee:</p>
+                    <div class="row">
+                        <div class="col">
+                            <h3>compensation</h3>
+                        </div>
+                        <div class="col">
+                            <h3>benefits</h3>
+                        </div>
+                        <div class="col">
+                            <h3>withholding</h3>
+                        </div>
+                    </div>
+
+                <p>We manage your payroll on an ongoing basis, ensuring that all employees are compensated according to
+                    their employment agreements and benefits sections</p>
+            <div class="payroll-text">
+            <h3>Payroll Funding</h3>
+            <p class="text">CSR provides quick payroll preparation, and if capital is insufficient to cover the payroll, we
+                fund our clients by paying the salaries of approved payroll. This gives our clients a sit-back
+                and focuses on the main activities that will grow the business.
+                Our funding is on a one-off commission agreed upon in a contract.</p>
+            </div>
+                <a href="">
+                    <button class="btn-blue">Get a quotation</button>
+                </a>
+        </div>
+
+    </section>
+    
+
+{% include 'footer.html' %}
+
+{% endblock %}
