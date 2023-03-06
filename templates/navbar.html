@@ -20,7 +20,6 @@
                         <a class="nav-link" href="{% url 'about' %}">about us</a>
                     </li>
                     <li class="link">
-                        <a class="nav-link" href="{% url 'index' %}#services">services</a>
                         <a class="nav-link" href="#" class="service-link">
                             services
                             <div class="open-dropdown">
@@ -30,25 +29,25 @@
                         <div class="dropdown">
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">
+                                    <a href="{% url 'finance-acc' %}">
                                         <i class="fas fa-chart-line"></i>
                                         <h3>Accounting Services</h3>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{% url 'coming-soon' %}">
                                         <i class="fas fa-pencil-ruler"></i>
                                         <h3>Business Branding</h3>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/software-dev.html">
+                                    <a href="{% url 'coming-soon' %}">
                                         <i class="fas fa-code"></i>
                                         <h3>Software Development</h3>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/social-media.html">
+                                    <a href="{% url 'social-media' %}">
                                         <i class="fas fa-share-alt"></i>
                                         <h3>Digital Marketing</h3>
                                     </a>
