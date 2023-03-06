@@ -108,9 +108,7 @@
   gap: 24px;
 }
 .social-media-services .container .row .col:hover {
-  margin: 0;
   padding: 24px;
-  margin-right: 24px;
   background-color: rgba(52, 97, 226, 0.13);
   transition: 0.3s;
   border-radius: 2px;

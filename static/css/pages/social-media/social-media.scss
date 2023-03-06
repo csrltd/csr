@@ -161,10 +161,12 @@ $border-radius: 2px;
         margin: 24px 0;
         display: grid;
         gap: 24px;
+        
         &:hover {
-          margin: 0;
+          
+          // margin: 0;
           padding: 24px;
-          margin-right: 24px;
+          // margin-right: 24px;
           background-color: rgba(52, 97, 226, 0.13);
           transition: 0.3s;
           border-radius: $border-radius;
