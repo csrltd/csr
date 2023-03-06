@@ -1,0 +1,211 @@
+p {
+  width: 70%;
+  font-size: 15px;
+}
+
+.deposit-services {
+  padding: 5vw;
+}
+.deposit-services .container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.deposit-services .container .row {
+  width: 80%;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.deposit-services .container .row p {
+  width: 100%;
+}
+.deposit-services .container .row .col {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: aliceblue;
+}
+.deposit-services .container h1 {
+  padding-top: 0vh;
+}
+.deposit-services .container .heading {
+  padding-top: 2%;
+}
+.deposit-services .container p {
+  padding: 10px 0;
+}
+.deposit-services .container .factoring-services {
+  width: 92%;
+}
+.deposit-services .container .factoring-services .row {
+  display: flex;
+  flex: 1 1 0;
+  width: 100%;
+  gap: 5%;
+}
+.deposit-services .container .factoring-services .row .col {
+  width: 100%;
+}
+.deposit-services .container .factoring-services .text {
+  margin: 5vh 0 0 0;
+  width: 100%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.deposit-services .container .factoring-services .text p {
+  width: 100%;
+}
+
+.payroll-services .container .row {
+  width: 70%;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.payroll-services .container .row .col {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: aliceblue;
+}
+.payroll-services .container p {
+  padding: 10px 0;
+}
+.payroll-services .container .text {
+  margin: 2vh 0 5vh 0;
+  width: 91.5%;
+  padding: 20px;
+  background-color: aliceblue;
+}
+.payroll-services .container .payroll-text h3 {
+  padding-top: 1%;
+}
+.payroll-services .container .btn-blue:hover {
+  background-color: transparent;
+  color: #2A2D7C;
+  border-color: #2A2D7C;
+}
+.payroll-services .container a button {
+  margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 1250px) {
+  .deposit-services .container .row {
+    gap: 1%;
+  }
+  .deposit-services .container .row .col {
+    width: 28vw;
+  }
+  .deposit-services .container .text {
+    width: 86vw;
+  }
+  .payroll-services .container {
+    margin: 5%;
+  }
+  .payroll-services .container .row {
+    gap: 1%;
+  }
+  .payroll-services .container .row .col {
+    width: 26vw;
+  }
+  .payroll-services .container .text {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .deposit-services .container .row .col {
+    width: 27vw;
+  }
+  .deposit-services .container .text {
+    width: 86vw;
+  }
+  .payroll-services .container {
+    margin: 5%;
+  }
+  .payroll-services .container .row .col {
+    width: 26vw;
+  }
+  .payroll-services .container .text {
+    width: 80vw;
+  }
+  .payroll-services .container a button {
+    margin-bottom: 0vh;
+  }
+  .payroll-services .container .payroll-text .text {
+    padding: 10%;
+    margin: 40%;
+    margin: 2vh 0 5vh 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .deposit-services {
+    padding: 0;
+  }
+  .deposit-services .container .row {
+    row-gap: 20px;
+  }
+  .deposit-services .container .row .col {
+    width: 28vw;
+  }
+  .deposit-services .container .text {
+    width: 90vw;
+  }
+  .payroll-services .container h1 {
+    padding-top: 5%;
+    font-size: 36px;
+  }
+  .payroll-services .container .row {
+    row-gap: 28px;
+  }
+  .payroll-services .container .row .col {
+    width: 28vw;
+  }
+  .payroll-services .container .text {
+    width: 85vw;
+  }
+}
+@media screen and (max-width: 540px) {
+  .deposit-services {
+    padding: 10%;
+  }
+  .deposit-services .container .row {
+    grid-template-columns: auto;
+  }
+  .deposit-services .container .row .col {
+    width: 100%;
+  }
+  .deposit-services .container h1 {
+    padding-top: 2vh;
+    font-size: 24px;
+  }
+  .deposit-services .container .factoring-services .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .deposit-services .container .factoring-services .text {
+    padding: 10%;
+    margin: 40%;
+    margin: 2vh 0 5vh 0;
+    width: 100%;
+  }
+  .payroll-services {
+    padding: 10%;
+  }
+  .payroll-services .container h1 {
+    font-size: 24px;
+  }
+  .payroll-services .container .row {
+    grid-template-columns: auto;
+  }
+  .payroll-services .container .row .col {
+    width: 80%;
+  }
+  .payroll-services .container h1 {
+    padding-top: 2vh;
+  }
+  .payroll-services .container a button {
+    margin-bottom: 0vh;
+  }
+}/*# sourceMappingURL=microfinance.css.map */
