@@ -70,6 +70,16 @@
 .services .container .row {
   gap: 48px;
 }
+.services .container .row button {
+  margin-top: 5%;
+  background-color: #2A2D7C;
+  color: white;
+}
+.services .container .row button:hover {
+  background-color: transparent;
+  color: #2A2D7C;
+  border-color: #2A2D7C;
+}
 
 .about-summary {
   color: #f6f9fe;

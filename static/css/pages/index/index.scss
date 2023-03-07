@@ -338,7 +338,9 @@ $border-radius: 2px;
   
                   .icon {
                     font-size: 28px;
-                    color: $primary-color;
+                    // color: $primary-color;
+                    background-color: $primary-color;
+                    color: $whitesmoke;
                   }
   
                   h3 {

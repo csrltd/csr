@@ -35,8 +35,7 @@
 }
 .bookkeeping-services .container .row .col {
   width: 100%;
-  height: 50vh;
-  padding: 20px;
+  height: 45vh;
   gap: 12px;
 }
 .bookkeeping-services .container .row .col .heading-book {
@@ -50,12 +49,16 @@
 .bookkeeping-services .container .row .col .book-list {
   height: 35vh;
   background-color: #F6F9FE;
+  padding: 5%;
 }
 .bookkeeping-services .container .row .col .book-list ul li {
   padding-bottom: 12px;
 }
 
 @media screen and (max-width: 1200px) {
+  .accounting-services {
+    padding: 20px 30px;
+  }
   .accounting-services .heading {
     font-size: 30px;
   }
@@ -69,6 +72,7 @@
     font-size: 20px;
   }
   .bookkeeping-services {
+    padding: 20px 30px;
     height: 100vh;
     padding-top: 30vh;
   }
@@ -134,11 +138,15 @@
     margin-bottom: 45vh;
   }
   .accounting-services .container .row {
+    margin-top: 20px;
+    padding-top: 20px;
     grid-template-columns: 100%;
+    padding: 0;
   }
   .accounting-services .container .row .col {
     height: auto;
-    width: 80%;
+    width: 100%;
+    margin: auto;
   }
   .bookkeeping-services {
     padding-top: 20vh;
@@ -148,8 +156,12 @@
     grid-template-columns: 100%;
   }
   .bookkeeping-services .container .row .col {
-    width: 70%;
+    width: 100%;
     height: 40vh;
+    margin: auto;
+  }
+  .bookkeeping-services .container .row .col .book-list {
+    padding: 5%;
   }
   .bookkeeping-services .container .row .col h2 {
     font-size: 20px;

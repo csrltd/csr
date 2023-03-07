@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
-<!-- {% block links %} -->
-    <!-- corrected mobile view styles -->
-<!-- ÷<link rel="stylesheet" href="{% static '/css/mobileFixed.css' %}"> -->
-<!-- {% endblock links %} -->
+{% block pageLinks %}
+<link rel="stylesheet" href="{% static 'css/pages/contact/contact.css' %}">
+{% endblock pageLinks %}
 {% block content %}
 
 {% include 'navbar.html' %}

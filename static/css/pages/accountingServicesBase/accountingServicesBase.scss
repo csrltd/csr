@@ -8,6 +8,27 @@
 
 }
 
+.page-intro{
+       
+    .container{
+  
+        .page-summary{
+            width: 50%;
+            
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .page-intro{
+       
+        .container{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
+
 @media screen and (max-width:540px) {
     .page-intro{
        
@@ -16,6 +37,7 @@
             padding-right: 30px;
             .page-summary{
                 width: 100%;
+                
             }
         }
     }

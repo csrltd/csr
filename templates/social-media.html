@@ -9,7 +9,7 @@
 
 {% block content %}
 
-{% include 'navbar.html' %}
+{% include 'white-nav-bar.html' %}
 
 
 <section class="hero-social-media">
@@ -21,9 +21,12 @@
                 <p>Let us help your business grow and succeed in the digital world. Contact us today to learn more
                     about our services and how we can help your business reach new heights.</p>
                 <div>
-                    <a href="/contact.html">
+                    
+                    <a href="{% url 'contact' %}" >
                         <button class="btn-blue btn-social">Get quotation</button>
                     </a>
+    
+                    
                 </div>
             </div>
             <div class="col">
