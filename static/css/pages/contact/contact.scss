@@ -2,7 +2,8 @@
 
 .page-intro {
   background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/office.jpg");
-  
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contacts {
     padding-top: 100px;
@@ -123,3 +124,62 @@
       }
     }
   }
+
+  @media screen and (max-width: 540px) {
+    .container{
+      padding: 20px;
+      width: 100%;
+    }
+    .page-intro{
+      background-position: center;
+    }
+    //Contact
+  
+    .contacts {
+      .container {
+        .col {
+          flex-direction: column;
+          .row {
+            width: 100%;
+  
+            .col-1 {
+              flex-direction: column;
+              width: 100%;
+  
+              .row-1 {
+                width: 100%;
+                height: auto;
+                padding: 30px;
+              }
+            }
+          }
+  
+          .row {
+            width: 100%;
+          }
+        }
+  
+        .location {
+          flex-direction: column;
+  
+          .row {
+            width: 100%;
+            img {
+              border-radius: $border-radius $border-radius 0 0;
+            }
+          }
+  
+          .map {
+            width: 100%;
+            margin-top: 0;
+  
+            iframe {
+              border-radius: 0 0 $border-radius $border-radius;
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }  

@@ -1,0 +1,33 @@
+@import "../../variables";
+
+
+// header
+.header {
+    background-color: transparent;
+    backdrop-filter: none;
+
+    .container {
+        .nav-header {
+            .brand {
+                .blue-logo {
+                    display: block;
+                }
+
+                .white-logo {
+                    display: none;
+                }
+            }
+
+            .nav-menu {
+                .links {
+                    .link {
+                        .nav-link {
+                            color: $whitesmoke;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

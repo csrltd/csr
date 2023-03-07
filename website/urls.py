@@ -17,6 +17,7 @@ urlpatterns = [
     path("micro-finance/", microFinance, name='micro-finance'),
     path('controller-services/', controllerServices, name='controller-services'),
     path('financial-consulting/',financialConsulting,name='financial-consulting'),
+    path('women-s-day/',womensDay,name='women-s-day'),
 
     #Blog
     path('blogs/', blogs, name='blogs'),

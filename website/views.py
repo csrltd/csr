@@ -31,7 +31,7 @@ def softwareDev(request):
     return render(request, 'software-dev.html')
 
 def financeAccounting(request):
-    page_title = 'Accounting and finance services'
+    page_title = 'Finance and Accounting'
     context = {'page_title': page_title}
     return render(request, 'finance-acc.html', context)
 
@@ -179,4 +179,10 @@ def financialConsulting(request):
     context = {'page_title': page_title,'page':page,'title':title,'description':description}
 
     return render(request, 'financial.html', context)
+
+
+def womensDay(request):
+    page_title = "Women's Day"
+
+    return render(request, 'women-s-day.html')
 
