@@ -1,27 +1,50 @@
 @import "../../variables";
 // MOBILE VERSION
 // hero section only
-@media screen and (max-width: 1024px) {
-    // HERO SECTION
-    .finance-acc-hero {
-        .container {
-            height: 90vh;
-            .row {
-                gap: 0;
-                .col-1 {
-                    padding: 100px auto;
-                }
-            }
+// @media screen and (max-width: 1024px) {
+//     // HERO SECTION
+//     .finance-acc-hero {
+//         .container {
+//             height: 90vh;
+//             .row {
+//                 gap: 0;
+//                 .col-1 {
+//                     padding: 100px auto;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width: 1020px) {
+    .hero {
+        text-align: center;
+        padding-top: 250px;
+        height: 855px;
+    
+        .heading {
+            font-size: 45px;
         }
+
+        .hero-text {
+            width: 100%;
+        }
+    
+        .hero-btns {
+            flex-direction: column;
+        }
+
+
     }
 }
 
 
 @media screen and (max-width: 540px) {
+
     // services
     .services {
         .container {
-
+            padding: 0 20px;
             .services-paragraph {
                 width: 100%;
             }
@@ -45,70 +68,70 @@
 }
 
 
-@media screen and (max-width: 780px) {
-    // HEADER
-    .header {
-        .container {
-            height: 50vh;
-            .nav-header {
-                .brand {
-                    .blue-logo {
-                        display: none;
-                    }
-                    .white-logo {
-                        display: block;
-                    }
-                }
+// @media screen and (max-width: 780px) {
+//     // HEADER
+//     .header {
+//         .container {
+//             height: 50vh;
+//             .nav-header {
+//                 .brand {
+//                     .blue-logo {
+//                         display: none;
+//                     }
+//                     .white-logo {
+//                         display: block;
+//                     }
+//                 }
 
-                .nav-menu {
-                    .links {
-                        .link {
-                            display: none;
-                        }
-                    }
-                }
-                .nav-toggle {
-                    display: block;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    
-    // HERO
-    .finance-acc-hero {
-        .container {
-            
-          .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-      
-            .col-2 {
-              width: 100%;
-              top: 0;
-              right: 0;
-              left: 0;
-              z-index: 0;
-            }
-      
-            .col-1 {
-              position: relative;
-              display: flex;
-              flex-direction: column;
-              z-index: 2;
-              margin-top: 250px;
-              padding: 50px 50px;
-              min-width: 400px;
-              box-sizing: border-box;
-      
-              h1 {
-                font-size: 32px;
-              }
-            }
-          }
-        }
-      }
-      
-      
-}
+//                 .nav-menu {
+//                     .links {
+//                         .link {
+//                             display: none;
+//                         }
+//                     }
+//                 }
+//                 .nav-toggle {
+//                     display: block;
+//                     cursor: pointer;
+//                 }
+//             }
+//         }
+//     }
+
+//     // HERO
+//     .finance-acc-hero {
+//         .container {
+
+//           .row {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+
+//             .col-2 {
+//               width: 100%;
+//               top: 0;
+//               right: 0;
+//               left: 0;
+//               z-index: 0;
+//             }
+
+//             .col-1 {
+//               position: relative;
+//               display: flex;
+//               flex-direction: column;
+//               z-index: 2;
+//               margin-top: 250px;
+//               padding: 50px 50px;
+//               min-width: 400px;
+//               box-sizing: border-box;
+
+//               h1 {
+//                 font-size: 32px;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+
+// }

@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block pageLinks %}
-{% comment %} <link rel="stylesheet" href="{% static '/css/pages/navigation/nav-bar/nav-bar.css' %}">
+{% comment %}
+<link rel="stylesheet" href="{% static '/css/pages/navigation/nav-bar/nav-bar.css' %}">
 <link rel="stylesheet" href="{% static '/css/pages/navigation/footer/footer.css' %}">
 <link rel="stylesheet" href="{% static '/css/main.css' %}">
 <link rel="stylesheet" href="{% static '/css/mobile.css' %}"> {% endcomment %}
@@ -12,16 +13,12 @@
 {% endblock pageLinks %}
 
 {% block content %}
-
-<!-- header -->
-{% include 'white-nav-bar.html' %}
-
+{% include 'navbar.html' %}
 <!-- hero section unique to this page -->
 <!-- added row reverse -->
-<section class="finance-acc-hero">
+<!-- <section class="finance-acc-hero">
     <div class="container">
         <div class="row">
-            <!-- first col -->
             <div class="col col-1">
                 <h1 class="heading">Finance and Accounting Services</h1>
                 <p class="hero-paragraph">We are fully committed to helping you succeed by performing the critical
@@ -31,10 +28,26 @@
                     <button class="contact-btn">Get in touch</button>
                 </a>
             </div>
-
-            <!-- second col -->
             <div class="col col-2">
                 <img src="{% static '/img/Illustration.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="hero">
+    <div class="container">
+        <h1 class="heading hero-heading">Finance and Accounting Services</h1>
+        <p class="hero-text">
+            We are fully committed to helping you succeed by performing the critical
+            accounting functions that keep you financially solved and compliant with financial regulations.
+        </p>
+        <div class="hero-btns">
+            <div class="btn">
+                <button class="btn-blue hero-btn1">
+                    <a href="{% url 'contact' %}">
+                        Get in touch
+                    </a>
             </div>
         </div>
     </div>
@@ -62,7 +75,7 @@
                     management and achieve your business goals.</p>
                 <a href="{% url 'accounting-book-keeping' %}">
                     <button class="">Learn more</button>
-            </a>
+                </a>
             </div>
         </div>
 
