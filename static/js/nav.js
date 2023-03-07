@@ -10,6 +10,8 @@ const logoBlue = document.querySelector('.blue-logo')
 const logoWhite = document.querySelector('.white-logo')
 const btnHeader = document.querySelector('.btn-header')
 
+const title = document.title
+
 // let link = document.querySelector('.nav-link')
 let link = document.querySelector('title')
 
@@ -108,7 +110,7 @@ closeBtn.addEventListener('click', () => {
 })
 
 
-if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
+if(title.includes('Accounting and finance services') && scrolledPixels === 0) {
   logoBlue.style.display = 'block'
   logoWhite.style.display ='none'
 }

@@ -74,6 +74,7 @@ def blogs(request):
     blogs = Blog.objects.filter(status='Published')
     context = {'blogs':blogs, 'page_title': page_title}
     return render(request, 'coming-soon.html', context)
+    
 
 def blogCategories(request):
     categories = Category.objects.all()
