@@ -34,9 +34,10 @@ window.addEventListener('scroll', () => {
       logoBlue.style.display = 'block'
       logoWhite.style.display = 'none'
     })
-  } else if (headerBg.classList.contains('finance-acc-header')) {
-    headerBg.style.background = 'white'
-  }
+  } 
+  // else if (headerBg.classList.contains('finance-acc-header')) {
+  //   headerBg.style.background = 'white'
+  // }
   
   else {
     headerBg.style.background = 'transparent'
@@ -57,10 +58,10 @@ window.addEventListener('scroll', () => {
     btnHeader.classList.remove('btn-blue-outline')
   }
 
-  if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
-    logoBlue.style.display = 'block'
-    logoWhite.style.display ='none'
-  }
+  // if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
+  //   logoBlue.style.display = 'block'
+  //   logoWhite.style.display ='none'
+  // }
 })
 
 

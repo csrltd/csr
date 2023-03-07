@@ -1,0 +1,74 @@
+$primary-color: #2A2D7C;
+$secondary-color: #4365AF;
+$primary-color-fade: #2a2d7c10;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 2px;
+
+
+.poem {
+
+    height: 100vh;
+    max-width: 500px;
+    margin: auto;
+
+    .col {
+        display: grid;
+        place-items: start;
+        align-content: center;
+        padding: 100px 0;
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .logo {
+                img {
+                    height: 40px;
+                }
+            }
+            // .poem-title {
+            //     font-size: 58px;
+            // }
+        }
+
+        .poem-content {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding: 12px 0;
+
+        }
+        .author {
+            text-align: left;
+            .author-name {
+                font-weight: bolder;
+            }
+        }
+        .back-home {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            .icon {
+                background-color: transparent;
+                
+                color: $tex-color;
+                img {
+                    width: 28px;
+                }
+            }
+
+            .home {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// mobile 
+@media screen and (max-width: 540px) {
+    .poem {
+        padding: 0 50px;
+    }
+}

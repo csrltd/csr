@@ -1,15 +1,23 @@
-@media screen and (max-width: 1024px) {
-  .finance-acc-hero .container {
-    height: 90vh;
+@media screen and (max-width: 1020px) {
+  .hero {
+    text-align: center;
+    padding-top: 250px;
+    height: 855px;
   }
-  .finance-acc-hero .container .row {
-    gap: 0;
+  .hero .heading {
+    font-size: 45px;
   }
-  .finance-acc-hero .container .row .col-1 {
-    padding: 100px auto;
+  .hero .hero-text {
+    width: 100%;
+  }
+  .hero .hero-btns {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 540px) {
+  .services .container {
+    padding: 0 20px;
+  }
   .services .container .services-paragraph {
     width: 100%;
   }
@@ -24,48 +32,5 @@
   .services .container .row-reverse {
     display: flex;
     flex-direction: column-reverse;
-  }
-}
-@media screen and (max-width: 780px) {
-  .header .container {
-    height: 50vh;
-  }
-  .header .container .nav-header .brand .blue-logo {
-    display: none;
-  }
-  .header .container .nav-header .brand .white-logo {
-    display: block;
-  }
-  .header .container .nav-header .nav-menu .links .link {
-    display: none;
-  }
-  .header .container .nav-header .nav-toggle {
-    display: block;
-    cursor: pointer;
-  }
-  .finance-acc-hero .container .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .finance-acc-hero .container .row .col-2 {
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 0;
-  }
-  .finance-acc-hero .container .row .col-1 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    margin-top: 250px;
-    padding: 50px 50px;
-    min-width: 400px;
-    box-sizing: border-box;
-  }
-  .finance-acc-hero .container .row .col-1 h1 {
-    font-size: 32px;
   }
 }/*# sourceMappingURL=mobile.css.map */

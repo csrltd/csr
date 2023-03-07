@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/pages/womens-day/womens-day.css' %}">
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+    <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/csr logo.svg">
+    <title>Comprehensive Staffing Resources Ltd(CSR)| Women's Day</title>
+</head>
+
+<body>
+    <section class="poem">
+        <div class="col">
+            <div class="title">
+                <div class="logo">
+                    <img src="{% static '/img/branding/logo variation.png' %}" alt="">
+                </div>
+                <div class="poem-title">
+                    <h1>Woman Of Power</h1>
+                </div>
+            </div>
+            <div class="poem-content">
+                <p>On International Women's Day we celebrate,
+                    The strength and power of women, so great,
+                    For generations, they've fought and led,
+                    Breaking barriers and pushing ahead.</p>
+                <p>From suffragettes who fought for our vote,
+                    To scientists who help us to cope,
+                    With challenges both big and small,
+                    Women have always given their all.</p>
+                <p>Mothers, sisters, daughters, and friends,
+                    Their love and support never ends,
+                    They're there to pick us up when we fall,
+                    And help us rise, standing tall.</p>
+                <p>So on this day, let's honor and cherish,
+                    All the women who have fought and perished,
+                    And those who continue to make strides,
+                    As we strive for equality and all good resides.</p>
+            </div>
+            <div class="author">
+                <p class="author-name">Zeufack Anselme Emmanuel</p>
+                <a href="{% url 'index' %}" class="back-home">
+                    <div class="icon">
+                        <img src="{% static '/img/icons/poem-back-icon.png' %}" alt="">
+                    </div>
+                    <div class="home">Back to home</div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

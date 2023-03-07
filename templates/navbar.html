@@ -4,8 +4,14 @@
 <link rel="stylesheet" href="{% static '/css/pages/navigation/nav-bar/mobile.css' %}">
 
 <header class="header" id="home">
+    <div class="notification">
+        <div class="container">
+            <a href="{% url 'womens-day' %}">CSR wished you a happy women's day. <span>Click here</span> to read a poem we wrote for you</a>
+        </div>
+    </div>
     <div class="container">
         <!-- navbar -->
+       
         <nav class="nav-header">
             <a href="/" class="brand">
                 <img class="logo white-logo" src="{% static '/img/branding/logo-white.svg' %}" alt="">

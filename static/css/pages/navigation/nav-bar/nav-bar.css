@@ -1,7 +1,6 @@
 .header {
   transition: linear 0.3s;
   background-color: transparent;
-  height: 100px;
   margin-bottom: -100px;
   position: fixed;
   top: 0;
@@ -11,11 +10,21 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+.header .notification {
+  background-color: #2A2D7C;
+  padding: 8px 0;
+}
+.header .notification a {
+  color: white;
+}
+.header .notification a span {
+  text-decoration: underline;
+}
 .header .container .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 20px 0;
   font-family: "Futura Book", sans-serif;
 }
 .header .container .nav-header .brand {
