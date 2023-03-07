@@ -6,6 +6,7 @@ $tex-color: #3d3d3d;
 $border-radius: 2px;
 
 
+
 .header {
   background-color: whitesmoke;
 
@@ -53,6 +54,18 @@ $border-radius: 2px;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
+
+        .btn-social:hover {
+          background-color: white;
+          color: $primary-color;
+          border: $primary-color solid 2px;
+
+          // &:hover {
+          //   color: $whitesmoke;
+          //   background-color: $primary-color;
+          //   border: transparent;
+          // }
+        }
       }
       .col {
         img {
@@ -60,14 +73,7 @@ $border-radius: 2px;
           width: 40%;
           right: 0;
           top: 190px;
-
-        }
-
-        .btn-social:hover {
-          background-color: white;
-          color: $primary-color;
-          border: $primary-color solid 2px;
-        }
+        }     
 
       }
     }
@@ -131,8 +137,8 @@ $border-radius: 2px;
       position: absolute;
       width: 267px;
       height: 311px;
-      left: 0px;
-      top: 620px;
+      left: 0;
+      top: 700px;
     }
   }
 
@@ -155,10 +161,12 @@ $border-radius: 2px;
         margin: 24px 0;
         display: grid;
         gap: 24px;
+        
         &:hover {
-          margin: 0;
+          
+          // margin: 0;
           padding: 24px;
-          margin-right: 24px;
+          // margin-right: 24px;
           background-color: rgba(52, 97, 226, 0.13);
           transition: 0.3s;
           border-radius: $border-radius;

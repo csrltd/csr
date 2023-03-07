@@ -1,0 +1,47 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/css/pages/navigation/nav-bar/nav-bar.css' %}">
+<link rel="stylesheet" href="{% static '/css/pages/navigation/footer/footer.css' %}">
+<link rel="stylesheet" href="{% static '/css/main.css' %}">
+<link rel="stylesheet" href="{% static '/css/mobile.css' %}">
+<!-- finance and accounting styles -->
+<link rel="stylesheet" href="{% static '/css/pages/finance-acc/finance-acc.css' %}">
+<!-- mobile version -->
+<link rel="stylesheet" href="{% static '/css/pages/finance-acc/mobile.css' %}">
+
+<header class="header finance-acc-header" id="home">
+    <div class="container">
+        <!-- navbar -->
+        <nav class="nav-header">
+            <div class="brand">
+                <a href="{% url 'index' %}"><img class="logo white-logo" src="{% static '/img/branding/logo-white.svg' %}" alt=""></a>
+                <a href="{% url 'index' %}"><img class="logo blue-logo" src="{% static '/img/branding/logo-blue.svg' %}" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <ul class="links">
+                    <li class="link">
+                        <a class="nav-link" href="{% url 'index' %}">home</a>
+                    </li>
+                    <li class="link">
+                        <a class="nav-link" href="{% url 'about' %}">about us</a>
+                    </li>
+                    <li class="link">
+                        <a class="nav-link" href="{% url 'index' %}#services ">services</a>
+                    </li>
+                    <li class="link">
+                        <a class="nav-link" href="{% url 'coming-soon' %}">gallery</a>
+                    </li>
+                    <li class="link">
+                        <a class="nav-link" href="{% url 'blogs' %}">news room</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-close-btn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+    </div>
+    </nav>
+</header>

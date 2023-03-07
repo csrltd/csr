@@ -178,3 +178,4 @@ def financialConsulting(request):
     context = {'page_title': page_title,'page':page,'title':title,'description':description}
 
     return render(request, 'financial.html', context)
+

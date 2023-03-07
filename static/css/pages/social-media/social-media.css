@@ -27,16 +27,16 @@
   align-items: flex-start;
   gap: 24px;
 }
+.hero-social-media .container .row .col-social .btn-social:hover {
+  background-color: white;
+  color: #2A2D7C;
+  border: #2A2D7C solid 2px;
+}
 .hero-social-media .container .row .col img {
   position: absolute;
   width: 40%;
   right: 0;
   top: 190px;
-}
-.hero-social-media .container .row .col .btn-social:hover {
-  background-color: white;
-  color: #2A2D7C;
-  border: #2A2D7C solid 2px;
 }
 .hero-social-media .container .social-media {
   cursor: pointer;
@@ -85,8 +85,8 @@
   position: absolute;
   width: 267px;
   height: 311px;
-  left: 0px;
-  top: 620px;
+  left: 0;
+  top: 700px;
 }
 
 .social-media-services {
@@ -108,9 +108,7 @@
   gap: 24px;
 }
 .social-media-services .container .row .col:hover {
-  margin: 0;
   padding: 24px;
-  margin-right: 24px;
   background-color: rgba(52, 97, 226, 0.13);
   transition: 0.3s;
   border-radius: 2px;

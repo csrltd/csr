@@ -1,72 +1,30 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-
-.container{
-    background-image: url("./bg-image\ \(1\).png");
-    width: 200%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+.paragraphandimage {
+  padding: 5rem 14rem;
 }
-
-
-.block1{
-    padding-bottom: 30px;
-    font-family:'Nunito Sans';
+.paragraphandimage .row {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
-
-
-
-.bj{
-    color: white;
-    text-decoration: none;
+.paragraphandimage .row div:first-child {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
-
-
-.und{
-    color: white;
-} 
-
-
-
-#navbar {
-    display: flex;
-    gap: 220px;
-    align-items: center;
-    padding-top: 50px;
+.paragraphandimage .row div:first-child p {
+  font-size: 16px;
 }
-
-
-.row{
-    display: flex;
-    padding-top: 100px;
-    padding-left: 100px;
-    gap: 100px;
+.paragraphandimage .row div:last-child img {
+  height: 35vh;
+  width: 35vh;
 }
-
-.bluebutton{
-    padding-top: 50px;
-
-
-}
-
-.textwhite{
-    background-color: #2A2D7C;
-        padding: 12px 25px 12px 25px;
-        border-radius: 2px;
-        text-decoration: none;
-}
-
-
-
-.twoparagra{
-    padding-top: 40px;
-}
-
-.oneparagra{
-    padding-top: 40px;
-}
+.paragraphandimage .row button {
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=financialconsulting.css.map */

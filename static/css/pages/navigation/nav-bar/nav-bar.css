@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  font-family: "Futura Book", sans-serif;
 }
 .header .container .nav-header .brand {
   width: 400px;
@@ -42,9 +43,53 @@
 }
 .header .container .nav-header .nav-menu .links .link {
   font-size: 18px;
-}
-.header .container .nav-header .nav-menu .links .link .nav-link {
+  position: relative;
   font-family: "Futura Book" sans-serif !important;
+}
+.header .container .nav-header .nav-menu .links .link .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 250px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px;
+  background-color: #f6f9fe;
+  z-index: 10;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+.header .container .nav-header .nav-menu .links .link .dropdown h3 {
+  font-size: 20px;
+}
+.header .container .nav-header .nav-menu .links .link .dropdown a {
+  color: #2A2D7C;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header .container .nav-header .nav-menu .links .link .dropdown a i {
+  font-size: 22px;
+  background: transparent;
+  color: #2A2D7C;
+}
+.header .container .nav-header .nav-menu .links .link .dropdown ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.header .container .nav-header .nav-menu .links .link:hover .dropdown {
+  display: block;
+}
+.header .container .nav-header .nav-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header .container .nav-header .nav-menu li a i {
+  font-size: 22px;
+  margin-top: 8px;
 }
 .header .container .nav-header .nav-toggle {
   display: none;

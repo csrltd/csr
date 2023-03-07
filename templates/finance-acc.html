@@ -14,42 +14,7 @@
 {% block content %}
 
 <!-- header -->
-<header class="header finance-acc-header" id="home">
-    <div class="container">
-        <!-- navbar -->
-        <nav class="nav-header">
-            <div class="brand">
-                <img class="logo white-logo" src="{% static '/img/branding/logo-white.svg' %}" alt="">
-                <img class="logo blue-logo" src="{% static '/img/branding/logo-blue.svg' %}" alt="">
-            </div>
-            <div class="nav-menu">
-                <ul class="links">
-                    <li class="link">
-                        <a class="nav-link" href="{% url 'index' %}">home</a>
-                    </li>
-                    <li class="link">
-                        <a class="nav-link" href="{% url 'about' %}">about us</a>
-                    </li>
-                    <li class="link">
-                        <a class="nav-link" href="{% static 'services' %}">services</a>
-                    </li>
-                    <li class="link">
-                        <a class="nav-link" href="">gallery</a>
-                    </li>
-                    <li class="link">
-                        <a class="nav-link" href="{% url 'blogs' %}">news room</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav-close-btn">
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
-    </div>
-    </nav>
-</header>
+{% include 'white-nav-bar.html' %}
 
 <!-- hero section unique to this page -->
 <!-- added row reverse -->
@@ -62,7 +27,7 @@
                 <p class="hero-paragraph">We are fully committed to helping you succeed by performing the critical
                     accounting functions that keep you financially solved and compliant with financial regulations.
                 </p>
-                <a href="#contacts">
+                <a href="{% url 'contact' %}">
                     <button class="contact-btn">Get in touch</button>
                 </a>
             </div>
@@ -95,7 +60,9 @@
                     experienced professionals is committed to providing personalized solutions to meet our clients'
                     unique needs. Contact us today to learn more about how we can help you streamline your financial
                     management and achieve your business goals.</p>
-                <a href="#">Learn more</a>
+                <a href="{% url 'accounting-book-keeping' %}">
+                    <button class="">Learn more</button>
+            </a>
             </div>
         </div>
 
@@ -112,7 +79,9 @@
                     influence that operate perfect financial health. CSR, our controller-level services provide
                     businesses with comprehensive accounting knowledge that also play another as a complete in-house
                     accounting department.</p>
-                <a href="#">Learn more</a>
+                <a href="{% url 'controller-services' %}">
+                    <button class="">Learn more</button>
+                </a>
             </div>
             <div class="col">
                 <img src="{% static '/img/finance-acc-imgs/Group.png' %}" alt="">
@@ -132,7 +101,9 @@
                     to understand the short, medium, and long-term ramifications of your decisions.</p>
                 <p>Our financial consulting services make it easy to understand the financial impact your decisions
                     will have on your company’s future.</p>
-                <a href="#">Learn more</a>
+                <a href="{% url 'financial-consulting' %}">
+                    <button class="">Learn more</button>
+                </a>
             </div>
         </div>
 
@@ -144,7 +115,9 @@
                     carefully to minimize your risk of unforeseen tax liabilities, fees, and penalties.</p>
                 <p>Our team will work with you to prepare complete and accurate corporate fillings on a quarterly
                     and Annually basis.</p>
-                <a href="#">Learn more</a>
+                <a href="{% url 'tax-preparation' %}">
+                    <button class="">Learn more</button>
+                </a>
             </div>
             <div class="col">
                 <img src="{% static '/img/finance-acc-imgs/girl seeing video on virtual reality.png' %}" alt="">
