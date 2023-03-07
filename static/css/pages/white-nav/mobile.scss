@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.nav-toggle {
+    margin-right: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  .nav-fixed {
+    position: fixed;
+    display: grid;
+    place-content: center;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #3462e2a6;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    a {
+      color: $primary-color;
+    }
+
+    .fixed-nav-links {
+      background-color: $whitesmoke;
+      border-radius: 10px;
+      width: 90vw;
+      padding: 20px 10px;
+
+      .link {
+        padding: 1rem;
+      }
+
+      .contact-btn {
+        background-color: $primary-color;
+        color: $whitesmoke;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 40vw;
+        border-radius: 10px;
+        padding: 10px 25px;
+        a {
+          color: $whitesmoke;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .nav-close-btn {
+    margin-right: 20px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+  }

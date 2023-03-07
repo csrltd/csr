@@ -58,7 +58,6 @@ $border-radius: 2px;
 
           a {
             button {
-                
                 background-color: $primary-color;
                 color: $whitesmoke;
                 &:hover {
@@ -76,7 +75,7 @@ $border-radius: 2px;
             place-content: center;
             flex-direction: column;
             gap: 24px;
-            padding: 0 100px;
+            padding: 100px 100px;
             background-color: $color-gray;
             top: 0;
             bottom: 0;
@@ -104,6 +103,11 @@ $border-radius: 2px;
         display: flex;
         flex-direction: column;
         gap: 48px;
+
+        a {
+            text-decoration: underline;
+            color: $color-blue;
+        }
         
         .services-paragraph {
             max-width: 70%;
@@ -112,16 +116,11 @@ $border-radius: 2px;
         .row {
             gap: 48px;
 
-            button {
-                margin-top: 5%;
-                background-color: $primary-color;
-                color: white;
-                &:hover {
-                  background-color: transparent;
-                  color: $primary-color;
-                  border-color: $primary-color;
-                }
-              }
+            .col {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
         }
     }
 }

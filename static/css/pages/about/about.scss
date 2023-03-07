@@ -1,12 +1,10 @@
-$primary-color: #2A2D7C;
-$secondary-color: #4365AF;
-$primary-color-fade: #2a2d7c10;
-$whitesmoke: #f6f9fe;
-$tex-color: #3d3d3d;
-$border-radius: 2px;
+@import '../../variables';
 
 .page-intro {
   background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
   
 }
 .description {

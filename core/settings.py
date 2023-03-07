@@ -14,7 +14,7 @@ DEBUG = False
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-ALLOWED_HOSTS = ['csrlimited.rw','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
+ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
 
 # Application definition
 
@@ -128,3 +128,6 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+

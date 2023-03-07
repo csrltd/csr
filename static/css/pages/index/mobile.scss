@@ -1,15 +1,23 @@
-$primary-color: #2A2D7C;
-$secondary-color: #4365AF;
-$primary-color-fade: #2a2d7c10;
-$whitesmoke: #f6f9fe;
-$tex-color: #3d3d3d;
-$border-radius: 2px;
+@import '../../variables';
 
 @media screen and (max-width: 540px) {
+  .container{
+    padding: 20px;
+    width: 100%;
+    
+
+    .heading{
+      font-size: 22px;
+    }
+  }
     .hero {
       text-align: center;
       padding-top: 250px;
       height: 855px;
+
+      .heading{
+        font-size: 45px;
+      }
       .hero-btns {
         flex-direction: column;
       }
@@ -25,6 +33,35 @@ $border-radius: 2px;
             width: 100%;
             justify-content: center;
             
+          }
+        }
+      }
+    }
+
+    // Services
+
+    .services-details{
+      .container{
+        .col{
+          flex-direction: column;
+          justify-content: center;
+
+
+        }
+      }
+    }
+
+    // About
+    .about{
+      .container{
+        .heading{
+          font-size: 22px;
+        }
+        .col{
+          .row{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 15px;
           }
         }
       }

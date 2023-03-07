@@ -10,17 +10,10 @@ const logoBlue = document.querySelector('.blue-logo')
 const logoWhite = document.querySelector('.white-logo')
 const btnHeader = document.querySelector('.btn-header')
 
+const title = document.title
+
 // let link = document.querySelector('.nav-link')
 let link = document.querySelector('title')
-
-if (link.innerHTML.includes('About Us')){
-  console.log('This is about us page')
-  
-}else{
-  console.log("It is not working");
-}
-
-
 
 window.addEventListener('scroll', () => {
   let scrolledPixels = window.scrollY
@@ -62,6 +55,11 @@ window.addEventListener('scroll', () => {
     })
 
     btnHeader.classList.remove('btn-blue-outline')
+  }
+
+  if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
+    logoBlue.style.display = 'block'
+    logoWhite.style.display ='none'
   }
 })
 
@@ -106,9 +104,3 @@ closeBtn.addEventListener('click', () => {
     link.style.color = 'white'
   })
 })
-
-
-if(title.includes('Finance and Accounting') && scrolledPixels === 0) {
-  logoBlue.style.display = 'block'
-  logoWhite.style.display ='none'
-}
