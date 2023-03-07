@@ -1,8 +1,8 @@
 .hero {
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/hero-img2.JPG");
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/accounting-services.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
   max-width: 100%;
   color: white;
   padding-top: 40vh;
