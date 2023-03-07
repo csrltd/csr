@@ -1,9 +1,4 @@
-$primary-color: #2A2D7C;
-$secondary-color: #4365AF;
-$primary-color-fade: #2a2d7c10;
-$whitesmoke: #f6f9fe;
-$tex-color: #3d3d3d;
-$border-radius: 2px;
+@import '../../variables';
 
 @media screen and (max-width: 540px) {
     .software-dev-hero {
