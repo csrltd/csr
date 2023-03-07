@@ -110,6 +110,17 @@ footer .copy .container .row .social-media img {
 }
 
 @media screen and (max-width: 540px) {
+  footer .container .row {
+    flex-direction: column;
+  }
+  footer .container .row .col {
+    width: 100%;
+  }
+  footer .container .row .col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   footer .copy {
     padding: 20px 12px;
     text-align: center;
@@ -132,6 +143,6 @@ footer .copy .container .row .social-media img {
     justify-content: center;
   }
   footer .copy .container .row .social-media .icon {
-    height: 20px;
+    height: 40px;
   }
 }/*# sourceMappingURL=footer.css.map */

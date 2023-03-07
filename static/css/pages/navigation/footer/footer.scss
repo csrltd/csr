@@ -150,6 +150,20 @@ footer {
   @media screen and (max-width:540px) {
     
     footer{
+
+      .container{
+        .row{
+          flex-direction: column;
+          .col{
+            width: 100%;
+            ul{
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+            }
+          }
+        }
+      }
       
       .copy{
         padding: 20px 12px;
@@ -177,7 +191,7 @@ footer {
                 justify-content: center;
               .icon{
                 
-                height: 20px;
+                height: 40px;
                 
               }
             }

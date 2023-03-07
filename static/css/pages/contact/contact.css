@@ -1,5 +1,7 @@
 .page-intro {
   background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts {
@@ -105,4 +107,50 @@
 }
 .contacts .container .location {
   padding: 50px 0;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding: 20px;
+    width: 100%;
+  }
+  .page-intro {
+    background-position: center;
+  }
+  .contacts .container .col {
+    flex-direction: column;
+  }
+  .contacts .container .col .row {
+    width: 100%;
+  }
+  .contacts .container .col .row .col-1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contacts .container .col .row .col-1 .row-1 {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+  .contacts .container .col .row {
+    width: 100%;
+  }
+  .contacts .container .location {
+    flex-direction: column;
+  }
+  .contacts .container .location .row {
+    width: 100%;
+  }
+  .contacts .container .location .row img {
+    border-radius: 2px 2px 0 0;
+  }
+  .contacts .container .location .map {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contacts .container .location .map iframe {
+    border-radius: 0 0 2px 2px;
+    width: 100%;
+    top: 0;
+  }
 }/*# sourceMappingURL=contact.css.map */

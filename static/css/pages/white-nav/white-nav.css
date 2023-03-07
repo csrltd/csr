@@ -1,0 +1,14 @@
+.header {
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
+.header .container .nav-header .brand .blue-logo {
+  display: block;
+}
+.header .container .nav-header .brand .white-logo {
+  display: none;
+}
+.header .container .nav-header .nav-menu .links .link .nav-link {
+  color: #f6f9fe;
+}/*# sourceMappingURL=white-nav.css.map */

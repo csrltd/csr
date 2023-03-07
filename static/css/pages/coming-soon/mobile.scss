@@ -1,23 +1,39 @@
 @media screen and (max-width:540px) {
-    .coming-soon {
+  .container{
+    padding: 20px;
+   
+  }  
+  .coming-soon {
+   
       .container {
         padding: 0;
         .row {
+       
           .col-1 {
             display: none;
           }
     
           .col-2 {
+            display: flex;
+            flex-direction: column;
+            
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            text-align: justify;
+            place-items: center;
+            place-content: center;
+
             .logo {
               display: block;
               width: 150px;
             }
-            width: 100%;
-            height: 100vh;
-            padding: 30px;
-            text-align: center;
-            place-items: center;
-            place-content: center;
+            .coming-soon-contacts {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 24px;
+            }
           }
         }
       }

@@ -3,18 +3,18 @@ import os
 from dotenv import load_dotenv
 
 #development environment variables
-#load_dotenv()
+load_dotenv()
 #production environment variables
-load_dotenv("/home/admin/csr/core/.env")
+#load_dotenv("/home/admin/csr/core/.env")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = False
+DEBUG = True
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-ALLOWED_HOSTS = ['csrlimited.rw','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
+ALLOWED_HOSTS = ['csrlimited.rw','127.0.0.1','csrlimited.com', 'www.csrlimited.rw', 'www.csrlimited.com']
 
 # Application definition
 

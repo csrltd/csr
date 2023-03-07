@@ -41,7 +41,7 @@
   place-content: center;
   flex-direction: column;
   gap: 24px;
-  padding: 0 100px;
+  padding: 100px 100px;
   background-color: #F1F2FF;
   top: 0;
   bottom: 0;
@@ -64,21 +64,20 @@
   flex-direction: column;
   gap: 48px;
 }
+.services .container a {
+  text-decoration: underline;
+  color: #003ECB;
+}
 .services .container .services-paragraph {
   max-width: 70%;
 }
 .services .container .row {
   gap: 48px;
 }
-.services .container .row button {
-  margin-top: 5%;
-  background-color: #2A2D7C;
-  color: white;
-}
-.services .container .row button:hover {
-  background-color: transparent;
-  color: #2A2D7C;
-  border-color: #2A2D7C;
+.services .container .row .col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .about-summary {

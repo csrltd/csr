@@ -1,10 +1,23 @@
 @import '../../variables';
 
 @media screen and (max-width: 540px) {
+  .container{
+    padding: 20px;
+    width: 100%;
+    
+
+    .heading{
+      font-size: 22px;
+    }
+  }
     .hero {
       text-align: center;
       padding-top: 250px;
       height: 855px;
+
+      .heading{
+        font-size: 45px;
+      }
       .hero-btns {
         flex-direction: column;
       }
@@ -20,6 +33,35 @@
             width: 100%;
             justify-content: center;
             
+          }
+        }
+      }
+    }
+
+    // Services
+
+    .services-details{
+      .container{
+        .col{
+          flex-direction: column;
+          justify-content: center;
+
+
+        }
+      }
+    }
+
+    // About
+    .about{
+      .container{
+        .heading{
+          font-size: 22px;
+        }
+        .col{
+          .row{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 15px;
           }
         }
       }
