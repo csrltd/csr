@@ -12,6 +12,7 @@ $border-radius: 2px;
     position: relative;
   
     .container {
+      
       .row {
         padding-top: 20px;
         display: grid;
@@ -25,8 +26,6 @@ $border-radius: 2px;
           padding: 20px;
           background-color: #F6F9FE;
           gap: 12px;
-  
-  
   
         }
   
@@ -43,21 +42,24 @@ $border-radius: 2px;
     position: relative;
   
     .container {
+      
       .row {
         padding-top: 20px;
         display: grid;
         grid-template-columns: 30% 30% 30%;
         align-items: start;
         gap: 3%;
+        // background-color: #2A2D7C;
   
         .col {
           width: 100%;
-          height: 50vh;
-          padding: 20px;
+          height: 45vh;
+          // padding: 20px;
           gap: 12px;
+          // background-color: aqua;
   
           .heading-book {
-         padding: 10px;
+            padding: 10px;
             height: 60px;
             background-color: $primary-color;
             h2 {
@@ -69,6 +71,7 @@ $border-radius: 2px;
           .book-list {
             height: 35vh;
             background-color: #F6F9FE;
+            padding: 5%;
   
             ul {
               li {
@@ -89,6 +92,7 @@ $border-radius: 2px;
   @media screen and (max-width: 1200px) {
   
     .accounting-services {
+      padding: 20px 30px;
       .heading {
         font-size: 30px;
       }
@@ -110,6 +114,7 @@ $border-radius: 2px;
     }
   
     .bookkeeping-services {
+      padding: 20px 30px;
       .heading {
         font-size: 30px;
       }
@@ -220,16 +225,24 @@ $border-radius: 2px;
   @media screen and (max-width: 540px) {
     .accounting-services {
       padding-top: 5vh;
-  margin-bottom: 45vh;
+      margin-bottom: 45vh;
       .container {
         
         .row {
-        grid-template-columns: 100%;
-       
+          margin-top: 20px;
+          padding-top: 20px;
+          grid-template-columns: 100%;
+          padding: 0;
+        
+        
           .col {
            
             height: auto;
-            width: 80%;
+            width: 100%;
+            margin: auto;
+            
+           
+            
   
           }
   
@@ -245,11 +258,15 @@ $border-radius: 2px;
       .container {
         .row {
           grid-template-columns: 100%;
+          
   
           .col {
-            width: 70%;
+            width: 100%;
             height: 40vh;
-  
+            margin: auto;
+            .book-list{
+              padding: 5%;
+            }
             h2 {
               font-size: 20px;
             }
