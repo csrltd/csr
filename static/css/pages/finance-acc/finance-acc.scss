@@ -9,90 +9,146 @@ $border-radius: 2px;
 
 
 
-// header
-.header {
-    background-color: transparent;
-    backdrop-filter: none;
+// // header
+// .header {
+//     background-color: transparent;
+//     backdrop-filter: none;
 
+//     .container {
+//         .nav-header {
+//             .brand {
+//                 .blue-logo {
+//                     display: block;
+//                 }
+
+//                 .white-logo {
+//                     display: none;
+//                 }
+//             }
+
+//             .nav-menu {
+//                 .links {
+//                     .link {
+//                         .nav-link {
+//                             color: $whitesmoke;
+//                         }
+//                     }
+//                 }
+//             }
+
+//         }
+//     }
+// }
+// // hero
+// .finance-acc-hero {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     .container {
+//         height: 80vh;
+//       .row {
+//         .col {
+//           padding-right: 15px;
+//           padding-left: 15px;
+//           position: absolute;
+
+//         //   h1 {
+//         //     margin-top: 192px;
+//         //   }
+
+//           a {
+//             button {
+//                 background-color: $primary-color;
+//                 color: $whitesmoke;
+//                 &:hover {
+//                     background: transparent;
+//                     border: 1px solid $primary-color;
+//                     border-radius: $border-radius;
+//                     color: $primary-color;
+//                 }
+//             }
+//           }
+//         }
+
+//         .col-1 {
+//             display: grid;
+//             place-content: center;
+//             flex-direction: column;
+//             gap: 24px;
+//             padding: 100px 100px;
+//             background-color: $color-gray;
+//             top: 0;
+//             bottom: 0;
+//             left: 0;
+//             right: 50%;
+//         }
+
+//         .col-2 {
+//           top: 0;
+//           bottom: 0;
+//           left: 50%;
+//           right: 0;
+//           background-color: $color-blue;
+//         }
+//       }
+//     }
+// }
+
+.hero {
+    background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/hero-img2.JPG");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    max-width: 100%;
+    color: white;
+    padding-top: 40vh;
+  
     .container {
-        .nav-header {
-            .brand {
-                .blue-logo {
-                    display: block;
-                }
-
-                .white-logo {
-                    display: none;
-                }
-            }
-
-            .nav-menu {
-                .links {
-                    .link {
-                        .nav-link {
-                            color: $whitesmoke;
-                        }
-                    }
-                }
-            }
-
-        }
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
     }
-}
-// hero
-.finance-acc-hero {
-    position: relative;
-    display: flex;
-    align-items: center;
-    .container {
-        height: 80vh;
-      .row {
-        .col {
-          padding-right: 15px;
-          padding-left: 15px;
-          position: absolute;
-
-        //   h1 {
-        //     margin-top: 192px;
-        //   }
-
-          a {
-            button {
-                background-color: $primary-color;
-                color: $whitesmoke;
-                &:hover {
-                    background: transparent;
-                    border: 1px solid $primary-color;
-                    border-radius: $border-radius;
-                    color: $primary-color;
-                }
-            }
+    .hero-text {
+        width: 60%;
+    }
+    .hero-btns {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+  
+      .hero-btn1 {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+  
+        a {
+          color: $whitesmoke;
+          font-size: 17px;
+          font-weight: bold;
+          margin-left: 20px;
+        }
+      }
+  
+      .btn {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: white;
+          img {
+            max-width: 32px;
           }
-        }
-
-        .col-1 {
-            display: grid;
-            place-content: center;
-            flex-direction: column;
-            gap: 24px;
-            padding: 100px 100px;
-            background-color: $color-gray;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 50%;
-        }
-
-        .col-2 {
-          top: 0;
-          bottom: 0;
-          left: 50%;
-          right: 0;
-          background-color: $color-blue;
+          span {
+            text-decoration: underline;
+            font-size: 24px;
+            font-weight: lighter;
+          }
         }
       }
     }
-}
+  }
+  
 
 
 // services 

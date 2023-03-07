@@ -1,59 +1,49 @@
-.header {
-  background-color: transparent;
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
+.hero {
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/static/img/hero-img2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  max-width: 100%;
+  color: white;
+  padding-top: 40vh;
 }
-.header .container .nav-header .brand .blue-logo {
-  display: block;
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }
-.header .container .nav-header .brand .white-logo {
-  display: none;
+.hero .hero-text {
+  width: 60%;
 }
-.header .container .nav-header .nav-menu .links .link .nav-link {
-  color: #f6f9fe;
-}
-
-.finance-acc-hero {
-  position: relative;
+.hero .hero-btns {
   display: flex;
   align-items: center;
-}
-.finance-acc-hero .container {
-  height: 80vh;
-}
-.finance-acc-hero .container .row .col {
-  padding-right: 15px;
-  padding-left: 15px;
-  position: absolute;
-}
-.finance-acc-hero .container .row .col a button {
-  background-color: #2A2D7C;
-  color: #f6f9fe;
-}
-.finance-acc-hero .container .row .col a button:hover {
-  background: transparent;
-  border: 1px solid #2A2D7C;
-  border-radius: 2px;
-  color: #2A2D7C;
-}
-.finance-acc-hero .container .row .col-1 {
-  display: grid;
-  place-content: center;
-  flex-direction: column;
   gap: 24px;
-  padding: 100px 100px;
-  background-color: #F1F2FF;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 50%;
 }
-.finance-acc-hero .container .row .col-2 {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  background-color: #003ECB;
+.hero .hero-btns .hero-btn1 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.hero .hero-btns .hero-btn1 a {
+  color: #f6f9fe;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.hero .hero-btns .btn a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+.hero .hero-btns .btn a img {
+  max-width: 32px;
+}
+.hero .hero-btns .btn a span {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 .services {

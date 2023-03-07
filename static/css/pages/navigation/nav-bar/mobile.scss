@@ -7,6 +7,9 @@ $border-radius: 2px;
 
 @media screen and (max-width: 1020px) {
     .header {
+      .notification {
+        padding: 8px 20px;
+      }
       .container {
         padding: 0;
   

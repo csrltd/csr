@@ -110,6 +110,9 @@ footer .copy .container .row .social-media img {
 }
 
 @media screen and (max-width: 540px) {
+  footer .container {
+    padding: 0 20px;
+  }
   footer .container .row {
     flex-direction: column;
   }
