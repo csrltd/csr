@@ -15,7 +15,7 @@
   gap: 10px;
 }
 .poem .col .title .logo img {
-  height: 40px;
+  width: 40px;
 }
 .poem .col .poem-content {
   display: flex;
